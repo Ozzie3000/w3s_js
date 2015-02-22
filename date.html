@@ -21,11 +21,21 @@
 
   <button id="sdate1">Show Date</button>
   <div id="sdate2"></div>
+  <br /><br />
+  <div id="sdate2"></div>
+  <br /><br />
+  <div id="sdate2"></div>
+  <br /><br />
 
 
 
 <script>
-	document.getElmentById("sdate2").innerHTML = Date();
+	function show_date(){
+		var date = new Date();
+		document.getElementById("sdate2").innerHTML = date;
+
+	}
+	setTimeout(function(){ show_date()}, 1500);
 	$(document).ready(function(){
 		
 		
