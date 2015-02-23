@@ -50,20 +50,18 @@
 		document.getElementById("sdate_b").innerHTML= date2;
 	}
 
+	document.getElementById("sdate2").addEventListener("click", show_date3);
+	function show_date3(){
+		document.getElementById("sdate_c").innerHTML = new Date();
+	}
+
+
 	function show_date2(){
 		var date = new Date();
-		document.getElementById("sdate_c").innerHTML = date;
+		document.getElementById("sdate_e").innerHTML = date;
 	}
 	setTimeout(function(){ show_date2()}, 1500);
 	
-	function show_date3(){
-		document.getElementById("stuff").addEventListener("click", show_date3);
-		document.getElementById("stuff").innerHTML = new Date();
-	}
-
-
-
-
 	$(document).ready(function(){
 
 	}); //end doc ready
