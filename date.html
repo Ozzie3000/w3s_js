@@ -19,14 +19,15 @@
 	<br /><br />
   <h1></h1>
 
-  <button id="sdate0" onclick="show_date0()">Show Date</button>
+  <button id="sdate0" onclick="show_date0()">Show Date 0</button>
   <div id="sdate_a">a</div>
   <br /><br />
 
-  <button id="sdate1" onclick="show_date1()">Show Date</button>
+  <button id="sdate1" onclick="show_date1()">Show Date 1</button>
   <div id="sdate_b">b</div>
   <br /><br />
 
+  <button id="sdate2">Show Date 2</button>
   <div id="sdate_c">c</div>
   <br /><br />
 
@@ -55,6 +56,10 @@
 	}
 	setTimeout(function(){ show_date2()}, 1500);
 	
+	function show_date3(){
+		document.getElementById("stuff").addEventListener("click", show_date3);
+		document.getElementById("stuff").innerHTML = new Date();
+	}
 
 
 
