@@ -20,32 +20,46 @@
   <h1></h1>
 
   <button id="sdate0" onclick="show_date0()">Show Date</button>
-  <div id="sdate1">a</div>
+  <div id="sdate_a">a</div>
   <br /><br />
-  <div id="sdate2">b</div>
+
+  <button id="sdate1" onclick="show_date1()">Show Date</button>
+  <div id="sdate_b">b</div>
   <br /><br />
-  <div id="sdate2">c</div>
+
+  <div id="sdate_c">c</div>
   <br /><br />
-  <div id="sdate2">d</div>
+
+  <div id="sdate_d">d</div>
+  <br /><br />
+
+  <div id="sdate_e">e</div>
   <br /><br />
 
 
 
 <script>
 	function show_date0(){
-		document.getElementById("sdate1").innerHTML= new Date();
+		document.getElementById("sdate_a").innerHTML= new Date();
 	}
 
+	document.getElementById("sdate1").onclick= function(){ show_date1()};
 	function show_date1(){
-		var date = new Date();
-		document.getElementById("sdate2").innerHTML = date;
+		var date2 = new Date();
+		document.getElementById("sdate_b").innerHTML= date2;
 	}
-	setTimeout(function(){ show_date1()}, 1500);
+
+	function show_date2(){
+		var date = new Date();
+		document.getElementById("sdate_c").innerHTML = date;
+	}
+	setTimeout(function(){ show_date2()}, 1500);
 	
 
 
+
+
 	$(document).ready(function(){
-		
 
 	}); //end doc ready
 </script>
