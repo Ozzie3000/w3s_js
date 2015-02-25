@@ -8,13 +8,13 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    color: white;
+    color: blue;
     font-size: 18px;
     padding: 0px 10px ;
   }
-  h1{ color: white; font-family: sans-serif; text-align: center; font-size: 26px;}
-  h2{ color: white; font-family: sans-serif; text-align: center; font-size: 22px;}
-  h3{ color: white; font-family: sans-serif; text-align: center; font-size: 20px;}
+  h1{ color: blue; font-family: sans-serif; text-align: center; font-size: 26px;}
+  h2{ color: blue; font-family: sans-serif; text-align: center; font-size: 22px;}
+  h3{ color: blue; font-family: sans-serif; text-align: center; font-size: 20px;}
 
   .btn{
     -webkit-border-radius: 20px;
