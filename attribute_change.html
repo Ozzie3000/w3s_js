@@ -20,26 +20,31 @@
   <h1>JS change HTML attributes</h1>
 
  	<div>
- 		<img id=src="http://www.clker.com/cliparts/8/8/2/2/1195423990759977006molumen_multicolor_power_buttons_5.svg.med.png">
+ 		<img id="pic1" src="http://www.clker.com/cliparts/8/8/2/2/1195423990759977006molumen_multicolor_power_buttons_5.svg.med.png" onclick="switcher()">
  	</div>
 
 
 <script>
 	function switcher(){
 		var pixxy = document.getElementById("pic1");
-		if(im)
-	}
+		if(pixxy.src.match("_5")){
+			pixxy.src="http://www.clker.com/cliparts/4/4/1/a/1195429270821624493molumen_multicolor_power_buttons_4.svg.med.png"
+		}
+		else{
+			pixxy.src="http://www.clker.com/cliparts/8/8/2/2/1195423990759977006molumen_multicolor_power_buttons_5.svg.med.png";
+		}
+	};
 
 
 	$(document).ready(function(){
 		
-		
+	/***	
 	on
 	http://www.clker.com/cliparts/8/8/2/2/1195423990759977006molumen_multicolor_power_buttons_5.svg.med.png
 
 	off
 	http://www.clker.com/cliparts/4/4/1/a/1195429270821624493molumen_multicolor_power_buttons_4.svg.med.png
-
+  ***/
 	}); //end doc ready
 </script>
 </body>
