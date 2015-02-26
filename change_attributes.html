@@ -21,16 +21,18 @@
 	<br /><br />
   <h1 id="change_me">Using JS to change CSS attributes</h1>
 
- 	<button id="30pix">Chnage font size of header to 30px</button>
+ 	<button id="30pix" onclick="change_up()">Change font size of header to 30px</button>
  	<p>or</p>
-	<button id="10pix">Chnage font size of header to 10px</button>
+	<button id="10pix" onclick="change_down()">Change font size of header to 10px</button>
 
 <script>
 	var x = document.getElementById("change_me");
 	function change_up(){
-		if(x.style.fontSize <= "19px"){
 			x.style.fontSize = "30px";
-		}
+	}
+
+	function change_down(){
+			x.style.fontSize = "10px";
 	}
 	$(document).ready(function(){
 		
