@@ -28,6 +28,10 @@
 	<button id="red_color" onclick="go_red()">Change color to red</button>
  	<p>or</p>
 	<button id="blue_color" onclick="go_blue()">Change color to blue</button>
+	<p>&nbsp;</p>
+	<button id="target" onclick="show_date()">Date</button>
+	<br />
+	<span id="here">&nbsp;</span>
 
 <script>
 	var x = document.getElementById("change_me");
@@ -45,6 +49,11 @@
 
 	function go_blue(){
 			x.style.color = "blue";
+	}
+
+	function show_date(){
+		var date2 = new Date();
+		document.getElementById("here").innerHTML= date2;
 	}
 
 	$(document).ready(function(){
