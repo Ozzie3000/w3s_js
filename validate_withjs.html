@@ -19,13 +19,31 @@
 	<br /><br />
   <h1>JS validate input</h1>
 
- 
+	<p>Please input a number between 1 and 10:</p>
+
+	<input id="num" type="number">
+
+	<button type="button" onclick="val_num()">Submit</button>
+
+	<p id="demo"></p>
 
 
 <script>
 	document.getElementById("").
 
+	function val_num(){
+    var x, text;
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("num").value;
 
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+	}
 
 
 
