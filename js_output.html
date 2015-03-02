@@ -29,11 +29,15 @@
   	<li>console.log</li>
   </ul>
 
-  <button id="al" class="btn">Alert 5</button>
+  <button id="al" class="btn" onclick="alert_now()">Alert 5</button>
   <span id="here0"></span>
   <br /><br />
-  <button id="writ" class="btn">Write 5</button>
-  <span id="here1"></span>
+  <button id="writ" class="btn">document.write 5</button>
+  <span id="here1">&nbsp; &nbsp; ||
+  	<script>	
+				document.write(" 5 ");
+  	</script>
+  </span>
   <br /><br />
   <button id="inner" class="btn">innerHTML 5</button>
   <span id=""></span>
@@ -42,7 +46,13 @@
   <span></span>
 
 <script>
-	//document.getElementById("").
+	function alert_now(){
+		alert("5");
+	}
+
+
+
+	document.getElementById("").
 	$(document).ready(function(){
 		
 		
