@@ -21,20 +21,20 @@
 
   <p>What is your name?</p>
 
-  <input type="text" id="namer">
+  <input type="text" id="namer" onblur="obtain_name()">
 
-  <p>&nbsp;</p>
+  <p id="answer">&nbsp;</p>
 
 
 <script>
-	document.getElementById("namer").onblur(
-			function obtain_name(){
-				var name_given = document.getElementById("#namer").value();
-			};
-		)
+	function obtain_name(){
+		var name_given = document.getElementById("namer").value;
+		document.getElementById("answer").innerHTML = name_given;
+	}
 	
 	
-	obtain_name.onblur();
+	
+
 
 	$(document).ready(function(){
 
