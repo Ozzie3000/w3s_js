@@ -23,13 +23,16 @@
 
   <input type="text" id="namer">
 
-
+  <p>&nbsp;</p>
 
 
 <script>
-	function obtain_name(){
-		var name_given = document.getElementById("#namer").value();
-	}
+	document.getElementById("namer").onblur(
+			function obtain_name(){
+				var name_given = document.getElementById("#namer").value();
+			};
+		)
+	
 	
 	obtain_name.onblur();
 
