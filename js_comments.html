@@ -21,7 +21,9 @@
 
   <p id="myP">&nbsp;</p>
 
- 
+ 	<p id="p0">&nbsp;</p>
+
+ 	<p id="p1">&nbsp;</p>
 
 
 <script>
@@ -31,6 +33,11 @@
 	//find #myP and change inner contents to a string
 	document.getElementById("myP").innerHTML = "This is a paragraph";
 	$(document).ready(function(){
+
+	/*The following will change:
+	several elements
+	*/
+	document.getElementById("p0, p1").innerHTML = "These are more paragraphs";
 		
 	}); //end doc ready
 </script>
