@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JS and jQuery | JS comments</title>
+<meta charset="utf-8">
+<meta name="description" content="HTML5, js, jquery demos" />
+<link rel="stylesheet" type="text/css" href="stylesheets/main1.css"></link>
+<style type="text/css"></style>
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+	}); //end doc ready
+</script>
+</head>
+<body>
+	<input type="button" id="submit" class="btn" value="Refreshness" onclick="location.reload();" />
+	<br /><br />
+  <h1 id="myH">JS comments</h1>
+
+  <p id="myP">&nbsp;</p>
+
+ 	<p id="p0">&nbsp;</p>
+
+ 	<p id="p1">&nbsp;</p>
+
+
+<script>
+	//find #myP and change inner contents to a string
+	document.getElementById("myH").innerHTML = "This is a H1";
+
+	//find #myP and change inner contents to a string
+	document.getElementById("myP").innerHTML = "This is a paragraph";
+
+	var a = 1;
+	var b = 2;
+	var c = a+b;
+	document.getElementById("p0").innerHTML = c;
+
+	$(document).ready(function(){
+
+	/*The following will change:
+	several elements
+	*/
+	
+	document.getElementById("p0 p1").innerHTML = "These are more paragraphs";
+		
+	}); //end doc ready
+</script>
+</body>
+</html>
