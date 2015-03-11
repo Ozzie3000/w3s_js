@@ -24,11 +24,14 @@
   <input type="text" id="price" placeholder="Enter quantity" tabindex="2">
   <br />
   <!--<input type="text" id="quantity" placeholder="Your total will go here" readonly="true">  -->
-  <input type="text" id="quantity" placeholder="Your total will go here" disabled="true" tabindex="3">
+  <input type="text" id="total" placeholder="Your total will go here" disabled="true" tabindex="3">
 
 <script>
 	function get_total(){
 		var quantity = document.getElementById("quantity").value;
+		var price = document.getElementById("price").value;
+		var total = quantity * price;
+		document.getElementById("total").innerHTML = total;
 	}
 
 	document.getElementById("").
