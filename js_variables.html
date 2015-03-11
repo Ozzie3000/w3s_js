@@ -5,7 +5,9 @@
 <meta charset="utf-8">
 <meta name="description" content="HTML5, js, jquery demos" />
 <link rel="stylesheet" type="text/css" href="stylesheets/main1.css"></link>
-<style type="text/css"></style>
+<style type="text/css">
+	#final_ans{ padding: 10px 5px; margin-top: 5px;}
+</style>
 <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
 <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 <script type="text/javascript">
@@ -21,17 +23,20 @@
 
   <input type="text" id="quantity" placeholder="Enter quantity" tabindex="1">
   <br />
-  <input type="text" id="price" placeholder="Enter quantity" tabindex="2" onblur="get_total()">
+  <input type="text" id="price" placeholder="Enter item price" tabindex="2" onblur="get_total()">
   <br />
-  <input type="text" id="tota" placeholder="Your total will go here" readonly="true" tabindex="3">
+  <!--<input type="text" id="tota" placeholder="Your total will go here" readonly="readonly" tabindex="3"> -->
   <!--<input type="text" id="total" placeholder="Your total will go here" disabled="true" tabindex="3"> -->
+  <div id="final_ans">
+  	<span id="total"></span>
+  </div>
 
 <script>
 	function get_total(){
 		var quantity = document.getElementById("quantity").value;
 		var price = document.getElementById("price").value;
 		var total_price = quantity * price;
-		document.getElementById("total").innerHTML = total_price;
+		document.getElementById("total").innerHTML = "Your total price is : $" + total_price;
 	}
 
 
