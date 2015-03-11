@@ -4,7 +4,7 @@
 <title>JS and jQuery | JS variables</title>
 <meta charset="utf-8">
 <meta name="description" content="HTML5, js, jquery demos" />
-<link rel="stylesheet" type="text/css" href="..stylesheets/main1.css"></link>
+<link rel="stylesheet" type="text/css" href="stylesheets/main1.css"></link>
 <style type="text/css"></style>
 <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
 <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
@@ -21,20 +21,20 @@
 
   <input type="text" id="quantity" placeholder="Enter quantity" tabindex="1">
   <br />
-  <input type="text" id="price" placeholder="Enter quantity" tabindex="2">
+  <input type="text" id="price" placeholder="Enter quantity" tabindex="2" onblur="get_total()">
   <br />
-  <!--<input type="text" id="quantity" placeholder="Your total will go here" readonly="true">  -->
-  <input type="text" id="total" placeholder="Your total will go here" disabled="true" tabindex="3">
+  <input type="text" id="tota" placeholder="Your total will go here" readonly="true" tabindex="3">
+  <!--<input type="text" id="total" placeholder="Your total will go here" disabled="true" tabindex="3"> -->
 
 <script>
 	function get_total(){
 		var quantity = document.getElementById("quantity").value;
 		var price = document.getElementById("price").value;
-		var total = quantity * price;
-		document.getElementById("total").innerHTML = total;
+		var total_price = quantity * price;
+		document.getElementById("total").innerHTML = total_price;
 	}
 
-	document.getElementById("").
+
 
 
 	$(document).ready(function(){
