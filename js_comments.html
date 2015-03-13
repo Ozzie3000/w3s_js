@@ -5,7 +5,9 @@
 <meta charset="utf-8">
 <meta name="description" content="HTML5, js, jquery demos" />
 <link rel="stylesheet" type="text/css" href="stylesheets/main1.css"></link>
-<style type="text/css"></style>
+<style type="text/css">
+	body{ background-color: grey;}
+</style>
 <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
 <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 <script type="text/javascript">
@@ -45,7 +47,7 @@
 
 	/*  you can use the multi-line comment to prevent multiple lines of code from running
 	alert("Hellow World");
-	document.getElementById("p2").innterHTML = ""
+	document.getElementById("p2").innerHTML = ""
 
 
 
@@ -56,9 +58,13 @@
 	several elements
 	*/
 	
-	document.getElementById("p0 p1").innerHTML = "These are more paragraphs";
+	var p1 = document.getElementById("p1");
+	var p2 = document.getElementById("p2");
+	var more_stuff = "These are more paragraphs";
+	p1.innerHTML = more_stuff;
+	p2.innerHTML = more_stuff;
 		
-	}); //end doc ready
+	//}); //end doc ready
 </script>
 </body>
 </html>
