@@ -5,7 +5,12 @@
 <meta charset="utf-8">
 <meta name="description" content="HTML5, js, jquery demos" />
 <link rel="stylesheet" type="text/css" href="stylesheets/main1.css"></link>
-<style type="text/css"></style>
+<style type="text/css">
+	th, td{ 
+		padding: 5px 25px;
+		border: solid black 2px;
+	}
+</style>
 <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
 <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 <script type="text/javascript">
@@ -27,11 +32,36 @@
 				<th>Same as</th>
 			</tr>
 			<tr>
-				<td>=	x</td>
-				<td>= y</td>
-				<td></td>
+				<td>=</td>
+				<td>x = y</td>
+				<td>x =y</td>
 			</tr>
-			<tr></tr>
+			<tr>
+				<td>+=</td>
+				<td>x += y</td>
+				<td>x = x + y</td>
+			</tr>
+			<tr>
+				<td>-=</td>
+				<td>x -= y</td>
+				<td>x = x -y</td>
+			</tr>
+			<tr>
+				<td>*=</td>
+				<td>x * = y</td>
+				<td>x = x * y</td>
+			</tr>
+			<tr>
+				<td>/=</td>
+				<td>x /= y</td>
+				<td>x = x / y</td>
+			</tr>
+			<tr>
+				<td>%=</td>
+				<td>x %= y</td>
+				<td>x = x % y</td>
+			</tr>
+
 		</tbody>
 	</table>
 
