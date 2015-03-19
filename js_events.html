@@ -27,7 +27,7 @@
   	<li>HTML input field changed</li>
   	<li>HTML button clicked
   		<ul>
-  			<li>Examples in line JS:
+  			<li>Examples with in-line JS:
 		  		<ul>
 		  			<li><button onclick='getElementById("demo").innerHTML=Date()'>The time is?</button></li>
 		  			<li id="demo">this will be replaced with the current date and time</li>
@@ -35,6 +35,15 @@
 		  			<li><button onclick="this.innerHTML=Date()">I will also change</button></li>
 		  		</ul>
 		  	</li>
+		  	<li>Examples with js function call
+		  		<ul>
+		  			<li><button id="func_1" onclick="a_func()">Show me the money!</button></li>
+		  			<li id="target_0">I will change</li>
+		  			<li><button onclick="times()">What time is it?</button></li>
+		  			<li id="target_1">I will also change</li>
+		  		</ul>
+		  	</li>
+
   		</ul>
   	</li>
   	
@@ -49,7 +58,12 @@
 
 <script>
 	//document.getElementById("").
-
+	function a_func(){
+		document.getElementById("target_0").innerHTML = "SHOW ME THE MONEY!!!"
+	}
+	function times(){
+		document.getElementById("target_1").innerHTML = "Time for you to get a watch : " + Date();
+	}
 
 	$(document).ready(function(){
 
