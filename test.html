@@ -32,8 +32,13 @@
 	function help1(){ alert("help1");};
 	function help2(){ alert("help2");};
 
+	// 1) works like expected
 	setInterval(help1, 4000);
+
+	// 2) executes when interpretor gets to this line, but only once
 	setInterval(help2(), 3000);
+	
+	// 3) 
 	setInterval(function(){help2();},2000)
 
 	$(document).ready(function(){
