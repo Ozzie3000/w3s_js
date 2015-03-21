@@ -50,7 +50,22 @@
 		<li>Primitive values do not have properties and methods</li>
 		<li>JS treats strings like objects when executing properties and methods</li>
 		<ul>Properties
-			<li>constructor: returns the function that created the string object's prototype</li>
+			<li>constructor: returns the function that created the string object's prototype
+				<br />
+				var name_of_whatever = {stuff:1, line:6, song:"free_bird"};
+				<br />
+				name_of_whatever.constructor returns what it is: i.e. function Object()
+				<br />
+				<br />
+				function addStuff(a,b){ var sum = a+b;}
+				<br />
+				var myTotal = new addStuff(5,6);
+				<br />
+				console.log( myTotal.constructor) // returns
+				<br />
+				function addStuff(a,b){ var sum = a+b;}
+
+			</li>
 		</ul>
 	</ul>
 
