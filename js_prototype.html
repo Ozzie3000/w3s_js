@@ -30,13 +30,15 @@
 	var A = function () {
     this.x = function () {
         //do something
+        alert("this is function A");
     };
 	};
 
 	//vs
 	var B = function () { };
-	B.prototype.y = function () {
+	this.B.prototype.y = function () {
 	    //do something
+	    alert("this is function B");
 	};	
 
 	$(document).ready(function(){
