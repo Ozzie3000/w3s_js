@@ -68,6 +68,8 @@ body{
     background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
   }
 
-  .ul_tops{ color: red; font-size: 20px;}
+  .ul_tops{ color: #FF0000; font-size: 22px;}
+  .ul_tops1{ color: #696969; font-size: 20px;}
+
 
   .important { color: red; font-weight: 600; text-decoration: underline;}
