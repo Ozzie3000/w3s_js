@@ -134,13 +134,24 @@
 						</li>
 					</ul>
 				</li>
-	
+			</ul>
+		</li>
+
+		<li>
+			<ul><span class="ul_tops">Accessing a string as an Array is possible, but unsafe</span>
+				<li>It does not work in all browsers (IE5-IE7)</li>
+				<li>It makes strings look like arrays (which they are not)</li>
+				<li>may not necessarily work or give you an error if it doesn't</li>
+				<li>Convert to an array if you want it to behave as an array</li>
+				<li>
+					var string_0 = "Welcome to Jurassic Park";
+					<br />
+					string_0[0] = "H"; // an example of trying to make it behave like an array
+				</li>
 			</ul>
 		</li>
 
 
-
-	</ul>
 
 	</ul>
 
