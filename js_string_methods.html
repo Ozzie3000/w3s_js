@@ -170,8 +170,9 @@
 					var text = ""; <br />
 					var i; <br />
 					for (i = 0; i < arr.length; i++) {text += arr[i] + "<br>" } <br />
-					document.getElementById("here").innerHTML =
+					document.getElementById("here").innerHTML = text;
 				</li>
+				<li id="here"></li>
 			</ul>
 		</li>
 
@@ -182,7 +183,12 @@
 
 <script>
 	//document.getElementById("").
-
+	var str = "Hello";
+	var arr = str.split("");
+	var text = "";
+	var i;
+	for (i = 0; i < arr.length; i++) {text += arr[i] + "<br>" }
+	document.getElementById("here").innerHTML = text;
 
 	$(document).ready(function(){
 
