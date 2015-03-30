@@ -95,9 +95,14 @@
  		<li>
  			<ul><span class="ul_tops1">Numbers as objects</span>
  				<li>normally numbers are primitive values created from literals in JS</li>
- 				<li>ex: var a = 123;</li>
+ 				<li>ex: var a = 123;  // typeof a // returns "number"</li>
  				<li>with the use of -> new <- keyword you can define them as objects</li>
- 				<li>var b = new Number(234);  // typeof b // returns "objects"</li>
+ 				<li>var b = new Number(123);  // typeof b // returns "objects"</li>
+ 				<li>(a == b) is true because of equal values</li>
+ 				<li>(a ===b ) is false because of different types</li>
+ 				<li>comparing two objects does not work</li>
+ 				<li>var c = new Number(123);</li>
+ 				<li>(b == c) is false because objects cannot be compared</li>
  			</ul>
  		</li>
 
