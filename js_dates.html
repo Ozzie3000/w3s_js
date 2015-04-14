@@ -26,6 +26,11 @@
  		<span id="demo"></span>
  	</div>
 
+ 	<div>
+ 		<span>When you display a date object in HTML, it is automatically converted to a string, with the toString() method.</span>
+ 		<br />
+ 		<span id="target">&nbsp;</span>
+ 	</div>
 
 <script>
 	//document.getElementById("").
@@ -46,6 +51,8 @@
 	var boring_date_input = new Date(99,11,31,11,59);
 	//Fri Dec 31 1999 11:59:00 GMT-0500 (Eastern Standard Time)
 
+	var har_har = new Date();
+	document.getElementById("target").innerHTML = har_har;
 
 	$(document).ready(function(){
 
