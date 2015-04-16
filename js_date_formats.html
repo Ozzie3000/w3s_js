@@ -30,6 +30,7 @@
 
  	<ul><span class="ul_tops">JS ISO dates</span>
  		<li>ISO 8601 syntax (YYYY-MM-DD) is the newest and preferred JS format</li>
+ 		<li>Month is written before day in all short date and ISO date formats.</li>
  		<li>var date_0 = new Date("2015-1-1"); // Thu Jan 01 2015 00:00:00 GMT-0500</li>
  		<li>
  			strangeness: 
@@ -48,8 +49,10 @@
  	</ul>
 
  	<ul><span class="ul_tops">JS Short Dates</span>
- 		<li>often written as MM/DD/YYYY or MM-DD-YYYY</li>
- 		<li>var stuff_2 = new Date("01/02/3456");  //</li>
+ 		<li>often written as MM/DD/YYYY or MM-DD-YYYY js will also accept "YYYY/MM/DD"</li>
+ 		<li>var stuff_2 = new Date("01/02/3456"); // Wed Jan 02 3456 00:00:00 GMT-0500</li>
+ 		<li>var stuff_3 = new Date("06-05-4321"); // Sun Jun 05 4321 00:00:00 GMT-0400</li>
+ 		<li>var stuff_4 = new Date("1234/05/06"); // Sat May 06 1234 00:00:00 GMT-0400</li>
  	</ul>
 
 
