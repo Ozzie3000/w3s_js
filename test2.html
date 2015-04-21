@@ -41,6 +41,13 @@
 
 
 	$(document).ready(function(){
+		function wait_awhile(){
+      $("#alert").replaceWith("<noscript id='alert'>hi grant you wont see this</noscript>");
+    };
+        
+    $("#remove").click(function(){
+        wait_awhile();
+    });
 
 	}); //end doc ready
 </script>
