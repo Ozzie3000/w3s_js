@@ -82,7 +82,13 @@
 
  	<ul><span class="ul_tops">things to avoid</span>
  		<li>new Array(); // JS new keyword</li>
+ 		<li>var array_0 = []; // good -- empty array </li>
+ 		<li>var array_1 = new Array(); // bad go home -- </li>
+ 		<li>var array_2 = new Array(10); // no bueno now you have an array with 10 undefined elements</li>
+ 		<li>var array_3 = [10]; // looks the same as above, but is not. array with number 10 inside index 0</li>
  	</ul>
+
+ 	
 
 
 <script>
