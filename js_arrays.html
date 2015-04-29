@@ -94,7 +94,10 @@
  		<li>var my_num = 12; my_num.constructor // returns function Number() { [native code] }</li>
  		<li>var stuff = {"one":1, "two":2}; stuff.constructor // returns function Object() { [native code] }</li>
  		<li>var array_3 = [10]; array_3.constructor // returns function Array() { [native code] }</li>
- 		<li></li>
+ 		<li>or if you want to get fancy</li>
+ 		<li>var stuff = [1,2,3];</li>
+ 		<li>function isArray(stuff){ return stuff.constructor.toString().indexOf("Array") >-1; }</li>
+ 		<li>if it does not find array in what it returns in the function above it will display -1 (meaning false)</li>
  		
  	</ul>
 
