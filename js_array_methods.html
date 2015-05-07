@@ -69,9 +69,15 @@
 		<li>fruits.sort() --> "apple", "banana", "clementine", "durian", "test1", "test2"</li>
 	</ul>
 
-  <ul><span class="ul_tops">reversing and array</span>
+  <ul><span class="ul_tops">reversing an array</span>
     <li>var fruits = ["apple", "banana", "clementine", "durian", "test1", "test2"];  // from previous example</li>
     <li>fruits.reverse(); --> ["test2", "test1", "durian", "clementine", "banana", "apple"]</li>
+  </ul>
+
+  <ul><span class="ul_tops">numeric sort w/ compare function</span>
+    <li>.sort() does not work well for integers so i needs a helper</li>
+    <li>var nums = [2, 5, 111, 321, 987];</li>
+    <li>nums.sort(function(a,b){return a-b});</li>
   </ul>
 
 
