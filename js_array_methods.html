@@ -77,12 +77,14 @@
   <ul><span class="ul_tops">numeric sort w/ compare function</span>
     <li>.sort() does not work well for integers so i needs a helper</li>
     <li>var nums = [992, 355, 111, 321, 987];</li>
-    <li>nums.sort(function(a,b){return a-b});</li>
+    <li>nums.sort(function(a,b){return a-b}); changes array</li>
     <li>nums now --> 111, 321, 355, 987, 992</li>
   </ul>
 
   <ul><span class="ul_tops">reverse numerica sort with compare function</span>
-    <li></li>
+    <li>var nums = [992, 355, 111, 321, 987]; // reset</li>
+    <li>nums.sort(function(a,b){b-a}; // changes array</li>
+    <li>nums now --> 992, 987, 355, 321, 111</li>
   </ul>
 
 
