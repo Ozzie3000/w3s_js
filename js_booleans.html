@@ -47,6 +47,7 @@
     <li>Boolean(-2); // negative number</li>
     <li>Boolean("anyString"); // string</li>
     <li>Boolean(1+2+3); // no zero expressions</li>
+    <li>Boolean(true);</li>
   </ul>
 
   <ul><span class="ul_tops">things that eval to false</span>
@@ -54,7 +55,7 @@
     <li>Boolean(-0); //</li>
     <li>Boolean(""); // empty string</li>
     <li>Boolean(x); // where x is undefined</li>
-
+    <li>var y = null; Boolean(y); // y is null</li>
   </ul>
 
 
