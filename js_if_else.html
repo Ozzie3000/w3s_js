@@ -22,6 +22,7 @@
 	<br /><br />
   <h1>JS If Else Statements</h1>
 
+  <h2>Greetings: <span id="here"></span></h2>
   <ul><span class="ul_tops"></span>
   	<li>Use if to specify a block of code to be executed, if a specified condition is true</li>
   	<li>Use else to specify a block of code to be executed, if the same condition is false</li>
@@ -43,7 +44,14 @@
   <li></li>
 
 <script>
-	//document.getElementById("").
+	if(new Date().getHours()<11){
+		document.getElementById("here").innerHTML = "Good Morning";
+	} else if(new Date().getHours()>10 && new Date().getHours()<18){
+		document.getElementById("here").innerHTML = "Good Afternoon";	
+	} else{
+		document.getElementById("here").innerHTML = "Good Evening";
+	}
+	//
 
 
 	$(document).ready(function(){
