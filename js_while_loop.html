@@ -27,10 +27,22 @@
   	<li>while (condition){ code block; }</li>
   </ul>
 
+  <ul><span class="ul_tops">examples</span>
+  	<li>while (i&lt;10){ message += "<br />The current number is : " + i; i++; } //see below (ommitted rest of code)</li>
+  	<li id="here"></li>
+  </ul>
+
 
 <script>
-	//document.getElementById("").
 
+	function count(){
+		var i=0;
+		message = "";
+		while (i<10){ message += "<br />The current number is : " + i; i++; }
+		document.getElementById("here").innerHTML = message;
+	}
+	
+	setTimeout(function(){ count()}, 1500);
 
 	$(document).ready(function(){
 
