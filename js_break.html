@@ -27,9 +27,25 @@
   	<li>continue: skips over one iteration of the loop is condition is meet</li>
   </ul>
 
+  <ul><span class="ul_tops">break</span>
+  	<li>break will exit out of switch aand loops</li>
+  	<li>
+	  	var message = ""; 
+	  	<br />
+	  	for (i = 0; i &lt; 10; i++) { if (i === 3) { break; }
+	  	<br />
+	  	message += "The number is " + i + "<br>"; }
+	  	</li>
+  	<li id="break_it"></li>
+  </ul>
+
 
 <script>
-	//document.getElementById("").
+	var message = "";
+	for (i = 0; i < 10; i++) 
+		{ if (i === 3) { break; } 
+	message += "The number is " + i + "<br>"; }
+	document.getElementById("break_it").innerHTML = message;
 
 
 	$(document).ready(function(){
