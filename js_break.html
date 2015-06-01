@@ -34,7 +34,7 @@
 	  	<br />
 	  	for (i = 0; i &lt; 10; i++) { if (i === 3) { break; }
 	  	<br />
-	  	message += "The number is " + i + "<br>"; 
+	  	message += "The number is " + i + "&lt;br&gt;"; 
 	  	<br />
 	  	}
 	  	</li>
@@ -44,13 +44,13 @@
   <ul><span class="ul_tops">continue</span>
   <li>if condition is meet skips just 1 iteration</li>
   	<li>
-  	var message = "";
+  	var message_1 = "";
   	<br />
   	for (i=0; i &lt; 5; i++;){
   	<br />
   	if(i===2){continue;}
   	<br />
-  	message = "The number is: " +i+ "<br />";
+  	message_1 = "The number is: " +i+ "&lt;br&gt;";
   	<br />
   	}
   	</li>
@@ -60,10 +60,19 @@
 
 <script>
 	var message = "";
-	for (i = 0; i < 10; i++) 
+	var i;
+	for (i = 0; i<10; i++) 
 		{ if (i === 3) { break; } 
 	message += "The number is " + i + "<br>"; }
 	document.getElementById("break_it").innerHTML = message;
+
+	var message_1 = "";
+	var b;
+	for(b=0; b<5; b++){
+		if(b===2){continue;}
+		message_1 += "The number is: " + b + "<br />";
+	}
+	document.getElementById("carry_on").innerHTML = message_1;
 
 
 	$(document).ready(function(){
