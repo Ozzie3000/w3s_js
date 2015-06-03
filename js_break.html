@@ -73,6 +73,12 @@
   	<li>break with a label will exit out of any code block</li>
   </ul>
 
+  <ul><span class="ul_tops">label example</span>
+  	<li>var fruit = ["apple", "banana", "cherry", "durian"];</li>
+  	<li></li>
+  	<li id="here2"></li>
+  </ul>
+
 
 <script>
 	var message = "";
@@ -89,6 +95,17 @@
 		message_1 += "The number is: " + b + "<br />";
 	}
 	document.getElementById("carry_on").innerHTML = message_1;
+
+	var fruit = ["apple", "banana", "cherry", "durian"];
+	var fruit_message = "";
+	list: {
+		fruit_message += fruit[0] + "<br />";
+		fruit_message += fruit[1] + "<br />";
+		break list;
+		fruit_message += fruit[2] + "<br />";
+		fruit_message += fruit[3] + "<br />";
+	}
+	document.getElementById("here2").innerHTML = fruit_message;
 
 
 	$(document).ready(function(){
