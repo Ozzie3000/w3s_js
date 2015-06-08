@@ -72,7 +72,9 @@
     <li>(3.16).constructor // returns function Number() { [native code] }</li>
     <li>false.constructor // returns function Boolean() { [native code] }</li>
     <li>[1,2,3,4].constructor // returns function Array() { [native code] }</li>
-    <li>{name:"john", age:316}.consructor // returns Object() { [native code] }</li>
+    <li>{name:"john", age:316}.consructor // returns function Object() { [native code] }</li>
+    <li>new Date().constructor // returns function Date() { [native code] }</li>
+    <li>function(){}.constructor // returns function Function() { [native code] }</li>
   </ul>
 
 
