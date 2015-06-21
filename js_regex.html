@@ -82,13 +82,16 @@
   	<li>searches a string for a pattern, and returns true or false</li>
   	<li>var stpatty = /green/;</li>
   	<li>stpatty.test("It's all about the luck of the Irish and green everywhere"); // returns true</li>
-  	<li>stpatty.test(It's all about the luck of the Irish and Green everywhere"); // returns false</li>
+  	<li>stpatty.test("It's all about the luck of the Irish and Green everywhere"); // returns false</li>
   	<li>stpatty2 = /green/i;</li>
   	<li>stpatty2.test("It's all about the luck of the Irish and Green everywhere"); // returns true</li>
   </ul>
 
   <ul><span class="ul_tops">.exec()</span>
   	<li>searches a string for a specified pattern, and if found returns the text</li>
+  	<li>/y/.exec("It's all about the luck of the Irish and Green everywhere");</li>
+  	<li>in Firefox Array["y"]</li>
+  	<li>in Chrome ["y"]</li>
   </ul>
 
 <script>
