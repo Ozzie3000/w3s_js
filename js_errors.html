@@ -31,10 +31,15 @@
   	<li>finally statement lets you execute code, after try and catch, in any result</li>
   </ul>
 
+  <ul><span class="ul_tops">try and catch example</span>
+  	<li id="here">first error</li>
+  </ul>
 
 <script>
 	//document.getElementById("").
-
+	try{ adalert("Welcome to Jurrasic Park"); }
+	//try{ addalert("Welcome to Jurrasic Park"); }
+	catch(error) { document.getElementById("here").innerHTML = error.message; }
 
 	$(document).ready(function(){
 
