@@ -77,8 +77,14 @@
     try{
       if(x=="") throw "did you forget how to use a keyboard?";
       if(isNaN(x)) throw "not a number. use the number pad will ya?"
+        x == Number(x);
+      if(x<3) throw "low baller?";
+      if (x>9) throw "we have a high roller over here!";
     }
-  }
+    catch(error){
+      message.innerHTML = "O.K. " + error;
+    }
+  };
 
 </script>
 </body>
