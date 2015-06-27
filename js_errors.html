@@ -75,7 +75,8 @@
     var message, x;
     message = document.getElementById("demo").value;
     try{
-      if(x=="") throw "did you forget how to use a keyboard?"
+      if(x=="") throw "did you forget how to use a keyboard?";
+      if(isNaN(x)) throw "not a number. use the number pad will ya?"
     }
   }
 
