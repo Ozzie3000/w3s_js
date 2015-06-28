@@ -56,7 +56,7 @@
 
   <ul><span class="ul_tops">input error detection</span>
     <li>Give me a number (no funny business) between 3-9</li>
-    <li>Type here: <input id="demo" type="number" min="3" max="9" step="1"><button type="button" onclick="func_a()">Go!</button></li>
+    <li>Type here: <input id="demo" type="number" min="3" max="9" step="1"> <button type="button" onclick="func_a()">Go!</button></li>
     <li><span id="message"></span></li>
   </ul>
 
@@ -73,8 +73,13 @@
 
   function func_a(){
     var message, x;
-    message = document.getElementById("demo").value;
+    message = document.getElementById("message");
+    message.innerHTML = "";
+    x = document.getElementById("demo").value;
     try{
+      if((x<=9)||(x>=3)){
+        message.innerHTML = "Dude you can read and type!";
+      }
       if(x=="") throw "did you forget how to use a keyboard?";
       if(isNaN(x)) throw "not a number. use the number pad will ya?"
         x == Number(x);
