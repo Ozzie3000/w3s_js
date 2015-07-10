@@ -37,10 +37,11 @@
   	<li>
   		"use strict"
   		<br />
-  		x=3.16; // notice var is missing
+  		x=3.16; // error will happen notice var is missing
       <br />
-      afunc();
+      afunc(); // error will happen
       </br />
+      function afunc() { x = 3.16;}
   	</li>
   </ul>
 
