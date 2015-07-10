@@ -40,11 +40,21 @@
     <li>
       "use strict"
       <br />
-      x=3.16; // error will happen notice var is missing
+      x =3.16; // error will happen notice var is missing
       <br />
       afunc(); // error will happen
       </br />
       function afunc() { x = 3.16;}
+    </li>
+  </ul>
+
+  <ul><span class="ul_tops">local declaration</span>
+    <li>
+      x = 3.16; // no error will happen notice var is missing
+      <br />
+      afunc(); // error will happen
+      </br />
+      function afunc() { "use strict" ; x = 3.16;}
     </li>
   </ul>
 
