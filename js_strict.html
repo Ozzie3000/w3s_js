@@ -95,6 +95,8 @@
     <li>var eval = 3.14; // error ; cannot use eval as a variable</li>
     <li>var arguments = 3.16;  // error; cannot use arguments as a variable</li>
     <li>with (Math){x = cos(0)}; // with statement not allowed</li>
+    <li>using eval to create variables and calling within the same scope not allowed</li>
+    <li>eval ("var d = 1337"); alert(d);  // error</li>
   </ul>
 
 
