@@ -121,14 +121,26 @@
 
 <script>
 	//document.getElementById("").
+
+	$(document).ready(function(){
+
   function myFunc(a,b) { 
     if (b === undefined){ 
       b = 0;
     }
-    returns a * b;
+    $("#result").text(a * b);
   } 
 
-	$(document).ready(function(){
+
+  $("#varA").blur(function(){
+    var a = $("#varA").value;
+  });
+
+  $("#varB").blur(function(){
+    var b = $("#varB").value;
+    myFunc();
+  });
+
 
 	}); //end doc ready
 </script>
