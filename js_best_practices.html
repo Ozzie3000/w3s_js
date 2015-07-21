@@ -125,21 +125,27 @@
 	$(document).ready(function(){
 
   function myFunc(a,b) { 
-    if (b === undefined){ 
+    if (b === undefined) || (a === undefined){ 
       b = 0;
+      a = 0;
     }
-    $("#result").text(a * b);
+
+    $("#varA").blur(function(){
+      var a = $("#varA").val();
+      Number(a);
+    });
+
+    $("#varB").blur(function(){
+      var b = $("#varB").val();
+      Number(b);
+    });
+    
+    var c = $("#result").val(a * b);
+    
+    $("#result").val(c);
   } 
 
-
-  $("#varA").blur(function(){
-    var a = $("#varA").value;
-  });
-
-  $("#varB").blur(function(){
-    var b = $("#varB").value;
-    myFunc();
-  });
+  $("#varB").blur(function(){ myFunc(a, b)}, 1000);
 
 
 	}); //end doc ready
