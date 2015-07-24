@@ -49,7 +49,9 @@
     <li>JS uses floating point numbers.  64bits</li>
     <li>All programming languages have problems when it comes to floating point value precision</li>
     <li>var a = 0.1; var b = 0.2; var c = a + b;</li>
-    <li>what will c be? 0.3? Nope</li>
+    <li>what will c be? 0.3? Nope it is 0.30000000000000004</li>
+    <li>to get around this basically go up to whole numbers then divide to drop it back down</li>
+    <li>var d  = (a * 10 + b * 10) / 10;  // d will be 0.3</li>
   </ul>
 
 
