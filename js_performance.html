@@ -48,7 +48,9 @@
   </ul>
 
   <ul><span class="ul_tops">Delay JS loading</span>
-  	<li></li>
+  	<li>Putting Scripts at the bottom of the page lets the rest of them DOM load</li>
+  	<li>If a script is downloading, the browser will not start any other downloads.</li>
+  	<li>As a result other rendering and parsing might be held up</li>
   </ul>
 
 
