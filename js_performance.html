@@ -53,6 +53,21 @@
   	<li>As a result other rendering and parsing might be held up</li>
   	<li>HTTP specification: browsers should not download more than two components in parallel.</li>
   	<li>For external scripts you may use the defer="true" attribute in script tags</li>
+  	<li>For internal scripts you can use the window.onload event</li>
+  	<li>
+  		&lt;script&gt;
+  		<br />
+  		window.onload = downloadstuff;
+  		<br />
+  		function downloadstuff(){
+  		&nbsp; var element = document.createElement("script");
+  		<br />
+  		&nbsp; element.src = "scriptSource.js";
+  		<br />
+  		&nbsp; document.body.appendChild(element);
+  		<br />
+	  	}
+  	</li>
   </ul>
 
 
