@@ -40,7 +40,11 @@
   </ul>
 
   <ul><span class="ul_tops">Avoid bloating.  Reduce variables</span>
-  	<li></li>
+  	<li>Creating and accessing variables that are used very little to none is a waste of time</li>
+  	<li>ex: fullName = firstName + " " + lastName;</li>
+  	<li>document.getElementById("sample").innerHTML = fullName;</li>
+  	<li>ex 2: document.getElementById("sample").innerHTML = firstName + " " + lastName;</li>
+  	<li>skip the creation of a variable you will only use once</li>
   </ul>
 
 
