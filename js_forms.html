@@ -29,12 +29,16 @@
   	<li>When the user tries to submit the form you run the function to check</li>
   </ul>
 
-  
+  <form name="thisForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+	Name: <input type="text" name="fieldname">
+	<input type="submit" value="Submit">
+	</form>
+
 
 <script>
 	//document.getElementById("").
 	function validateForm() {
-    var x = document.forms["thisForm"]["fname"].value;
+    var x = document.forms["thisForm"]["fieldname"].value;
     if (x == null || x == "") {
         alert("Name must be filled out");
         return false;
