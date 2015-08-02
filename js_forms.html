@@ -29,10 +29,17 @@
   	<li>When the user tries to submit the form you run the function to check</li>
   </ul>
 
+  
 
 <script>
 	//document.getElementById("").
-
+	function validateForm() {
+    var x = document.forms["thisForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+	}
 
 	$(document).ready(function(){
 
