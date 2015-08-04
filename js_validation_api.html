@@ -29,10 +29,24 @@
 		<li>example of checkValidity()  input element has this  min="3" max="12" will check for you if it falls in that range</li>
   </ul>
 
+  <input id="id1" type="number" min="1" max="10">
+	<button onclick="myFunc()">1-10?</button>
+
+	<p id="demo">**stuff will go here**</p>
+
 
 <script>
 	//document.getElementById("").
-
+	function myFunc() {
+    var inputObj = document.getElementById("id1");
+    //need to check if it is empty will run ok even if it is blank
+    //if (inputObj)
+    if (inputObj.checkValidity() == false) {
+        document.getElementById("demo").innerHTML = inputObj.validationMessage;
+    } else {
+        document.getElementById("demo").innerHTML = "Input OK";
+    } 
+	}
 
 	$(document).ready(function(){
 
