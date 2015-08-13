@@ -50,16 +50,25 @@
 	  	<br />
 	  	&nbsp; stuff += personHood[x] + " ";
 	  	<br />
-	  	&nbsp; 
+	  	}
   	</li>
+  	<li id="here1">&nbsp;</li>
   </ul>
 
 
 
 
 <script>
-	//document.getElementById("").
 
+	var person = {firstName: "john", lastName: "steinbeck", age: 40};
+	function list(){
+		var stuff = "";
+		for (x in person){
+			stuff += person[x] + ", ";
+		}
+		return stuff;
+	}
+	document.getElementById("here1").innerHTML = list();
 
 	$(document).ready(function(){
 
