@@ -33,7 +33,18 @@
   </ul>
 
   <ul><span class="ul_tops">Create a prototype</span>
-  	<li></li>
+  	<li>Use the object constructor function</li>
+  	<li>
+      function person(firstName, lastName, age, eyeColor) { <br />
+       &nbsp; this.firstName = firstName; <br />
+       &nbsp; this.lastName = lastName; <br />
+       &nbsp; this.age = age; <br />
+       &nbsp; this.eyeColor = eyeColor; <br />
+       &nbsp; this.changeLastName = function (name) { <br />
+       &nbsp; &nbsp; &nbsp; this.lastName = name; <br />
+       &nbsp; } <br />
+      } <br />
+    </li>
   </ul>
 
 
