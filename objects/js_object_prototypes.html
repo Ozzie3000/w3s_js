@@ -77,6 +77,18 @@
     <li>this also has to be done inside the constructor function</li>
   </ul>
 
+  <ul><span class="ul_tops">using the prototype property</span>
+    <li>JS prototype property allows you to add new properties to an existing prototype</li>
+    <li>person.prototype.homePlanet = "something";</li>
+    <li>caveat you will not be able to change this by passing it as an argument using the constructor</li>
+    <li>
+      example: 
+      <br />
+      var vader = new person("anakin", "skywalker", 18, "blue", "otherStuff");
+      <br />
+      vader.homePlanet; // still returns "something" and now "otherStuff"
+    </li>
+  </ul>
 
 
 <script>
