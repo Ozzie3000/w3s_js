@@ -62,7 +62,16 @@
     <li>Function expressions can be self-invoking</li>
     <li>Function invoked automatically without being called</li>
     <li>This is when a function is executed automatically when appended with ()</li>
-    <li></li>
+    <li>Cannot self-invoke a function declaration</li>
+    <li>(function(){ alert("hi"); })();</li>
+    <li>
+      (function(){
+      <br />
+      &nbsp; console.log("fail");
+      <br />
+      })();
+    </li>
+    <li>both are self-invoking anonymous functions</li>
   </ul>
 
 
