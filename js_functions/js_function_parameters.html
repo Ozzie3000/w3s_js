@@ -54,12 +54,17 @@
   		function bob(a, b){
 	  		if(y === undefined) {
 		  		y = 0;
+		  		alert(arguments.length);
 		  		return a * b;
 		  	}else{
+			  	alert(arguments.length);
 			  	return a * b;
 		  }
   	</li>
   	<li>bob(3); // returns 0 because b is undefined then enters code block and gets set to 0 and you know the rest</li>
+  	<li>What if I pass more then declared arguments?</li>
+  	<li>They cannot be referred because they are missing names</li>
+  	<li>They will only be reached in arguments object</li>
   </ul>
 
 
