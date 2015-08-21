@@ -71,7 +71,22 @@
   	<li>JS functions have a baked-in object called the arguments object</li>
   	<li>It contains an array of the arguments used when the function is invoked</li>
   	<li>This allows you to use a function to find (for example) the biggest integer in a list of numbers</li>
-  	<li></li>
+  	<li>a = findMax(1,2,3,4,10,9,8,7);</li>
+  	<li>
+  		function findMax(){
+  		<br />
+  		&nbps; var i, max = 0;
+  		<br />
+  		&nbsp; for (i = 0; i &lt; arguments.length; i++){
+  		<br />
+  		&nbsp; &nbsp; &nbsp; if (arguments[i] &gt; max){
+  		<br />
+  		&nbsp; &nbsp; &nbsp; &nbsp; max = arguments[i];
+	  	&nbsp; &nbsp; &nbsp; }
+	  	&nbsp; &nbsp; }
+	  	&nbsp; return max;
+	  }
+  	</li>
   </ul>
 
 
