@@ -65,10 +65,16 @@
     <li>
       var anObject = {
       <br />
-      &nbsp; firstName: "john",
+      &nbsp; firstName: "john", // first property
       <br />
-      &nbps; lastName: "matthew",
-    }
+      &nbps; lastName: "matthew", // second property
+      <br />
+      fullName: function(){  //function as a method
+      <br />
+      &nbsp; &nbps; return this.firstName + " " + this.lastName;
+      <br />
+      &nbsp;}
+      }
     </li>
   </ul>
 
