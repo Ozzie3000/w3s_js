@@ -89,12 +89,17 @@
     	<br />
     	&nbps; fullName: function () {
     	<br />
-      &nbps; &nbsp; return this;
+      &nbps; &nbsp; alert(this + ":using alert for this");
+      <br />
+      &nbps; &nbsp; console.log(this + ":using console.log for this");
+      <br />
+      &nbsp; &nbsp; "document.write will return [object Object]";
       <br />
       &nbps; }
       <br />
       }
     </li>
+    <li>myObject.fullName();</li>
   </ul>
 
 
