@@ -54,10 +54,16 @@
   	<li>Global variable example</li>
   	<li>var counter = 0;</li>
   	<li>function addUp() { counter += 1; }</li>
-  	<li>add(); // now 1</li>
-  	<li>add(); // now 2</li>
-  	<li>add(); // now 3</li>
+  	<li>addUp(); // now 1</li>
+  	<li>addUp(); // now 2</li>
+  	<li>addUp(); // now 3</li>
   	<li>Downside is you can access counter and change it without calling the add() function. It is a global var</li>
+  	<li>Local variable example: </li>
+  	<li>function addUp2(){ counter = 0; counter += 1; }</li>
+  	<li>addUp2(); // line 1 it gets set to 0 and then line two it gets incremented by 1</li>
+  	<li>addUp2(): // line 1 it gets set to 0 and then line two it gets incremented by 1</li>
+  	<li>addUp2(): // line 1 it gets set to 0 and then line two it gets incremented by 1</li>
+  	<li>that first line keeps resetting it</li>
   </ul>
 
 
