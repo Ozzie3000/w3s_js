@@ -132,6 +132,9 @@
     <li>Both methods take an owner object as teh first argument</li>
     <li>The call() takes the function arguments separately</li>
     <li>The apply() takes the function arguments in an array</li>
+    <li>If you use strict mode the first argument becomes the value of this in the invoked function wether or not that argument is an object</li>
+    <li>If you don't use strict mode the value of the first arguement's value will be the global object when that argument is undefined or null</li>
+    <li>WIth call() or apply() you can set the value of this, and invoke a function as a new method of an existing object</li>
   </ul>
 
 
