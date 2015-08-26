@@ -92,7 +92,15 @@
   </ul>
 
   <ul><span class="ul_tops">JS closures</span>
-    <li></li>
+    <li>
+      var add = (function () {
+      <br />
+      &nbsp; &nbsp; var counter = 0;
+      <br />
+      &nbsp; &nbsp; return function () {return counter += 1;}
+      <br />
+      })();
+    </li>
   </ul>
 
 
