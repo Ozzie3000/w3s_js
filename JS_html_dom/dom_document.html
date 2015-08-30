@@ -13,17 +13,15 @@
 		position: relative;
 		width: 100%;
 	}
-	#lefty{
+	.lefty{
 		position: absolute;
 		left: 5%;
-		width: 200px;
-		background-color: #0AE2FF;
+		width: 300px;
 	}
-	#righty{
+	.righty{
 		position: absolute;
 		right: 40%;
-		width: 200px;
-		background-color: red;
+		width: 300px;
 	}
 </style>
 <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
@@ -46,8 +44,14 @@
   </ul>
 
   <ul><span class="ul_tops">Search and find HTML elements</span>
-  	<li id="li_container"><span id="lefty">Method &nbsp; </span><span id="righty">Description &nbsp;</span></li>
-  	<li></li>
+  	<li id="li_container">
+  		<span class="lefty">Method &nbsp; </span>
+  		<span class="righty">Description &nbsp;</span>
+  	</li>
+  	<li>
+  		<span class="lefty">document.getElementById()</span>
+  		<span class="righty">Looks for an element with that id</span>
+  	</li>
   </ul>
 
 
