@@ -8,7 +8,24 @@
 <link rel="stylesheet" type="text/css" href="..stylesheets/main1.css"></link>
 -->
 <link rel="stylesheet" type="text/css" href="stylesheets/main1.css"></link>
-<style type="text/css"></style>
+<style type="text/css">
+	#li_container{
+		position: relative;
+		width: 100%;
+	}
+	#lefty{
+		position: absolute;
+		left: 5%;
+		width: 200px;
+		background-color: #0AE2FF;
+	}
+	#righty{
+		position: absolute;
+		right: 40%;
+		width: 200px;
+		background-color: red;
+	}
+</style>
 <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
 <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 <script type="text/javascript">
@@ -29,7 +46,8 @@
   </ul>
 
   <ul><span class="ul_tops">Search and find HTML elements</span>
-  	<li><span id="lefty"></span>Method &nbsp; <span id="righty">Description</span></li>
+  	<li id="li_container"><span id="lefty">Method &nbsp; </span><span id="righty">Description &nbsp;</span></li>
+  	<li></li>
   </ul>
 
 
