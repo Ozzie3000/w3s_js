@@ -66,6 +66,37 @@
 
   <ul><span class="ul_tops">Finding HTML elements by HTML object collections</span>
     <li></li>
+    <br />
+    <form id="frm1" action="form_action.asp">
+		  First name: <input type="text" name="fname" value="Jon">
+		  <br>
+		  Last name: <input type="text" name="lname" value="snow">
+		  <br><br>
+		  <input id="stopme" type="submit" value="Submit">
+		</form> 
+
+		<p>Click "Try it" to display the value of each element in all of the form.</p>
+
+		<button onclick="myFunction()">Try it</button>
+
+		<p id="demo"></p>
+
+		<script>
+		document.getElementById("stopme").addEventListener("click", function(event){
+			alert("got em"); //console.log("oppsies");
+			event.preventDefault();
+		});
+
+		function myFunction() {
+		    var x = document.forms["frm1"];
+		    var text = "";
+		    var i;
+		    for (i = 0; i < x.length ;i++) {
+		        text += x.elements[i].value + "<br>";
+		    }
+		    document.getElementById("demo").innerHTML = text;
+		}
+		</script>
   </ul>
 
 
