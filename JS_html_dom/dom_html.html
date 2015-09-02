@@ -40,7 +40,13 @@
   	<li>Syntax : document.getElementById(id).innerHTML = new HTML;</li>
   	<li>
   		<script type="text/javascript">
-	  		document.getElementById("old").innerHTML = "Baam! New Text";
+	  		function changer(){
+	  			document.getElementById("old").innerHTML = "Baam! New Text";
+	  			// alert("hi"); debug code
+	  		}
+	  		setTimeout(function(){
+	  			changer();
+	  		}, 1500);
   		</script>
   	</li>
   </ul>
