@@ -8,7 +8,11 @@
 <link rel="stylesheet" type="text/css" href="..stylesheets/main1.css"></link>
 -->
 <link rel="stylesheet" type="text/css" href="stylesheets/main1.css"></link>
-<style type="text/css"></style>
+<style type="text/css">
+	#blue{
+		color: blue;
+	}
+</style>
 <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
 <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 <script type="text/javascript">
@@ -26,6 +30,11 @@
   	<li>document.getElementById(id).style.property = new style</li>
   	<li id="blue">I start off blue</li>
   	<li id="red">I start off blue, but am changed to red</li>
+  	<li>
+  		<script type="text/javascript">
+	  		document.getElementById("red").style.color = "red";
+  		</script>
+  	</li>
   </ul>
 
 
