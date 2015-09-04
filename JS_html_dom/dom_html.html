@@ -53,7 +53,12 @@
 
   <ul><span class="ul_tops">Changing the value of an attribute</span>
     <li>document.getElementById(id).attribute=new_value</li>
-    <li><a href="http://www.amazon.com" target="_blank">link changer</a></li>
+    <li><a id="change_me" href="http://www.amazon.com" target="_blank">link changer</a> view source shows amazon; hover to see st jude</li>
+    <li>
+      <script type="text/javascript">
+        document.getElementById("change_me").href = "https://www.stjude.org";
+      </script>
+    </li>
   </ul>
 
 
