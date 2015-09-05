@@ -13,21 +13,18 @@
 		position: absolute;
 	}
 	#hov1{
-		width: 250px;
-		height: 50px;
 		background-color: red;
-		margin: 7px;
-		text-align: center;
-		vertical-align: center;
-		padding-top: 30px;
+
 	}
-	#hov2{
+	#click1{
+		background-color: cyan;
+	}
+	.target1{
 		width: 250px;
 		height: 50px;
-		background-color: cyan;
-		margin: 7px;
 		text-align: center;
 		padding-top: 30px;
+		margin: 7px;
 	}
 </style>
 <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
@@ -44,12 +41,8 @@
   <h1>JS HTML DOM events</h1>
 
   <ul id="ul_container"><span class="ul_tops">example 1</span>
-  	<li><div id="hov1" onmouseover="hovIn()" onmouseout="hovOut()">Hover over me</div></li>
-  	<li><div id="hov2">NO hover over here</div></li>
-  </ul>
-
-  <ul><span class="ul_tops">examle 2</span>
-  	<li></li>
+  	<li><div id="hov1" onmouseover="hovIn()" onmouseout="hovOut()" class="target1">Hover over me</div></li>
+  	<li><div id="click1" class="target1">NO Click Me!</div></li>
   </ul>
 
 
