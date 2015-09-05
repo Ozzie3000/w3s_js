@@ -44,13 +44,17 @@
   <h1>JS HTML DOM events</h1>
 
   <ul id="ul_container"><span class="ul_tops">example 1</span>
-  	<li><div id="hov1">Hover over me</div></li>
+  	<li><div id="hov1" onmouseover="hovIn()">Hover over me</div></li>
   	<li><div id="hov2">NO hover over here</div></li>
   </ul>
 
 
 <script>
-	//document.getElementById("").
+	function hovIn(){ 
+		document.getElementById("hov1").style.backgroundColor="orange";
+	}
+	
+	
 
 
 	$(document).ready(function(){
