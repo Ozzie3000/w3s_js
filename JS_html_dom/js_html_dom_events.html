@@ -42,7 +42,7 @@
 
   <ul id="ul_container"><span class="ul_tops">example 1</span>
   	<li><div id="hov1" onmouseover="hovIn()" onmouseout="hovOut()" class="target1">Hover over me</div></li>
-  	<li><div id="click1" class="target1" onclick="clicker">NO Click Me!</div></li>
+  	<li><div id="click1" class="target1" onclick="add()">NO Click Me!</div></li>
   </ul>
 
 
@@ -62,10 +62,12 @@
 	var add = (function(){
 		var counter = 0;
 		return function(){
-			return counter ++;
+			document.getElementById("click1").innerHTML = counter;
+			return counter ++; 
 		}
 	})();
 
+/*
  function clicker(){
  	switch(counter){
  		case 1:
@@ -75,6 +77,8 @@
 	 		alert(counter should be 2);
 	 		break;
  	}
+ }
+ */
 
 // 	document.getElementById("click1").innerHTML = "You clicked once";
  
