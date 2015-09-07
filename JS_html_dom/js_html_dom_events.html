@@ -59,7 +59,7 @@
   	<li>onclick with a function referencing the element</li>
   	<li onclick="this.innerHTML='Hot dam!'">If you click me they will come...</li>
   	<li>Call a function from an event handler</li>
-  	<li id="click2">Click this test as well</li>
+  	<li id="click2" onclick="changeMe(this)">Click this test as well</li>
   </ul>
 
 
@@ -83,6 +83,10 @@
 			return counter ++; 
 		}
 	})();
+
+	function changeMe(stuff){
+		stuff.innerHTML = "Oppsies!";
+	}
 
 /*
  function clicker(){
