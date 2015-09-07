@@ -19,6 +19,9 @@
 	#click1{
 		background-color: cyan;
 	}
+	#hov3{
+		background-color: orange;
+	}
 	.target1{
 		width: 250px;
 		height: 50px;
@@ -90,7 +93,10 @@
   </ul>
 
   <ul><span class="ul_tops">onmouseover and onmouseout events</span>
-  	<li></li>
+  	<li>2 events</li>
+  	<li>
+  		<div id="hov3" onmouseover="m_over(this)" onmouseout="m_out(this)" class="target1">Hover over me</div>
+  	</li>
   </ul>
 
 
@@ -143,6 +149,19 @@
 		message2.value = message2.value.toUpperCase();
 	}
 
+	function m_over(obje){
+		obje.innerHTML = "You entered my air space!";
+	}
+
+	function m_out(obje){
+		obje.innerHTML = "You left my air space!";
+		setTimeout(function(){ reset_message(); }, 2000);
+
+	}
+
+	function reset_message(){
+		document.getElementById("hov3").innerHTML = "Hover over me";
+	}
 
 /*
  function clicker(){
