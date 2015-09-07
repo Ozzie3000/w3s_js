@@ -64,6 +64,7 @@
 
   <ul><span class="ul_tops">HTML event attributes</span>
   	<li>Use event attributes to assignt events to HTML elements</li>
+  	<li><button onclick="showTime()">Show date</button> <span id="click3">&nbsp;</span></li>
   </ul>
 
 
@@ -90,6 +91,10 @@
 
 	function changeMe(stuff){
 		stuff.innerHTML = "Oppsies!";
+	}
+
+	function showTime(){
+		document.getElementById("click3").innerHTML = Date();
 	}
 
 /*
