@@ -68,7 +68,9 @@
   </ul>
 
   <ul><span class="ul_tops">Assignt events using the HTML DOM</span>
-  	<li></li>
+  	<li>With the help of JS of course</li>
+  	<li>Find an element and tag it (assign) with an event</li>
+  	<li><button id="assigner1">no js here; somewhere else</button> &nbsp; <span id="tagme1">Here</span></li>
   </ul>
 
 
@@ -100,6 +102,14 @@
 	function showTime(){
 		document.getElementById("click3").innerHTML = Date();
 	}
+
+	document.getElementById("assigner1").onclick = assignStuff;
+	function assignStuff(){
+		document.getElementById("tagme1").innerHTML = Date();
+	}
+
+
+
 
 /*
  function clicker(){
