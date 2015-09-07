@@ -84,7 +84,9 @@
   </ul>
 
   <ul><span class="ul_tops">onchange event</span>
-  	<li>Commonly used in conjuntion with validation of input fields</li>
+  	<li>Commonly used in conjuntion with validation of input fields</li>\
+  	<li>Change your lower case to upper case</li>
+  	<li>Type here : <input type="text" onchange="upCase()" id="target2"></li>
   </ul>
 
 
@@ -130,6 +132,11 @@
 			message = "Cookies have been disabled on your browser";
 		}
 		document.getElementById("showCookies").innerHTML = message;
+	}
+
+	function upCase(){
+		var message2 = document.getElementById("target2");
+		message2.value = message2.value.toUpperCase();
 	}
 
 
