@@ -183,7 +183,12 @@
 
 	function m_up(obje){
 		obje.style.backgroundColor = "red";
-		obje.innerHTML = "The release";
+		obje.innerHTML = "The release...";
+		setTimeout(function(){ reset_message2(); }, 2000);
+	}
+
+	function reset_message2(){
+		document.getElementById("click4").innerHTML = " Click me";
 	}
 /*
  function clicker(){
