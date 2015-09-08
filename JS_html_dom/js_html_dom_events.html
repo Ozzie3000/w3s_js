@@ -111,6 +111,10 @@
   	</li>
   </ul>
 
+  <ul><span class="ul_tops">onfocus</span>
+  	<li>Your first name: <input id="foc1" type="text" onfocus="c_bgrd(this)"></li>
+  </ul>
+
 
 <script>
 	function hovIn(){ 
@@ -189,6 +193,10 @@
 
 	function reset_message2(){
 		document.getElementById("click4").innerHTML = " Click me";
+	}
+
+	function c_bgrd(obje){
+		obje.style.backgroundColor = "cyan";
 	}
 /*
  function clicker(){
