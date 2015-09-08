@@ -19,6 +19,9 @@
 	#click1{
 		background-color: cyan;
 	}
+	#click4{
+		background-color: red;
+	}
 	#hov3{
 		background-color: orange;
 	}
@@ -103,6 +106,9 @@
   	<li>first: onmousedown</li>
   	<li>second: onmouseup</li>
   	<li>third: when mouse-click is completed the onclick event it triggered</li>
+  	<li>
+  		<div id="click4" onmousedown="m_down(this)" onmouseout="m_up(this)" class="target1">Click me</div>
+  	</li>
   </ul>
 
 
@@ -170,6 +176,10 @@
 		document.getElementById("hov3").innerHTML = "Hover over me";
 	}
 
+	function m_down(obje){
+		obje.style.backgroundColor = "cyan";
+		obje.innerHTML = "Hold it... hold it...";
+	}
 /*
  function clicker(){
  	switch(counter){
