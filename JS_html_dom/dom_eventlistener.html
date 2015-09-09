@@ -29,15 +29,23 @@
   		<input id="button1" type="button" value="show date. click me"> &nbsp;
   		<span id="target1">Here</span>
   	</li>
+  	<li>
+  		<input id="button2" type="button" value="show date. mouseover"> &nbsp;
+  		<span id="target2">Here</span>
+  	</li>
   </ul>
 
 
 <script>
 	document.getElementById("button1").addEventListener("click", showDate);
-	document.getElementById("button2").addEventListener("mouseover", showDate);
+	document.getElementById("button2").addEventListener("mouseover", showDate2);
 	
 	function showDate(){
 		document.getElementById("target1").innerHTML = Date();
+	}
+
+	function showDate2(){
+		document.getElementById("target2").innerHTML = Date();
 	}
 
 
