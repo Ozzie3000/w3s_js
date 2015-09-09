@@ -49,18 +49,31 @@
   		<input id="button3" type="button" value="show date. click"> &nbsp;
   		<span id="target3">Here</span>
   	</li>
+  	<li>
+  		<span id="target3b">message</span>
+  	</li>
   </ul>
 
 <script>
 	document.getElementById("button1").addEventListener("click", showDate);
 	document.getElementById("button2").addEventListener("mouseover", showDate2);
-	
+	document.getElementById("button3").addEventListener("click", showDate3);
+	document.getElementById("button3").addEventListener("click", helloMundo);
+
 	function showDate(){
 		document.getElementById("target1").innerHTML = Date();
 	}
 
 	function showDate2(){
 		document.getElementById("target2").innerHTML = Date();
+	}
+
+	function showDate3(){
+		document.getElementById("target3").innerHTML = Date();
+	}
+
+	function helloMundo(){
+		document.getElementById("target3b").innerHTML = "Hellow world!";
 	}
 
 
