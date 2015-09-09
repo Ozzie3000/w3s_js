@@ -25,12 +25,20 @@
   <ul><span class="ul_tops">addEventListener() method</span>
   	<li>document.getElementById("something").addEventListener("click", functionName);</li>
   	<li>show date below</li>
-  	<li><input id="button1" type="button" value="show date"> </li>
+  	<li>
+  		<input id="button1" type="button" value="show date. click me"> &nbsp;
+  		<span id="target1">Here</span>
+  	</li>
   </ul>
 
 
 <script>
-	//document.getElementById("").
+	document.getElementById("button1").addEventListener("click", showDate);
+	document.getElementById("button2").addEventListener("mouseover", showDate);
+	
+	function showDate(){
+		document.getElementById("target1").innerHTML = Date();
+	}
 
 
 	$(document).ready(function(){
