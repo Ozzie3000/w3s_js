@@ -84,7 +84,7 @@
   	<li>
   		window.addEventListener("resize", function(){
   		<br />
-  		&nbsp; document.getElementById("someId").innterHTML = "You resized me";
+  		&nbsp; document.getElementById("someId").innerHTML = "You resized me";
   		<br />
 	  	});
   	</li>
@@ -136,6 +136,16 @@
 		document.getElementById("target3b").innerHTML = "Hello world!";
 	}
 
+  var param1 = 23;
+  var param2 = 3;
+  document.getElementById("myBtn").addEventListener("click", function(){
+    myFunc4(param1, param2);
+  });
+
+  function myFunc4(a,b){
+    var product1 = a * b;
+    document.getElementById("demo").innerHTML = product1;
+  }
 
 	$(document).ready(function(){
 
