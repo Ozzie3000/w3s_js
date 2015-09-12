@@ -14,6 +14,7 @@
   }
   #bokkusu_ao{
     background-color: lightblue;
+    color: purple;
   }
   .box1{
     width: 250px;
@@ -162,14 +163,14 @@
       <div id="bokkusu_orenji" class="box1">This is a div1
         <br />
         <br />
-        <span>This is a nested paragraph1</span>
+        <span id="sp1">bubbling: nested paragraph1</span>
       </div>
     </li>
     <li>
       <div id="bokkusu_ao" class="box1">This is a div2
         <br />
         <br />
-        <span>This is a nested paragraph2</span>
+        <span id="sp2">capturing: nested paragraph2</span>
       </div>
     </li>
   </ul>
@@ -206,6 +207,11 @@
     var product1 = a * b;
     document.getElementById("demo").innerHTML = product1;
   }
+
+  //event bubbling
+  document.getElementById("sp1").addEventListener("click", function(){
+    alert("You clicked the nested span element");
+  }, false);
 
 	$(document).ready(function(){
 
