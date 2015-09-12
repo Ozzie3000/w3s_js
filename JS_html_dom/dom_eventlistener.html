@@ -132,14 +132,15 @@
     <li>When you set value to true the event uses capturing to propogate</li>
     <li>addEventListener("event", functionName, useCapture);</li>
     <li>examples</li>
-    <li>document.getElementById("thePtagId").addEventListener("click", myFunction, true);</li>
-    <li>document.getElementById("theDivTagId").addEventListener("click", myFunction, true);</li>
+    <li>document.getElementById("thePtagId").addEventListener("click", anonFunct() {myFunction1();}, true);</li>
+    <li>document.getElementById("theDivTagId").addEventListener("click", anonFunct() {myFunction2();}, true);</li>
     <li>From above if you click the p tag inside the div tag (use the function is to put up an alert) 
       <br />
       it will put up the div's alert
       <br />
       then it will putup the p tag's alert
-
+    </li>
+    <li></li>
   </ul>
 
 <script>
