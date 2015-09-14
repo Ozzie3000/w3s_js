@@ -9,10 +9,10 @@
 -->
 <link rel="stylesheet" type="text/css" href="../stylesheets/main1.css"></link>
 <style type="text/css">
-  #bokkusu_orenji{
+  .orenji{
     background-color: orange;
   }
-  #bokkusu_ao{
+  .ao{
     background-color: lightblue;
     color: purple;
   }
@@ -160,14 +160,14 @@
 
   <ul><span class="ul_tops">illustrate difference between to types</span>
     <li>
-      <div id="bokkusu_orenji" class="box1">This is a div1
+      <div id="bokkusu_orenji" class="orenji box1">This is a div1
         <br />
         <br />
         <span id="sp1">bubbling: nested paragraph1</span>
       </div>
     </li>
     <li>
-      <div id="bokkusu_ao" class="box1">This is a div2
+      <div id="bokkusu_ao" class="ao box1">This is a div2
         <br />
         <br />
         <span id="sp2">capturing: nested paragraph2</span>
@@ -177,6 +177,14 @@
 
   <ul><span class="ul_tops">Time to remove stuff; removeEventListener() method</span>
     <li>removeEventListener() removes what you attached using the addEventListener() method</li>
+  </ul>
+
+  <ul><span class="ul_tops">adding and removing event listeners</span>
+    <li>
+      <div id="" class="orenji box1">
+        <button>Attach</button>
+      </div>
+    </li>
   </ul>
 
 <script>
