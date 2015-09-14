@@ -193,9 +193,9 @@
     </li>
     <li>
       <div class="ao box1">
-        <button id="remover">Remove</button>
+        <button id="remover" onclick="remove_it()">Remove</button>
         <br />
-        <span class="target5">pre-attach</span>
+        <span id="target5">pre-attach</span>
       </div>
     </li>
   </ul>
@@ -251,14 +251,23 @@
     alert("You clicked the outer div element")
   }, true);
 
-  document.getElementById("attacher").addEventListener("click", function(){
+  function adding(){
     //alert('debug');
     //document.getElementById("remover").innerHTML = new Date;
     document.getElementById("target4").innerHTML = new Date;
     document.getElementById("target5").innerHTML = new Date;
     // can't seem to get class to work
     //document.getElementsByClassName("target4").innerHTML = new Date();
-  });
+  }
+
+
+  document.getElementById("attacher").addEventListener("click", adding);
+
+  function remove_it(){
+    document.getElementById("attacher").removeEventListener("click", adding);
+  }
+  
+
 
 	$(document).ready(function(){
 
