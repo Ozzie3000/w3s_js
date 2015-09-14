@@ -188,14 +188,14 @@
       <div class="orenji box1">
         <button id="attacher">Attach</button>
         <br />
-        <span class="target4">pre-attach</span>
+        <span id="target4">pre-attach</span>
       </div>
     </li>
     <li>
       <div class="ao box1">
         <button id="remover">Remove</button>
         <br />
-        <span class="target4">pre-attach</span>
+        <span class="target5">pre-attach</span>
       </div>
     </li>
   </ul>
@@ -251,7 +251,14 @@
     alert("You clicked the outer div element")
   }, true);
 
-
+  document.getElementById("attacher").addEventListener("click", function(){
+    //alert('debug');
+    //document.getElementById("remover").innerHTML = new Date;
+    document.getElementById("target4").innerHTML = new Date;
+    document.getElementById("target5").innerHTML = new Date;
+    // can't seem to get class to work
+    //document.getElementsByClassName("target4").innerHTML = new Date();
+  });
 
 	$(document).ready(function(){
 
