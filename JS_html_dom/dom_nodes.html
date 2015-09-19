@@ -22,7 +22,7 @@
 	<br /><br />
   <h1>JS HTML DOM elements (nodes)</h1>
 
-  <ul><span class="ul_tops">Create new HTML elements (nodes)</span>
+  <ul id="ul_1"><span class="ul_tops">Create new HTML elements (nodes)</span>
   	<li id="li_1">step 1 create node</li>
   	<li id="li_2">step 2 append new node to exist node</li>
   	<li id="li_3">Below me the magic happens</li>
@@ -30,7 +30,16 @@
 
 
 <script>
-	//document.getElementById("").
+	var counter = 1;
+	function makeStuff(){
+		var listItem = document.createElement("p");
+		var node1 = document.createTextNode("New paragraph. You have run this: " + counter);
+		listItem.appendChild(node1);
+		var element = document.getElementById("ul_1");
+		element.appendChild(node1);
+		counter ++;
+	}
+	//
 
 
 	$(document).ready(function(){
