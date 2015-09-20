@@ -40,7 +40,9 @@ var para = document.createElement("li");
 var node = document.createTextNode("This is new.");
 // next append text node to the variable para this is an li element
 para.appendChild(node);
+// find where you will put it all together
 var element = document.getElementById("ul_1");
+// append new complete element to existing element you found by ID
 element.appendChild(para);
 }
 //setInterval(function(){ bob(); }, 1000);
