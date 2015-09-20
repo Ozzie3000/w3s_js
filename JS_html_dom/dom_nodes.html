@@ -75,11 +75,12 @@ element.appendChild(para);
 	var other_counter = 1;
 	function makeStuff2(){
 		var listItem = document.createElement("li");
-		var node_2 = document.createTextNode("New li element. You have run this: " + counter + " ");
+		var node_2 = document.createTextNode("New li element. You have run this: " + other_counter + " ");
 		listItem.appendChild(node_2);
 		var element = document.getElementById("ul_2");
 		var child_target = document.getElementById("li_4");
-		element.insertBefore(listItem, );
+		// insert just about child_target every time
+		element.insertBefore(listItem, child_target);
 		other_counter ++;
 	}
 	document.getElementById("hit_me2").addEventListener("click",function(){ makeStuff2(); });
