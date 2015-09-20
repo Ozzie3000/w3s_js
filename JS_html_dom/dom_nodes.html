@@ -7,7 +7,7 @@
 <!-- server
 <link rel="stylesheet" type="text/css" href="..stylesheets/main1.css"></link>
 -->
-<link rel="stylesheet" type="text/css" href="stylesheets/main1.css"></link>
+<link rel="stylesheet" type="text/css" href="../stylesheets/main1.css"></link>
 <style type="text/css"></style>
 <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
 <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
@@ -25,7 +25,7 @@
   <ul id="ul_1"><span class="ul_tops">Create new HTML elements (nodes)</span>
   	<li id="li_1">step 1 create node</li>
   	<li id="li_2">step 2 append new node to exist node</li>
-  	<li id="li_3">Below me the magic happens</li>
+  	<li id="li_3">Below me the magic happens <button id="hit_me">Hit me!</button></li>
   </ul>
 
 
@@ -57,6 +57,7 @@ element.appendChild(para);
 	//setInterval(function(){ makeStuff(); }, 2000);
 	//
 
+	document.getElementById("hit_me").addEventListener("click", function(){ makeStuff(); });
 
 	$(document).ready(function(){
 
