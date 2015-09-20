@@ -29,16 +29,32 @@
   </ul>
 
 
+
+<script>
+/*
+//debug code
+function bob(){
+var para = document.createElement("li");
+var node = document.createTextNode("This is new.");
+para.appendChild(node);
+var element = document.getElementById("ul_1");
+element.appendChild(para);
+}
+//setInterval(function(){ bob(); }, 1000);
+*/
+</script>
+
 <script>
 	var counter = 1;
 	function makeStuff(){
-		var listItem = document.createElement("p");
-		var node1 = document.createTextNode("New paragraph. You have run this: " + counter);
-		listItem.appendChild(node1);
+		var listItem = document.createElement("li");
+		var node_1 = document.createTextNode("New li element. You have run this: " + counter + " ");
+		listItem.appendChild(node_1);
 		var element = document.getElementById("ul_1");
-		element.appendChild(node1);
+		element.appendChild(listItem);
 		counter ++;
 	}
+	//setInterval(function(){ makeStuff(); }, 2000);
 	//
 
 
