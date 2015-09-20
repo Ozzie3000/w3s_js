@@ -30,7 +30,8 @@
   	<li id="li_3">Below me the magic happens <button id="hit_me">Hit me!</button></li>
   </ul>
 
-  <ul><span class="ul_tops">Creating new HTML Elements - insertBefore()</span>
+  <ul id="ul_2"><span class="ul_tops">Creating new HTML Elements - insertBefore()</span>
+  	<li id="li_4">Above me the magic happens <button id="hit_me2">Hit me!</button></li>
   	<li>Here we take a different approach</li>
   	<li>Find an element, insert child at top</li>
   	<li>If repeated it will insert after previous insert</li>
@@ -69,8 +70,19 @@ element.appendChild(para);
 	}
 	//setInterval(function(){ makeStuff(); }, 2000);
 	//
-
 	document.getElementById("hit_me").addEventListener("click", function(){ makeStuff(); });
+
+	var other_counter = 1;
+	function makeStuff2(){
+		var listItem = document.createElement("li");
+		var node_2 = document.createTextNode("New li element. You have run this: " + counter + " ");
+		listItem.appendChild(node_2);
+		var element = document.getElementById("ul_2");
+		var child_target = document.getElementById("li_4");
+		element.insertBefore(listItem, );
+		other_counter ++;
+	}
+	document.getElementById("hit_me2").addEventListener("click",function(){ makeStuff2(); });
 
 	$(document).ready(function(){
 
