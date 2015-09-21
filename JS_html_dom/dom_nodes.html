@@ -108,7 +108,17 @@ element.appendChild(para);
 	
 	document.getElementById("boot_1").addEventListener("click", function(){ bootem(); });
 
+	function swapper_1(){
+		var listItem_2 = document.createElement("li");
+		var new_node1 = document.createTextNode("Now you don't...");
+		listItem_2.appendChild(new_node1);
+		var parente_2 = document.getElementById("parent_2");
+		var akachan_2 = document.getElementById("child_2");
+		//2 params first is new one, the second one is what is getting replaced
+		parente_2.replaceChild(listItem_2, child_2);
+	}
 
+	document.getElementById("swap_1").addEventListener("click", function(){ swapper_1(); });
 
 
 	$(document).ready(function(){
