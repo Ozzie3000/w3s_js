@@ -41,7 +41,7 @@
   	<li>Want to remove an element? Get to know it's parent</li>
   	<li id="parent_1">I'am a parent <button id="boot_1">Remove young one</button>
   		<br />
-  		<span id="child_1">I'm a child</span>
+  		<span id="child_1">*****I'm a child*****</span>
   	</li>
   </ul>
 
@@ -98,6 +98,7 @@ element.appendChild(para);
 		parent_1.removeChild(akachan_1);
 	}
 	
+	document.getElementById("boot_1").addEventListener("click", function(){ bootem(); });
 
 	$(document).ready(function(){
 
