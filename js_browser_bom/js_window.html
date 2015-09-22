@@ -51,23 +51,30 @@
   </ul>
 
   <ul><span class="ul_tops">practical example</span>
-  	<li></li>
+  	<li><button id="dims">Show me!</button></li>
+  	<li id="demo">Dimension will go here</li>
   </ul>
 
 
 
 
 <script>
-	var w = window.innerWidth
-	|| document.documentElement.clientWidth
-	|| document.body.clientWidth;
 
-	var h = window.innerHeight
-	|| document.documentElement.clientHeight
-	|| document.body.clientHeight;
+	function windowSpecs(){
+		var w = window.innerWidth
+		|| document.documentElement.clientWidth
+		|| document.body.clientWidth;
 
-	var x = document.getElementById("demo");
-	x.innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
+		var h = window.innerHeight
+		|| document.documentElement.clientHeight
+		|| document.body.clientHeight;
+
+		var x = document.getElementById("demo");
+		x.innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
+	}
+	
+	document.getElementById("dims").addEventListener("click", function(){ windowSpecs(); });
+	
 
 
 
