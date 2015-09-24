@@ -63,6 +63,8 @@
   <ul><span class="ul_tops">Window screen pixel depth</span>
     <li>The window.screen.pixelDepth or screen.pixelDepth property shows the pixel depth of the screen</li>
     <li>example: document.getElementById("depth").innerHTML = "Screen pixel Depth: " + screen.pixelDepth;</li>
+    <li id="depth"></li>
+    <li>Genearlly color depth and pixel depth are the same for lcd monitors</li>
   </ul>
 
 
@@ -72,6 +74,9 @@
     document.getElementById("colors").innerHTML = "Screen Color Depth: " + screen.colorDepth;
   })();
   
+  (function showpixxyDepth(){
+    document.getElementById("depth").innerHTML = "Screen pixel depth: " + screen.pixelDepth;
+  })();
 
 
 	$(document).ready(function(){
