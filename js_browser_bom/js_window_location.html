@@ -41,13 +41,21 @@
   	<li id="hst">something like: www.blahblah.w/e ;  if you see this then there isn't one because it is a local file</li>
   </ul>
 
+  <ul><span class="ul_tops">Window location pathname</span>
+  	<li>document.getElementById("demo").innerHTML = "Page path is " + window.location.pathname;</li>
+  	<li id="pn"></li>
+  </ul>
+
 
 <script>
-//href url
+	//href url
 	document.getElementById("ref").innerHTML = "Page location is " + window.location.href;
 
-//hostname
+	//hostname
 	document.getElementById("hst").innerHTML = "Page hostname is " + window.location.hostname;
+
+	//pathname
+	document.getElementById("pn").innerHTML = "Page path is " + window.location.pathname; 
 
 	$(document).ready(function(){
 
