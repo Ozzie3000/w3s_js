@@ -46,6 +46,11 @@
   	<li id="pn"></li>
   </ul>
 
+  <ul><span class="ul_tops">Window location protocol</span>
+  	<li>document.getElementById("demo").innerHTML = "Page protocol is " + window.location.protocol;</li>
+  	<li id="protoc"> if you see this then it's not http: or https:</li>
+  </ul>
+
 
 <script>
 	//href url
@@ -55,7 +60,10 @@
 	document.getElementById("hst").innerHTML = "Page hostname is " + window.location.hostname;
 
 	//pathname
-	document.getElementById("pn").innerHTML = "Page path is " + window.location.pathname; 
+	document.getElementById("pn").innerHTML = "Page path is " + window.location.pathname;
+
+	//location protocal
+	document.getElementById("protoc").innerHTML = "Page protocol is " + window.location.protocol;
 
 	$(document).ready(function(){
 
