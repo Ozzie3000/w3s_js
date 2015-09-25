@@ -36,10 +36,18 @@
   	<li id="ref"></li>
   </ul>
 
+  <ul><span class="ul_tops">Window location hostname</span>
+  	<li>document.getElementById("demo").innerHTML = "Page hostname is " + window.location.hostname;</li>
+  	<li id="hst"></li>
+  </ul>
+
 
 <script>
+//href url
 	document.getElementById("ref").innerHTML = "Page location is " + window.location.href;
 
+//hostname
+	document.getElementById("hst").innerHTML = "Page hostname is " + window.location.hostname;
 
 	$(document).ready(function(){
 
