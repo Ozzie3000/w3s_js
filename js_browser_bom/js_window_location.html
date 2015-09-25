@@ -28,11 +28,17 @@
   	<li>window.location.hostname; // returns domain name of web page</li>
   	<li>window.location.pathname; // returns path and filename of the current page</li>
   	<li>window.location.protocol; // returns the web protocol used (http:// or https://)</li>
+  	<li>window.location.assign; //  loads a new document</li>
+  </ul>
+
+  <ul><span class="ul_tops">Window location href example</span>
+  	<li>document.getElementById("ref").innerHTML = "Page location is " + window.location.href;</li>
+  	<li id="ref"></li>
   </ul>
 
 
 <script>
-	//document.getElementById("").
+	document.getElementById("ref").innerHTML = "Page location is " + window.location.href;
 
 
 	$(document).ready(function(){
