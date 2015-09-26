@@ -29,12 +29,14 @@
 		</li>
 		<li>navigator.appName; // <span id="appName"></span></li>
 		<li>navigator.appCodeName; // <span id="appCodeName"></span></li>
+		<li>navigator.appVersion; // <span id="appVersion"></span> (chrome is more detailed)</li>
   </ul>
 
 
 <script>
 	document.getElementById("appName").innerHTML = navigator.appName;
 	document.getElementById("appCodeName").innerHTML = navigator.appCodeName;
+	document.getElementById("appVersion").innerHTML = navigator.appVersion;
 
 
 	$(document).ready(function(){
