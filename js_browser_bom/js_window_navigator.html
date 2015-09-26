@@ -27,11 +27,14 @@
   	<li>
 	  	examples: navigator.appName, navigator.appCodeName, navigator.platform
 		</li>
+		<li>navigator.appName; // <span id="appName"></span></li>
+		<li>navigator.appCodeName; // <span id="appCodeName"></span></li>
   </ul>
 
 
 <script>
-	//document.getElementById("").
+	document.getElementById("appName").innerHTML = navigator.appName;
+	document.getElementById("appCodeName").innerHTML = navigator.appCodeName;
 
 
 	$(document).ready(function(){
