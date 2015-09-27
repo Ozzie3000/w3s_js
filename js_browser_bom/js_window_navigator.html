@@ -38,12 +38,19 @@
   	<li>navigator.appCodeName; // Chrome FF, IE, Opera, Safari all return "Mozilla"</li>
   </ul>
 
+  <ul><span class="ul_tops">The browser engine</span>
+  	<li>The product of this property returns the engine name of the browser</li>
+  	<li>Broswer engine name: <span id="engine"></span></li>
+  </ul>
+
 
 <script>
 	document.getElementById("appName").innerHTML = navigator.appName;
 	document.getElementById("appCodeName").innerHTML = navigator.appCodeName;
 	document.getElementById("appVersion").innerHTML = navigator.appVersion;
 	document.getElementById("cookie").innerHTML = navigator.cookieEnabled;
+
+	document.getElementById("engine").innerHTML = navigator.product;
 
 	$(document).ready(function(){
 
