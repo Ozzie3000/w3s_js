@@ -43,6 +43,11 @@
   	<li>Broswer engine name: <span id="engine"></span></li>
   </ul>
 
+  <ul><span class="ul_tops">The browser version</span>
+  	<li>This property returns the version of the browser</li>
+  	<li>Broswer version: <span id="ver"></span></li>
+  </ul>
+
 
 <script>
 	document.getElementById("appName").innerHTML = navigator.appName;
@@ -51,6 +56,7 @@
 	document.getElementById("cookie").innerHTML = navigator.cookieEnabled;
 
 	document.getElementById("engine").innerHTML = navigator.product;
+	document.getElementById("ver").innerHTML = navigator.appVersion;
 
 	$(document).ready(function(){
 
