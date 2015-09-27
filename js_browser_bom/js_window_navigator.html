@@ -74,6 +74,12 @@
   	<li>navigator language: <span id="lang"></span></li>
   </ul>
 
+  <ul><span class="ul_tops">Tell me about Java?</span>
+  	<li>navigator.javaEnabled();</li>
+  	<li>This method returns true if Java is enabled on the browser</li>
+  	<li>navigator javaEnabled: <span id="jav"></span></li>
+  </ul>
+
 
 <script>
 	document.getElementById("appName").innerHTML = navigator.appName;
@@ -87,6 +93,7 @@
 
 	document.getElementById("plat").innerHTML = navigator.platform;
 	document.getElementById("lang").innerHTML = navigator.language;
+	document.getElementById("jav").innerHTML = navigator.javaEnabled();
 
 	$(document).ready(function(){
 
