@@ -64,8 +64,14 @@
 
   <ul><span class="ul_tops">The browser platform</span>
   	<li>navigator.platform;</li>
-  	<li>This property returns teh browser platform or its operating system</li>
+  	<li>This property returns the browser platform or its operating system</li>
   	<li>navigator platform: <span id="plat"></span></li>
+  </ul>
+
+  <ul><span class="ul_tops">The browser language</span>
+  	<li>navigator.language;</li>
+  	<li>This property returns the browser's language</li>
+  	<li>navigator language: <span id="lang"></span></li>
   </ul>
 
 
@@ -80,6 +86,7 @@
 	document.getElementById("agent").innerHTML = navigator.userAgent;
 
 	document.getElementById("plat").innerHTML = navigator.platform;
+	document.getElementById("lang").innerHTML = navigator.language;
 
 	$(document).ready(function(){
 
