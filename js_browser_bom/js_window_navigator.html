@@ -48,6 +48,12 @@
   	<li>Broswer version: <span id="ver"></span></li>
   </ul>
 
+  <ul><span class="ul_tops">More info on browser version</span>
+  	<li>This property returns the version of the browser</li>
+  	<li>navigator.userAgent; </li>
+  	<li>User agent: <span id="agent"></span></li>
+  </ul>
+
 
 <script>
 	document.getElementById("appName").innerHTML = navigator.appName;
@@ -57,6 +63,7 @@
 
 	document.getElementById("engine").innerHTML = navigator.product;
 	document.getElementById("ver").innerHTML = navigator.appVersion;
+	document.getElementById("agent").innerHTML = navigator.userAgent;
 
 	$(document).ready(function(){
 
