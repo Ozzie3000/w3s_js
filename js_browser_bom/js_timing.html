@@ -48,18 +48,18 @@
   	<li>setTimeout(a, b); // window omitted</li>
   	<li>a parameter is a function</li>
   	<li>b parameter is timer for execution to occur</li>
-  	<li>Say "hi" <button id="sayHi">today junior!</button></li>
+  	<li>Say "hi" <button id="sayHi" onclick="setTimeout(greeting, 1000);">today junior!</button></li>
   </ul>
 
 
 <script>
-	document.getElementById("sayHi").
+	//document.getElementById("sayHi").addEventListener("click", greeting);
 
 	function greeting() {
     alert('Hi');
 	}
 
-	setTimeout(greeting, 1000);
+	
 
 	$(document).ready(function(){
 
