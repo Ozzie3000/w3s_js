@@ -54,13 +54,14 @@
   <ul><span class="ul_tops">Stop the madness</span>
   	<li>Want to put an end to the executions?</li>
   	<li>window.clearTimeout() puts a hault on the setTimeout() method</li>
-  	<li>It takes 1 parameter which can either be a variable or another function</li>
+  	<li>It takes 1 parameter which can a variable</li>
   	<li>aVar = setTimeout(function, milliseconds);</li>
   	<li>clearTimeout(aVar);</li>
+  	<li>setTimeout(param1) and clearTimeou(param1) must match</li>
+  	<li>In the HTML if you pass a variable, param1 to clearTimeout the same parameter must be passed to setTimeout</li>
   	<li>
-  		<button id="sayHi2" onclick="setTimeout(greeting, 3000);">today junior!</button> &nbsp; &nbsp; 
-  		<button id="stopit1" onclick="setTimeout(greeting);">today junior!</button> &nbsp; &nbsp;
-  		<button id="stopit2" onclick="setTimeout(greeting, 1000);">today junior!</button>
+  		<button id="sayHi2" onclick="setTimeout(aVar);">today junior!</button> &nbsp; &nbsp; 
+  		<button id="stopit1" onclick="clearTimeout(aVar);">Cancel</button> &nbsp; &nbsp;
   	</li>
   </ul>
 
@@ -68,11 +69,11 @@
 <script>
 	//document.getElementById("sayHi").addEventListener("click", greeting);
 
-	function greeting() {
+	function greeting(){
     alert('Hi');
 	}
 
-	aVar = setTimeout(function, milliseconds);
+	var aVar = setTimeout(greeting, 3000);
 
 	$(document).ready(function(){
 
