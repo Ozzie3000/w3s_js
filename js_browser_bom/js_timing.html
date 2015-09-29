@@ -54,7 +54,14 @@
   <ul><span class="ul_tops">Stop the madness</span>
   	<li>Want to put an end to the executions?</li>
   	<li>window.clearTimeout() puts a hault on the setTimeout() method</li>
-  	<li>It uses a </li>
+  	<li>It takes 1 parameter which can either be a variable or another function</li>
+  	<li>aVar = setTimeout(function, milliseconds);</li>
+  	<li>clearTimeout(aVar);</li>
+  	<li>
+  		<button id="sayHi2" onclick="setTimeout(greeting, 3000);">today junior!</button> &nbsp; &nbsp; 
+  		<button id="stopit1" onclick="setTimeout(greeting);">today junior!</button> &nbsp; &nbsp;
+  		<button id="stopit2" onclick="setTimeout(greeting, 1000);">today junior!</button>
+  	</li>
   </ul>
 
 
@@ -65,7 +72,7 @@
     alert('Hi');
 	}
 
-	
+	aVar = setTimeout(function, milliseconds);
 
 	$(document).ready(function(){
 
