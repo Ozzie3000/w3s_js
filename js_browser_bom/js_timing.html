@@ -68,7 +68,11 @@
   <ul><span class="ul_tops">setInterval()</span>
   	<li>Think of a loop.  It will keep repeating a function on speicified time</li>
   	<li>window.setInterval(function, milliseconds);</li>
-  	<li>Say 'Hello world!" <button>Hello World!</button></li>
+  	<li>
+    Say 'Hello world!" <button onclick="setInterval(var2)" >Hello World!</button> &nbsp; &nbsp; 
+    <button id="stopit1" onclick="clearInterval(var2);">Cancel</button> &nbsp; &nbsp;
+    </li>
+
   </ul>
 
 
@@ -78,14 +82,12 @@
 	function greeting(){
     alert('Hi');
 	}
-
 	var aVar = setTimeout(greeting, 3000);
 
   function hello(){
     alert("Hello world!");
   }
-
-  var var2 = setInterval()
+  var var2 = setInterval(hello, 3000);
 
 
 
