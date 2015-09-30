@@ -48,7 +48,7 @@
   	<li>setTimeout(a, b); // window omitted</li>
   	<li>a parameter is a function</li>
   	<li>b parameter is timer for execution to occur</li>
-  	<li>Say "hi" <button id="sayHi" onclick="setTimeout(greeting1, 2000);">today junior!</button></li>
+  	<li>Say "hi" <button id="sayHi" onclick="setTimeout(greeting1, 2000);">Greeting1</button></li>
   </ul>
 
   <ul><span class="ul_tops">Stop the madness</span>
@@ -60,7 +60,7 @@
   	<li>setTimeout(param1) and clearTimeou(param1) must match</li>
   	<li>In the HTML if you pass a variable, param1 to clearTimeout the same parameter must be passed to setTimeout</li>
   	<li>
-  		<button id="sayHi2" onclick="aVar">today junior!</button> &nbsp; &nbsp; 
+  		<button id="sayHi2" onclick="setTimeout(aVar)">Greeting2</button> &nbsp; &nbsp; 
   		<button id="stopit1" onclick="clearTimeout(aVar);">Cancel</button> &nbsp; &nbsp;
   	</li>
   </ul>
@@ -86,9 +86,12 @@
 	function greeting2(){
 		alert("greeting2");
 	}
+	//This is seems to execute by itself
+	// var aVar = setTimeout(greeting2, 2000);
+	//This seems to do what I would expect
+	var aVar = function(){ setTimeout(greeting2, 2000);};
 
-	var aVar = setTimeout(greeting2, 3000);
-/*
+	// s
   function hello(){
     alert("Hello world!");
   }
