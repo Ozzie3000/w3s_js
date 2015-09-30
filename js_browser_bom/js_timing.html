@@ -48,7 +48,7 @@
   	<li>setTimeout(a, b); // window omitted</li>
   	<li>a parameter is a function</li>
   	<li>b parameter is timer for execution to occur</li>
-  	<li>Say "hi" <button id="sayHi" onclick="setTimeout(greeting1, 2000);">Greeting1</button></li>
+  	<li>Say "hi" <button id="sayHi" onclick="setTimeout(greeting1, 1000);">Greeting1</button></li>
   </ul>
 
   <ul><span class="ul_tops">Stop the madness</span>
@@ -89,14 +89,15 @@
 	//This is seems to execute by itself
 	// var aVar = setTimeout(greeting2, 2000);
 	//This seems to do what I would expect
-	var aVar = function(){ setTimeout(greeting2, 2000);};
+	var aVar = function(){ setTimeout(greeting2, 1000);};
 
-	// s
+	// 
   function hello(){
     alert("Hello world!");
   }
-  var var2 = setInterval(hello, 3000);
-*/
+  //This also seems to execute by itself
+  //var var2 = setInterval(hello, 3000);
+  var var2 = function(){ setInterval(hello, 3000); };
 
 
 
