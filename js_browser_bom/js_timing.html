@@ -69,7 +69,7 @@
   	<li>Think of a loop.  It will keep repeating a function on speicified time</li>
   	<li>window.setInterval(function, milliseconds);</li>
   	<li>
-    Say 'Hello world!" <button onclick="setInterval(var2)" >Hello World!</button> &nbsp; &nbsp; 
+    Time: <button id="timez">Time goes here</button> &nbsp; &nbsp; 
     <button id="stopit1" onclick="clearInterval(var2);">Cancel</button> &nbsp; &nbsp;
     </li>
 
@@ -93,11 +93,13 @@
 
 	// 
   function hello(){
-    alert("Hello world!");
+  	var da = new Date();
+    document.getElementById("timez").innerHTML = da.toLocaleTimeString();
   }
   //This also seems to execute by itself
-  //var var2 = setInterval(hello, 3000);
-  var var2 = function(){ setInterval(hello, 3000); };
+  var var2 = setInterval(hello, 3000);
+  //so does this
+  //var var2 = function(){ setInterval(hello, 3000); };
 
 
 
