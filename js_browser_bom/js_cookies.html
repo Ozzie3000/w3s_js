@@ -79,12 +79,18 @@
   </ul>
 
   <ul><span class="ul_tops">Setting/banking the cookie</span>
-    <li>We will want to store info about the visitor</li>
+    <li>We will want to store info about the visitor in a variable</li>
+    <li></li>
   </ul>
 
 
 <script>
-	//document.getElementById("").
+	function setCookie(cname, cvalue, expdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (expdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+  } 
 
 
 	$(document).ready(function(){
