@@ -81,22 +81,22 @@
   <ul><span class="ul_tops">Setting/banking the cookie</span>
     <li>We will want to store info about the visitor in a variable</li>
     <li>
-      function setCookie(cname, cvalue, expdays) { <br />
+      function setCookie(cookname, cookvalue, expdays) { <br />
        &nbsp; var d = new Date(); <br />
        &nbsp; d.setTime(d.getTime() + (expdays*24*60*60*1000)); <br />
        &nbsp; var expires = "expires="+d.toUTCString(); <br />
-       &nbsp; document.cookie = cname + "=" + cvalue + "; " + expires; <br />
+       &nbsp; document.cookie = cookname + "=" + cookvalue + "; " + expires; <br />
       }
     </li>
   </ul>
 
 
 <script>
-	function setCookie(cname, cvalue, expdays) {
+	function setCookie(cookname, cookvalue, expdays) {
     var d = new Date();
     d.setTime(d.getTime() + (expdays*24*60*60*1000));
     var expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + "; " + expires;
+    document.cookie = cookname + "=" + cookvalue + "; " + expires;
   } 
 
 
