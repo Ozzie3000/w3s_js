@@ -125,6 +125,21 @@
     <li>If the cookie is not present give user a prompt</li>
     <li>Ask for user name, then store it, let it exp in 365 days</li>
     <li>Acoomplish this with the setCookie funciton</li>
+    <li>
+      function checkCookie() { <br />
+      var username=getCookie("username"); <br />
+        if (username!="") { <br />
+            alert("Welcome again " + username); <br />
+        }else{ <br />
+            username = prompt("Please enter your name:", ""); <br />
+            if (username != "" && username != null) { <br />
+                setCookie("username", username, 365); <br />
+            } <br />
+        } <br />
+      } <br />
+      <br />
+      checkCookie();
+    </li>
   </ul>
 
 
@@ -159,6 +174,7 @@
     }
   }
 
+  checkCookie();
 
 	$(document).ready(function(){
 
