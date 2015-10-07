@@ -97,16 +97,16 @@
 
   <ul><span class="ul_tops">Retrieve cookie</span>
     <li>
-      function getCookie(cookname) {
-       &nbsp; var name = cookname + "=";
-       &nbsp; var ca = document.cookie.split(';');
-       &nbsp; for(var i=0; i&lt;ca.length; i++) {
-       &nbsp;  &nbsp; var c = ca[i];
-       &nbsp;  &nbsp; while (c.charAt(0)==' ') c = c.substring(1);
-       &nbsp;  &nbsp; if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
-     &nbsp; }
-     &nbsp; return "";
-    }
+      function getCookie(cookname) { <br />
+       &nbsp; var name = cookname + "="; <br />
+       &nbsp; var ca = document.cookie.split(';'); <br />
+       &nbsp; for(var i=0; i&lt;ca.length; i++) { <br />
+       &nbsp;  &nbsp; var c = ca[i]; <br />
+       &nbsp;  &nbsp; while (c.charAt(0)==' ') c = c.substring(1); <br />
+       &nbsp;  &nbsp; if (c.indexOf(name) == 0) return c.substring(name.length,c.length); <br />
+       &nbsp; } <br />
+       &nbsp; return ""; <br />
+      }
     </li>
   </ul>
 
