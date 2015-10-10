@@ -51,6 +51,7 @@
 			} <br />
 			Event.observe(window, "load", myFunc2); <br />
   	</li>
+  	<li>&nbsp;-----&gt; <span id="id_2"></span></li>
   </ul>
 
   <ul><span class="ul_tops">Event.observe()</span>
@@ -74,7 +75,7 @@
 	onload = myFunc1;
 
 	function myFunc2(){ 
-		    $("id_2").insert("Used prototype instead");
+		$("id_2").insert("Used prototype instead");
 	}
 	Event.observe(window, "load", myFunc2);
 
