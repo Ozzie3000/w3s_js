@@ -67,11 +67,16 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.2.0/prototype.js"></script>
 <script>
-	function myFunc1() {
-		var obje = document.getElementById("id_1"); 
-		obje.innerHTML = "Used JS onload"; 
+	function myFunc1(){
+		var obje = document.getElementById("id_1");
+		obje.innerHTML = "Used JS onload";
 	}
 	onload = myFunc1;
+
+	function myFunc2(){ 
+		    $("id_2").insert("Used prototype instead");
+	}
+	Event.observe(window, "load", myFunc2);
 
 
 	$(document).ready(function(){
