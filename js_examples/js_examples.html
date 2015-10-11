@@ -40,7 +40,7 @@
   <ul><span class="ul_tops">Changing attributes with JS</span>
   	<li>Change pic below</li>
   	<li><div id="bar_1"></div></li>
-  	<li><button>Change to blue</button></li>
+  	<li><button onclick="redBlue()">Change to blue</button></li>
   </ul>
 
 
@@ -49,13 +49,17 @@
 		document.getElementById("change_1").innerHTML = "You changed me with JS";
 	});
 
+	
 	function redBlue(){
 		var barColor = document.getElementById("bar_1");
-		if (barColor.style.backgroundColor = "red"){
+		if (barColor.style.background == "red"){
 			//alert("red");   //debug
-			barColor.style.backgroundColor
+			barColor.style.background = "blue";
 		}
-	}
+		if (barColor.style.background == "blue"){
+			barColor.style.background = "red";
+		}
+	};
 
 
 	$(document).ready(function(){
