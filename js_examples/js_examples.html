@@ -16,7 +16,7 @@
 		margin: 5px 5px;
 		height: 40px;  
 		width: 300px;
-		background-color: red;
+		
 	}
 </style>
 <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
@@ -39,7 +39,7 @@
 
   <ul><span class="ul_tops">Changing attributes with JS</span>
   	<li>Change pic below</li>
-  	<li><div id="bar_1"></div></li>
+  	<li><div id="bar_1" style="background-color:red;"></div></li>
   	<li><button onclick="redBlue()">Change to blue</button></li>
   </ul>
 
@@ -52,12 +52,13 @@
 	
 	function redBlue(){
 		var barColor = document.getElementById("bar_1");
-		if (barColor.style.background == "red"){
+		if (barColor.style.backgroundColor == "red"){
 			//alert("red");   //debug
-			barColor.style.background = "blue";
-		}
-		if (barColor.style.background == "blue"){
-			barColor.style.background = "red";
+			barColor.style.backgroundColor = "blue";
+		} else if (barColor.style.backgroundColor == "blue"){
+			barColor.style.backgroundColor = "red";
+		} else {
+			barColor.style.backgroundColor = "red";
 		}
 	};
 
