@@ -101,7 +101,9 @@
 	function togglePics(){
 		var pic = document.getElementById("snes_gifs");
 		if (pic.src.match("link")){
-			ll
+			pic.src = "../images/zelda_icon.gif";
+		} else {
+			pic.src = "../images/link_icon.gif";
 		}
 	}
 
