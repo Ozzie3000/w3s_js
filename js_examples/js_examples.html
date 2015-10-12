@@ -50,10 +50,10 @@
   </ul>
 
   <ul><span class="ul_tops">Changing attribute with JS</span>
-  	<li><button>Change pic source</button></li>
+  	<li><button id="but_3">Change pic source</button></li>
   	<li style="margin:10px 0px 10px 0px">
   		<div>
-  			<img src="../images/link_icon.gif">
+  			<img id="snes_gifs" src="../images/link_icon.gif">
   		</div>
   	</li>
   </ul>
@@ -67,6 +67,10 @@
 	document.getElementById("but_2").addEventListener("click", function(){
 		redBlue1();
 		redBlue2();
+	});
+
+	document.getElementById("but_3").addEventListener("click", function(){
+		f
 	});
 
 	
@@ -93,6 +97,10 @@
 			barColor2.style.backgroundColor = "red";
 		}
 	};
+
+	function togglePics(){
+		var pic = document.getElementById("snes_gifs");
+	}
 
 
 	$(document).ready(function(){
