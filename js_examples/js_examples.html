@@ -63,7 +63,7 @@
   	<li>
   	<input id="num" type="number"> &nbsp; <button id="but_4" type="button">Go!</button>
   	</li>
-  	<li><span id="error_message">&bsp;</span></li>
+  	<li><span id="message1">&nbsp;</span></li>
   </ul>
 
 
@@ -122,7 +122,7 @@
 
 	//input validation
 	function num_vali(){
-		var x; error_message;
+		var x, error_message;
 		//get value of input and store it in already declared x
 		x = document.getElementById("num").value;
 		//check to see if x is not a number and within 1-10<
@@ -131,7 +131,7 @@
 		} else{
 			error_message = "You know how to count to 10!";
 		}
-		document.getElementById("demo").innerHTML = error_message;
+		document.getElementById("message1").innerHTML = error_message;
 	}
 
 	$(document).ready(function(){
