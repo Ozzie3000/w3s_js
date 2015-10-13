@@ -119,10 +119,13 @@
 
 	//input validation
 	function num_vali(){
-		var x; text;
+		var x; error_message;
 		//get value of input and store it in already declared x
 		x = document.getElementById("num").value;
-		//check to see if x is not a number and within 1-10
+		//check to see if x is not a number and within 1-10<
+		if (isNaN(x) || x<1 || x>10){
+			error_message = "Use a number you lazy person!";
+		}
 	}
 
 	$(document).ready(function(){
