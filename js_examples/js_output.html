@@ -24,17 +24,15 @@
 
   <ul><span class="ul_tops">JS window object alerts</span>
   	<li>Stuff stuff</li>
-  	<li>
-  		<script>
-  		window.alert("heh?");
-  		</script>
-  	</li>
+  	<li><button id="alert1"class="btn">Alert</button></li>
   	
   </ul>
 
 
 <script>
-	//document.getElementById("").
+	document.getElementById("alert1").addEventListener("click", function(){
+    window.alert("This is an alert");
+  });
 
 
 	$(document).ready(function(){
