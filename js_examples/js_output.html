@@ -46,6 +46,9 @@
 
   <ul><span class="ul_tops">JS can use the console log</span>
     <li>Date will show up in console log</li>
+    <li>
+      <button id="con_log" class="btn">Date in Console log</button>
+    </li>
   </ul>
 
 
@@ -56,6 +59,10 @@
 
   document.getElementById("write_stuff").addEventListener("click", function(){
     document.getElementById("here").innerHTML = "The right stuff!";
+  });
+
+  document.getElementById("con_log").addEventListener("click", function(){
+    console.log(new Date());
   });
 
 
