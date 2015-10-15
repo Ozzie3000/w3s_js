@@ -42,9 +42,18 @@
   <ul><span class="ul_tops">I body</span>
   	<li>Head over heals</li>
   	<li>
-  		Some other song
+  		<span id="bad_song">
+	  		Some other song 
+	  	</span>
+	  	&nbsp; &nbsp; &nbsp; &nbsp;
+  		<button id="fix_song">Fix me</button>
   	<li>
   	<li>Mad World</li>
+  	<script type="text/javascript">
+  	document.getElementById("fix_song").addEventListener("click", function(){
+  		document.getElementById("bad_song").innerHTML = "Everybody wants to rule the World";
+  	});
+  	</script>
   </ul>
 
 
