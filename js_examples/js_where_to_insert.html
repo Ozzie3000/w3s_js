@@ -59,6 +59,8 @@
   <ul><span class="ul_tops">In external file</span>
   	<li>
   		<button id="jq_1">Change me</button>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <span id="info"></span>
   	</li>
   	<li>
   		<button id="jq_2">Change it already!</button>
@@ -73,6 +75,7 @@
 	$(document).ready(function(){
 		$("#jq_2").click(function(){
 			$("#jq_1").addClass("btn");
+      $("#info").text("<--- jQuery was used here using external source file");
 		});
 	}); //end doc ready
 </script>
