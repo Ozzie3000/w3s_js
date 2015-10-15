@@ -29,8 +29,14 @@
 	<br /><br />
   <h1 id="h1_id">Inserting JS</h1>
 
-  <ul><span class="ul_tops"></span>
-  	<li></li>
+  <ul><span class="ul_tops">In head</span>
+  	<li>
+  		function header_color(){ <br />
+		   &nbsp; document.getElementById("h1_id").style.color = "cyan"; <br />
+			 &nbsp; document.getElementById("h1_id").style.fontSize = "larger"; <br />
+			} <br />
+			setTimeout(function(){ header_color(); }, 2000);
+  	</li>
   </ul>
 
 
