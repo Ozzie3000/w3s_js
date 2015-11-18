@@ -190,12 +190,20 @@
     <li>var funky2 = function(){}; // a new function object</li>
   </ul>
 
-  <ul><span class="ul_tops">JS object mutability</span>
+  <ul><span class="ul_tops">JS objects and mutability</span>
     <li>In JS objects are mutable.</li>
-    <li>Immutability: Once the obejct is instantiated you cannot change it's properties</li>
+    <li>Immutability: Once the object is instantiated you cannot change it's properties</li>
     <li>In lower levels immuntability will store a string in some memory allocated for it. If you modify the string it will store that in a different piece of memory.  It essence it sticks around until memory is cleared; making strings expensive.  Although this may have changed over the years</li>
     <li>Primitive types are immutable: null, undefined, boolean, number, string, symbol</li>
-    <li></li>
+    <li>Immutable values are incapable of being changed in JavaScript ECMAScript 6:</li>
+    <li>Objects on the other hand are address by reference instead of value</li>
+    <li>
+      example 1:
+      <br>
+      var a = {value:"pair"};
+      <br>
+      var b = a; // does not clone a the object 
+    </li>
   </ul>
 
 
