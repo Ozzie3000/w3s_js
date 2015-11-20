@@ -67,10 +67,11 @@
   	<li>the code block will be executed once per property in the object</li>
   	<li>var vehicle = {make:"ferrari", model:"enzo", year:2007, color:"red"};</li>
   	<li>var property_values = "";</li>
+  	<li>var i; // doesn't seem to be necessary to declare this here</li>
   	<li>
   		for (i in vehicle){
   		<br>
-  		&nbsp;&nbsp; property_values += vehicle[i];
+  		&nbsp;&nbsp; property_values += vehicle[i] + " ";
   		<br>
   		}
   	</li>
