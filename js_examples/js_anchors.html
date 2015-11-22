@@ -23,14 +23,15 @@
   <h1>JS and anchors</h1>
 
   <ul><span class="ul_tops">Finding anchors</span>
-  	<li>Example 1: <a href="http://www.amazon.com" target="_blank">amazon</a></li>
-  	<li>Example 2: <a href="http://www.yahoo.com" target="_blank">yahoo</a></li>
-  	<li>Example 3: <a href="http://www.startpage.com" target="_blank">start page</a></li>
+  	<li>Example 1: <a href="http://www.amazon.com" target="_blank" name="ammy">amazon</a></li>
+  	<li>Example 2: <a href="http://www.yahoo.com" target="_blank" name="yah">yahoo</a></li>
+  	<li>Example 3: <a href="http://www.startpage.com" target="_blank" name="start">start page</a></li>
+  	<li> <button>How many anchors?</button> &nbsp;&nbsp; <span id="answer"></span></li>
   </ul>
 
 
 <script>
-	//document.getElementById("").
+	document.getElementById("answer").innerHTML = document.anchors.length;
 
 
 	$(document).ready(function(){
