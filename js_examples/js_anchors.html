@@ -29,6 +29,14 @@
   	<li> <button id="show">How many anchors?</button> &nbsp;&nbsp; <span id="answer"></span></li>
   </ul>
 
+  <textarea class="example1">
+  	document.getElementById("show").addEventListener("click", showAnchors);
+
+		function showAnchors(){
+			document.getElementById("answer").innerHTML = document.anchors.length;
+		}
+  </textarea>
+
 
 <script>
 	document.getElementById("show").addEventListener("click", showAnchors);
