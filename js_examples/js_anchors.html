@@ -9,7 +9,10 @@
 -->
 <link rel="stylesheet" type="text/css" href="../stylesheets/main1.css"></link>
 <style type="text/css">
-
+	.example1{
+		min-width: 685px;
+		min-height: 140px;
+	}
 </style>
 <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
 <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
@@ -32,11 +35,14 @@
   </ul>
 
   <textarea class="example1">
-  	document.getElementById("show").addEventListener("click", showAnchors);
+		document.getElementById("show").addEventListener("click", showAnchors);
 
 		function showAnchors(){
 			document.getElementById("answer").innerHTML = document.anchors.length;
 		}
+
+		for some reason the document.anchors.length needs the 
+		anchors to have the attribute name=""
   </textarea>
 
 
