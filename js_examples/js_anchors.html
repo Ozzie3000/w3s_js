@@ -31,14 +31,14 @@
   	<li>Example 1: <a href="http://www.amazon.com" target="_blank" name="ammy">amazon</a></li>
   	<li>Example 2: <a href="http://www.yahoo.com" target="_blank" name="yah">yahoo</a></li>
   	<li>Example 3: <a href="http://www.startpage.com" target="_blank" name="start">start page</a></li>
-  	<li> <button id="show" class="btn">How many anchors?</button> &nbsp;&nbsp; <span id="answer"></span></li>
+  	<li><button id="show" class="btn">How many anchors?</button> &nbsp;&nbsp; <span id="answer1"></span></li>
   </ul>
 
   <textarea class="example1">
-		document.getElementById("show").addEventListener("click", showAnchors);
+		document.getElementById("show1").addEventListener("click", showAnchors);
 
 		function showAnchors(){
-			document.getElementById("answer").innerHTML = document.anchors.length;
+			document.getElementById("answer1").innerHTML = document.anchors.length;
 		}
 
 		for some reason the document.anchors.length needs the 
@@ -48,6 +48,8 @@
   <br><br>
   <ul><span class="ul_tops">Anchor innerHTML</span>
   	<li></li>
+  	<li><button id="show2" class="btn">First anchor text?</button></li>
+  	<li>&nbsp;&nbsp; <span id="answer2"></span></li>
   </ul>
 
   <textarea class="example1">
@@ -56,12 +58,13 @@
 
 
 <script>
-	document.getElementById("show").addEventListener("click", showAnchors);
+	document.getElementById("show1").addEventListener("click", showAnchors);
 
 	function showAnchors(){
-		document.getElementById("answer").innerHTML = document.anchors.length;
+		document.getElementById("answer1").innerHTML = document.anchors.length;
 	}
 	
+	document.getElementById("show2").addEventListener("click", blahblah);
 
 
 	$(document).ready(function(){
