@@ -31,7 +31,7 @@
   	<li>Example 1: <a href="http://www.amazon.com" target="_blank" name="ammy">amazon</a></li>
   	<li>Example 2: <a href="http://www.yahoo.com" target="_blank" name="yah">yahoo</a></li>
   	<li>Example 3: <a href="http://www.startpage.com" target="_blank" name="start">start page</a></li>
-  	<li><button id="show" class="btn">How many anchors?</button> &nbsp;&nbsp; <span id="answer1"></span></li>
+  	<li><button id="show1" class="btn">How many anchors?</button> &nbsp;&nbsp; <span id="answer1"></span></li>
   </ul>
 
   <textarea class="example1">
@@ -47,7 +47,7 @@
 
   <br><br>
   <ul><span class="ul_tops">Anchor innerHTML</span>
-  	<li></li>
+  	<li>How to grab the display value [innerHTML] from an achor</li>
   	<li><button id="show2" class="btn">First anchor text?</button></li>
   	<li>&nbsp;&nbsp; <span id="answer2"></span></li>
   </ul>
@@ -64,7 +64,11 @@
 		document.getElementById("answer1").innerHTML = document.anchors.length;
 	}
 	
-	document.getElementById("show2").addEventListener("click", blahblah);
+	document.getElementById("show2").addEventListener("click", anchorInfo);
+
+	function anchorInfo(){
+		document.getElementById("answer2").innerHTML = document.anchors[0].innerHTML;
+	}
 
 
 	$(document).ready(function(){
