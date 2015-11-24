@@ -77,15 +77,17 @@
 	}
 
 	var anchorz = document.anchors.length;
+	var message = "";
 	function anchorLooping(){
-		//var message = "";
-		var message = document.getElementById("answer3").innerHTML;
+		
+		//var message = document.getElementById("answer3").innerHTML;
 		for (var i = 0; i < anchorz; i++){
 		//message	document.anchors[0].innerHTML;
 		//message = document.anchors[i].innerHTML;
 		//works overwrites each time
 		//document.getElementById("answer3").innerHTML = document.anchors[i].innerHTML;
-			message +=  document.anchors[i].innerHTML;
+			message += document.anchors[i].innerHTML + "<br>";
+			document.getElementById("answer3").innerHTML = message;
 		};
 	}
 
