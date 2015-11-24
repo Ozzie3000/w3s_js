@@ -59,7 +59,9 @@
 			document.getElementById("answer2").innerHTML = document.anchors[0].innerHTML;
 		}
   </textarea>
-
+<!--debug -->
+<br>
+<span id="answer3">stuff</span>
 
 <script>
 	document.getElementById("show1").addEventListener("click", showAnchors);
@@ -74,13 +76,14 @@
 		document.getElementById("answer2").innerHTML = document.anchors[0].innerHTML;
 	}
 
-	var anchorz = document.anchors.length
+	var anchorz = document.anchors.length;
 	function anchorLooping(){
 		//var message = "";
-		document.getElementById("answer3")
-		for (var i = 0; i < anchorz; i--) {
+		var message = document.getElementById("answer3").innerHTML;
+		for (var i = 0; i < anchorz; i++){
 		//message	document.anchors[0].innerHTML;
-		document.anchors[0].innerHTML;
+		//message = document.anchors[i].innerHTML;
+		document.getElementById("answer3").innerHTML = document.anchors[i].innerHTML;
 		};
 	}
 
