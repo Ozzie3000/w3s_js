@@ -29,11 +29,15 @@
   	<li><a href="http://www.yahoo.com" target="_blank">ya who?</a></li>
   	<li><a href="http://www.startpage.com" target="_blank">Start page</a></li>
   	<li><button id="show2" class="btn" onclick="linkLength()">Loop</button></li>
+  	<li><span id="answer1"></span></li>
   </ul>
 
 
 <script>
-	//document.getElementById("").
+	function linkLength(){
+		document.getElementById("answer1").innerHTML = document.links.length;
+	}
+	
 
 
 	$(document).ready(function(){
