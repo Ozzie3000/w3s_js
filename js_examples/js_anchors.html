@@ -60,22 +60,23 @@
 		}
   </textarea>
 <!--debug -->
-<br>
-<span id="answer3">stuff</span>
-<ul><span class="ul_tops">Loop through anchors and display them</span>
-	<li><button id="show3" class="btn" onclick="anchorLooping()">Loop</button></li>
-</ul>
+	<br>
 
-<textarea class="example1">
-	var anchorz = document.anchors.length;
-	var message = "";
-	function anchorLooping(){
-		for (var i = 0; i < anchorz; i++){
-			message += document.anchors[i].innerHTML + "<br>";
-			document.getElementById("answer3").innerHTML = message;
-		};
-	}
-</textarea>
+	<ul><span class="ul_tops">Loop through anchors and display them</span>
+		<li><button id="show3" class="btn" onclick="anchorLooping()">Loop</button></li>
+		<li><span id="answer3"></span></li>
+	</ul>
+
+	<textarea class="example1">
+		var anchorz = document.anchors.length;
+		var message = "";
+		function anchorLooping(){
+			for (var i = 0; i < anchorz; i++){
+				message += document.anchors[i].innerHTML + "<br>";
+				document.getElementById("answer3").innerHTML = message;
+			};
+		}
+	</textarea>
 
 <script>
 	document.getElementById("show1").addEventListener("click", showAnchors);
