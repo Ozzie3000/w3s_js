@@ -66,6 +66,17 @@
 	<li></li>
 </ul>
 
+<textarea>
+	var anchorz = document.anchors.length;
+	var message = "";
+	function anchorLooping(){
+		for (var i = 0; i < anchorz; i++){
+			message += document.anchors[i].innerHTML + "<br>";
+			document.getElementById("answer3").innerHTML = message;
+		};
+	}
+</textarea>
+
 <script>
 	document.getElementById("show1").addEventListener("click", showAnchors);
 
