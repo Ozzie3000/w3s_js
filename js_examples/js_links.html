@@ -35,8 +35,8 @@
   <ul><span class="ul_tops">Link href content</span>
   	<li>Need to grab the href content</li>
   	<li>document.links[i].href; // i = index in a collection</li>
-  	<li><button id="show1" class="btn" onclick="linkContent(0)">Link 1 content</button></li>
-  	<li><span id="answer1"></span></li>
+  	<li><button id="show1" class="btn" onclick="linkContent('answer2', '0')">Link 1 content</button></li>
+  	<li><span id="answer2"></span></li>
   </ul>
 
 
@@ -45,6 +45,9 @@
 		document.getElementById("answer1").innerHTML = document.links.length;
 	}
 	
+	function linkContent(a, b){
+		document.getElementById(a).innerHTML = document.links[b].href;
+	}
 
 
 	$(document).ready(function(){
