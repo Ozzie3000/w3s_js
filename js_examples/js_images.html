@@ -34,7 +34,7 @@
   <ul><span class="ul_tops">Show id of images</span>
   	<li>If you need to grab the id of an image</li>
   	<li>document.images[i].id; // where i is the index number in the collection</li>
-  	<li><button id="show1" class="btn" onclick="idImages(a, b)">id of image 1</button></li>
+  	<li><button id="show1" class="btn" onclick="idImages('answer1', '0')">id of image 1</button></li>
   	<li><span id="answer1"></span></li>
   </ul>
 
@@ -43,7 +43,10 @@
 	function numImages(){
 		document.getElementById("answer0").innerHTML = "Number of images on this page: " + document.images.length;
 	}
-	//
+	
+  function idImages(a,b){
+    document.getElementById(a).innerHTML = document.images[b].id;
+  }
 
 
 	$(document).ready(function(){
