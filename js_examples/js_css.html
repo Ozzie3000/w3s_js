@@ -23,9 +23,9 @@
   <h1>JS CSS</h1>
 
   <ul><span class="ul_tops">Using JS to change CSS</span>
-  	<li>This is sentence number 0</li>
-  	<li>This is sentence number 1</li>
-  	<li>This is sentence number 2</li>
+  	<li id="target0">This is sentence number 0</li>
+  	<li id="target1">This is sentence number 1</li>
+  	<li id="target2">This is sentence number 2</li>
   	<li><button id="style0" class="btn" onclick="func0()">Change sentence 0</button></li>
   	<li><button id="style1" class="btn" onclick="func1()">Change sentence 1</button></li>
   	<li><button id="style2" class="btn" onclick="func2()">Change sentence 2</button></li>
@@ -33,6 +33,9 @@
 
 
 <script>
+	function func0(){
+		document.getElementById("target0").style.visibility = "hidden";
+	}
 	//document.getElementById("").
 
 
