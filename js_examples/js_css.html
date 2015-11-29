@@ -29,6 +29,7 @@
   	<li><button id="style0" class="btn" onclick="func0()">Change sentence 0</button></li>
   	<li><button id="style1" class="btn" onclick="func1()">Change sentence 1</button></li>
   	<li><button id="style2" class="btn" onclick="func2()">Change sentence 2</button></li>
+  	<li><button id="style3" class="btn" onclick="func3()">Reset</button></li>
   </ul>
 
 
@@ -41,6 +42,10 @@
 	}
 	function func2(){
 		document.getElementById("target2").style.color = "cyan";
+	}
+	function func3(){
+		var a = document.getElementById("target0");
+		a.removeAttribute('style');
 	}
 
 
