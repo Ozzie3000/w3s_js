@@ -8,7 +8,11 @@
 <link rel="stylesheet" type="text/css" href="..stylesheets/main1.css"></link>
 -->
 <link rel="stylesheet" type="text/css" href="../stylesheets/main1.css"></link>
-<style type="text/css"></style>
+<style type="text/css">
+	#table1{
+		margin-left: 30px;
+	}
+</style>
 <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
 <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 <script type="text/javascript">
@@ -31,6 +35,25 @@
   	<li><button id="style2" class="btn" onclick="func2()">Change sentence 2</button></li>
   	<li><button id="style3" class="btn" onclick="func3()">Reset</button></li>
   </ul>
+
+  <br><br><br>
+
+  <table id="table1" style="width:300px;height:100px">
+  <tr>
+    <td onmouseover="change_bg(this.style.backgroundColor)" 
+        onmouseout="change_bg('transparent')"
+        style="background-color:red">
+    </td>
+    <td onmouseover="change_bg(this.style.backgroundColor)" 
+        onmouseout="change_bg('transparent')"
+        style="background-color:white">
+    </td>
+    <td onmouseover="change_bg(this.style.backgroundColor)" 
+        onmouseout="change_bg('transparent')"
+        style="background-color:blue">
+    </td>
+  </tr>
+</table>
 
 
 <script>
