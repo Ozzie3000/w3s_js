@@ -24,12 +24,15 @@
 
   <ul><span class="ul_tops">Button objects</span>
   	<li>You may want to disable a button after it has been clicked</li>
-  	<li>Age: <input type="text" id="btn_00"><input type="button" id="btn_01" class="btn" value="Submit"></li>
+  	<li>Age: <input type="text" id="btn_00" class="target_00"> <input type="button" id="btn_01" class="btn target_00" value="Submit" onclick="func_00(), func_01()"></li>
   </ul>
 
 
 <script>
-	//document.getElementById("").
+	function func_00(){
+		var age = document.getElementById("btn_00").value;
+		alert(age);
+	}
 
 
 	$(document).ready(function(){
