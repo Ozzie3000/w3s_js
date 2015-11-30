@@ -30,6 +30,8 @@
   <ul><span class="ul_tops">Buttons by name</span>
   	<li>Name attribute in the HTML</li>
   	<li>name="";</li>
+  	<li></li>
+  	<li id="target_01"></li>
   </ul>
 
 
@@ -46,7 +48,10 @@
 	}
 
 //name of buttons
-
+	function func_02(){
+		var name0 = document.getElementById("btn_00").name;
+		document.getElementById("target_01").innerHTML = name0;
+	}
 
 	$(document).ready(function(){
 
