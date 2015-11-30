@@ -41,15 +41,15 @@
   <table id="table1" style="width:300px;height:100px">
   <tr>
     <td onmouseover="change_bg(this.style.backgroundColor)" 
-        onmouseout="change_bg('transparent')"
+        onmouseout="reset_bg()"
         style="background-color:red">
     </td>
     <td onmouseover="change_bg(this.style.backgroundColor)" 
-        onmouseout="change_bg('transparent')"
+        onmouseout="reset_bg()"
         style="background-color:white">
     </td>
     <td onmouseover="change_bg(this.style.backgroundColor)" 
-        onmouseout="change_bg('transparent')"
+        onmouseout="reset_bg()"
         style="background-color:blue">
     </td>
   </tr>
@@ -76,6 +76,9 @@
 	}
 	function change_bg(x){
 		document.body.style.backgroundColor = x;
+	}
+	function reset_bg(){
+		document.body.style.removeProperty('background-color');
 	}
 
 
