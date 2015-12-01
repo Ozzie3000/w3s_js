@@ -32,6 +32,8 @@
   	<li>name="";</li>
   	<li><button id="btn_02" class="btn" onclick="func_02()">Show Id</button></li>
   	<li id="target_01"></li>
+  	<li><button id="btn_03" class="btn" onclick="func_03()">Show Id</button></li>
+  	<li id="target_02"></li>
   </ul>
 
 
@@ -51,6 +53,10 @@
 	function func_02(){
 		var name0 = document.getElementById("btn_00").name;
 		document.getElementById("target_01").innerHTML = name0;
+	}
+	function func_03(){
+		var name1 = document.getElementById("btn_01").name;
+		document.getElementById("target_02").innerHTML = name1;
 	}
 
 	$(document).ready(function(){
