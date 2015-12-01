@@ -30,18 +30,18 @@
   <ul><span class="ul_tops">Buttons by name</span>
   	<li>Name attribute in the HTML</li>
   	<li>name="";</li>
-  	<li><button id="btn_02" class="btn" onclick="func_02()">Show Id</button></li>
+  	<li><button id="btn_02" class="btn" onclick="func_02()">Show Id input 1</button></li>
   	<li id="target_01"></li>
-  	<li><button id="btn_03" class="btn" onclick="func_03()">Show Id</button></li>
+  	<li><button id="btn_03" class="btn" onclick="func_03()">Show Id input 2</button></li>
   	<li id="target_02"></li>
   </ul>
 
   <ul><span class="ul_tops">Type of button</span>
   	<li>Type attribute in the HTML</li>
   	<li>type="";</li>
-  	<li><button id="btn_03" class="btn" onclick="func_04()">Show Id</button></li>
+  	<li><button id="btn_03" class="btn" onclick="func_04()">Show type input 1</button></li>
   	<li id="target_03"></li>
-  	<li><button id="btn_04" class="btn" onclick="func_05()">Show Id</button></li>
+  	<li><button id="btn_04" class="btn" onclick="func_05()">Show type input 2</button></li>
   	<li id="target_04"></li>
   </ul>
 
@@ -72,6 +72,10 @@
 	function func_04(){
 		var type0 = document.getElementById("btn_00").type;
 		document.getElementById("target_03").innerHTML = type0;
+	}
+	function func_05(){
+		var type1 = document.getElementById("btn_01").type;
+		document.getElementById("target_04").innerHTML = type1;
 	}
 
 
