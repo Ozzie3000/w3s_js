@@ -24,7 +24,11 @@
 
   <ul><span class="ul_tops">Button objects</span>
   	<li>You may want to disable a button after it has been clicked</li>
-  	<li>Age: <input type="text" id="btn_00" class="target_00" name="input_type_text0" value="text_input"> <input type="button" id="btn_01" class="btn target_00" name="input_type_button0" value="Submit" onclick="func_00(), func_01()"></li>
+  	<li>
+	  	Age: 
+	  	<input type="text" id="btn_00" class="ctarget_00" name="input_type_text0" value="text_input"> 
+	  	<input type="button" id="btn_01" class="btn ctarget_00" name="input_type_button0" value="Submit" onclick="func_00(), func_01()">
+  	</li>
   	<li><span id="target_00"></span></li>
   	<li><span id="target_01"></span></li>
   </ul>
@@ -78,7 +82,7 @@
 		alert(age);
 	}
 	function func_01(){
-		//document.getElementsByClassName("target_00").disabled = true;
+		//document.getElementsByClassName("ctarget_00").disabled = true;
 		document.getElementById("btn_00").disabled = true;
 		document.getElementById("btn_01").disabled = true;
 	}
