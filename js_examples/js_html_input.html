@@ -61,9 +61,9 @@
   	<li id="target_07">(if this does not change it has none.  Example input type is text)</li>
   	<li><button id="btn_08" class="btn" onclick="func_09()">Show text inside input 2</button></li>
   	<li id="target_08"></li>
-  	<li><button id="btn_09" class="btn" onclick="func_010()">Show text inside button 1</button></li>
+  	<li><button id="btn_09" class="btn" onclick="func_10()">Show text inside button 1</button></li>
   	<li id="target_09"></li>
-  	<li><button id="btn_10" class="btn" onclick="func_011()">Show text inside button 2</button></li>
+  	<li><button id="btn_10" class="btn" onclick="func_11()">Show text inside button 2</button></li>
   	<li id="target_10"></li>
   </ul>
 
@@ -118,6 +118,10 @@
 	function func_09(){
 		var displayText = document.getElementById("btn_01").innerHTML;
 		document.getElementById("target_08").innerHTML = displayText;
+	}
+	function func_10(){
+		var displayText = document.getElementById("btn_03").innerHTML;
+		document.getElementById("target_09").innerHTML = displayText;
 	}
 
 
