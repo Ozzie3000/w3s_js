@@ -79,9 +79,10 @@
   	<li>var form_id = document.getElementById("id_of_button").form.id;</li>
   	<li>
   		<form id="form_id_00">
-			<button id="btn_id_in_form" type="button">Some Rando button</button>
+			<button id="btn_id_in_form" type="button" onclick="func_12()">Some Rando button</button>
 			</form>
   	</li>
+  	<li id="form_target"></li>
   </ul>
 
 
@@ -143,6 +144,12 @@
 	function func_11(){
 		var displayText = document.getElementById("btn_04").innerHTML;
 		document.getElementById("target_11").innerHTML = displayText;
+	}
+
+	//get id of button then grab id of form housing said button
+	function func_12(){
+		var form_id = document.getElementById("btn_id_in_form").form.id;
+		document.getElementById("form_target").innerHTML = form_id;
 	}
 
 
