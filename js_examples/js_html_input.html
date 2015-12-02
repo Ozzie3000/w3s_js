@@ -58,7 +58,7 @@
   	<li>Need to grab the text that is displayed inside the button?</li>
   	<li>.innerHTML</li>
   	<li><button id="btn_07" class="btn" onclick="func_08()">Show text inside input 1</button></li>
-  	<li id="target_07"></li>
+  	<li id="target_07">(if this does not change it has none.  Example input type is text)</li>
   </ul>
 
 
@@ -102,6 +102,10 @@
 	function func_07(){
 		var value0 = document.getElementById("btn_01").value;
 		document.getElementById("target_06").innerHTML = value0;
+	}
+	function func_08(){
+		var displayText = document.getElementById("btn_00").innerHTML;
+		document.getElementById("target_07").innerHTML = displayText;
 	}
 
 
