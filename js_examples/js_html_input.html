@@ -39,6 +39,7 @@
   <ul><span class="ul_tops">Type of button</span>
   	<li>Type attribute in the HTML</li>
   	<li>type="";</li>
+  	<!--- fix button ids starting with this one below  -->
   	<li><button id="btn_03" class="btn" onclick="func_04()">Show type input 1</button></li>
   	<li id="target_03"></li>
   	<li><button id="btn_04" class="btn" onclick="func_05()">Show type input 2</button></li>
@@ -122,6 +123,10 @@
 	function func_10(){
 		var displayText = document.getElementById("btn_03").innerHTML;
 		document.getElementById("target_09").innerHTML = displayText;
+	}
+	function func_11(){
+		var displayText = document.getElementById("btn_04").innerHTML;
+		document.getElementById("target_10").innerHTML = displayText;
 	}
 
 
