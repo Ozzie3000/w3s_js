@@ -42,6 +42,8 @@
 
   <ul><span class="ul_tops">Element values in a form</span>
   	<li>You can grab the default values or what someone typed in</li>
+  	<li><input type="button" onclick="func_2()" value="getValues"></li>
+  	<li id="target_2"></li>
   </ul>
 
 
@@ -50,21 +52,21 @@
 	function func_0(){
 		document.getElementById("form_0").submit();
 	}
-	
+
 	// reset function
 	function func_1(){
 		document.getElementById("form_0").reset();
 	}
 
 	//get values
-	function myFunction() {
+	function func_2() {
     var x = document.getElementById("form_0");
     var text = "";
     var i;
     for (i = 0; i < x.length ;i++) {
         text += x.elements[i].value + "<br>";
     }
-    document.getElementById("").innerHTML = text;
+    document.getElementById("target_2").innerHTML = text;
 	}
 
 
