@@ -59,7 +59,7 @@
 	}
 
 	//get values
-	function func_2() {
+	function func_2(){
     var x = document.getElementById("form_0");
     var text = "";
     var i;
@@ -67,6 +67,12 @@
         text += x.elements[i].value + "<br>";
     }
     document.getElementById("target_2").innerHTML = text;
+	}
+
+	//acceptable characters
+	function func_3(){
+    var x = document.getElementById("form_0").acceptCharset;
+    document.getElementById("target_3").innerHTML = x;
 	}
 
 
