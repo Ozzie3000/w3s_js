@@ -56,17 +56,17 @@
   <ul><span class="ul_tops">Show all options at once for a select</span>
   	<li>Usually the GUI for a select is a drop down</li>
   	<li>You can use the size attribute to change it to display more</li>
-  	<li><input type="button" onclick="func_2(2)" value="number of options"></li>
-  	<li><input type="button" onclick="func_2(3)" value="number of options"></li>
-  	<li><input type="button" onclick="func_2(4)" value="number of options"></li>
+  	<li><input type="button" onclick="func_2(2)" value="number of options = 2"></li>
+  	<li><input type="button" onclick="func_2(3)" value="number of options = 3"></li>
+  	<li><input type="button" onclick="func_2(4)" value="number of options = 4"></li>
   </ul>
 
   <ul><span class="ul_tops">Multi-select options</span>
   	<li>By default you can only pick 1 option in a select</li>
   	<li>You can use the .multiple = true; property to turn this on</li>
   	<li>Scroll up to try it after you click on</li>
-  	<li><input type="button" onclick="func_3()" value="multiselect" name="multiselect_on"></li>
-  	<li><input type="button" onclick="func_3()" value="multiselect" name="multiselect_off"></li>
+  	<li><input type="button" onclick="func_3(true)" value="multi-select on" name="multiselect_on"></li>
+  	<li><input type="button" onclick="func_3(false)" value="multi-select off" name="multiselect_off"></li>
   </ul>
 
 
@@ -100,6 +100,11 @@
 	function func_2(a){
 		document.getElementById("selectId_0").size = a;
 		alert("Scroll up. You chaged it to : " + a);
+	}
+
+	//turn multi-select on or off
+	function func_3(a){
+		document.getElementById("selectId_0").multiple = a;
 	}
 
 
