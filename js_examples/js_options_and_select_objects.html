@@ -52,11 +52,17 @@
 <script>
 	//diable form
 	function disable() {
-	    document.getElementById("form_0").disabled=true;
+	  document.getElementById("form_0").disabled=true;
 	}
 	//enable form
 	function enable() {
-	    document.getElementById("form_0").disabled=false;
+	  document.getElementById("form_0").disabled=false;
+	}
+
+	//get form id
+	function func_0(){
+		var form_id = document.getElementById("form_0").form.id;
+		document.getElementById("target_0").innerHTML = form_id;
 	}
 
 
