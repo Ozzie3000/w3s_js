@@ -129,6 +129,17 @@
 		document.getElementById("target_4").innerHTML = obj.options[obj.selectedIndex].text;
 	}
 
+	//show options available
+	function func_4(){
+		var obj = document.getElementById("selectId_0");
+		var stuff = "";
+		var i;
+		for (i = 0; i < obj.length; i++){
+			stuff = stuff + " " + obj.options[i].text;
+		};
+		document.getElementById("target_4").innerHTML = stuff;
+	}
+
 
 
 	$(document).ready(function(){
