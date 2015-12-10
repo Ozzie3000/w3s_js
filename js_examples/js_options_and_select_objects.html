@@ -95,6 +95,8 @@
   <ul><span class="ul_tops">Change text inside an option</span>
   	<li>You can change the text for one of the options</li>
   	<li>obj.options[obj.selectedIndex].text = "type your text here";</li>
+  	<li><input type="button" onclick="func_7()" value="change text" name="changer"></li>
+  	<li>Scroll up and see what you did: <span id="target_7"></span></li>
   </ul>
 
 
@@ -163,6 +165,7 @@
 		var obj = document.getElementById("selectId_0");
 		//document.getElementById("target_7").innerHTML = obj.options[obj.selectedIndex].text;
 		obj.options[obj.selectedIndex].text = "jugs";
+		document.getElementById("target_7").innerHTML = "jugs";
 	}
 
 
