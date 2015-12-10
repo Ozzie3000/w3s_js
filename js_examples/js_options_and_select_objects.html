@@ -102,6 +102,8 @@
   <ul><span class="ul_tops">Remove a selected option</span>
   	<li>You can remove one of the selected options</li>
   	<li>obj.remove(obj.selectedIndex);</li>
+  	<li><input type="button" onclick="func_8()" value="change text" name="changer"></li>
+  	<li>Scroll up and see what you did. Removed: <span id="target_8"></span></li>
   </ul>
 
 
@@ -176,6 +178,7 @@
 	//remove the selected option
 	function func_8(){
 		var obj = document.getElementById("selectId_0");
+		document.getElementById("target_8").innerHTML = obj.options[obj.selectedIndex].text;
 		obj.remove(obj.selectedIndex);
 	}
 
