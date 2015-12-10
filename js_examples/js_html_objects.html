@@ -28,11 +28,18 @@
   <ul><span class="ul_tops">Anchor href</span>
   	<li>Need to wrap an anchor href</li>
   	<li>.href; property</li>
+  	<li><a id="id_1" href="https://www.amazon.com">This is why you're broke</a></li>
+  	<li><button id="btn_1" class="btn" onclick="func_1()">Grab href from link 1</button></li>
+  	<li id="target_1"></li>
   </ul>
 
 
 <script>
-	//document.getElementById("").
+	//grab href from an achor
+	function func_1(){
+		var link_1 = document.getElementById("id_1").href;
+		document.getElementById("target_1").innerHTML = link_1;
+	}
 
 
 	$(document).ready(function(){
