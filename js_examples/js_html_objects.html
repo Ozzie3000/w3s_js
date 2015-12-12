@@ -73,10 +73,17 @@
 
   <h2>Area Object</h2>
 
+  <img src="../images/mountains1.jpg" width="384" height="216" usemap="#n64_link">
+
+  <map name="n64_link">
+  <area id="id_2" shape="circle" coords="124,58,8" alt="The greatest super hero of all time" href="../images/link_icon.gif">
+  </map>
+
+
   <ul><span class="ul_tops">Find alternate text for an image-map area</span>
     <li>Need to find and grab the alt name for an image-map area?</li>
     <li>.alt;</li>
-    <li><button id="btn_7" class="btn" onclick="func_7()">Grab target attribute value link 1</button></li>
+    <li><button id="btn_7" class="btn" onclick="func_7()">Grab alt name for an image-map link 1</button></li>
     <li id="target_7"></li>
   </ul>
 
@@ -120,8 +127,8 @@
 
   //grab athe alt name for an img-map
   function func_7(){
-    var link_1 = document.getElementById("id_1").alt;
-    document.getElementById("target_7").innerHTML = link_1;
+    var image_1 = document.getElementById("id_2").alt;
+    document.getElementById("target_7").innerHTML = image_1;
   }
 
 
