@@ -73,18 +73,20 @@
 
   <h2>Area Object</h2>
 
-  <img src="../images/mountains1.jpg" width="384" height="216" usemap="#n64_link" title="Click on red dot">
+  <img id="id_2" src="../images/mountains1.jpg" width="384" height="216" usemap="#n64_link" title="Click on red dot" alt="japanese woodprint mountains">
 
   <map name="n64_link">
-  <area id="id_2" shape="circle" coords="35,102,18" alt="The greatest super hero of all time" href="../images/link_icon.gif">
+  <area id="id_3" shape="circle" coords="35,102,18" alt="The greatest super hero of all time" href="../images/link_icon.gif">
   </map>
 
 
   <ul><span class="ul_tops">Find alternate text for an image-map area</span>
     <li>Need to find and grab the alt name for an image-map area?</li>
     <li>.alt;</li>
-    <li><button id="btn_7" class="btn" onclick="func_7()">Grab alt name for an image-map link 1</button></li>
+    <li><button id="btn_7" class="btn" onclick="func_7()">Grab alt name for red dot</button></li>
     <li id="target_7"></li>
+    <li><button id="btn_8" class="btn" onclick="func_8()">Grab alt name for entire image</button></li>
+    <li id="target_8"></li>
   </ul>
 
 
@@ -125,10 +127,16 @@
     document.getElementById("target_6").innerHTML = link_1;
   }
 
-  //grab athe alt name for an img-map
+  //grab athe alt name for an map
   function func_7(){
-    var image_1 = document.getElementById("id_2").alt;
+    var image_1 = document.getElementById("id_3").alt;
     document.getElementById("target_7").innerHTML = image_1;
+  }
+
+  //grab athe alt name for an img
+  function func_8(){
+    var image_1 = document.getElementById("id_2").alt;
+    document.getElementById("target_8").innerHTML = image_1;
   }
 
 
