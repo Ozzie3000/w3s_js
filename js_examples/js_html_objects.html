@@ -110,9 +110,9 @@
     <li>You specify the id; it will go to that look in the href attribute;</li>
     <li>.href;</li>
      <li><button id="btn_11" class="btn" onclick="func_11()">Show shape</button></li>
-    <li>href of id_2 : <span id="target_11"></span></li>
+    <li>Image src of id_2 : <span id="target_11"></span></li>
     <li><button id="btn_12" class="btn" onclick="func_12()">Show shape</button></li>
-    <li>href of id_3 : <span id="target_12"></span></li>
+    <li>Area href of id_3 : <span id="target_12"></span></li>
   </ul>
 
 
@@ -179,6 +179,12 @@
   function func_10(){
     var image_1 = document.getElementById("id_3").shape;
     document.getElementById("target_10").innerHTML = image_1;
+  }
+
+  //show src
+  function func_11(){
+    var image_1 = document.getElementById("id_2").src;
+    document.getElementById("target_11").innerHTML = image_1;
   }
 
 
