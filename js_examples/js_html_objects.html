@@ -73,7 +73,10 @@
 
   <h2>Area Object</h2>
 
+  <img id="id_2" src="http://www.smashbros.com/images/og/link.jpg" width="384" height="216" usemap="#n64_link" title="Click on red dot" alt="japanese woodprint mountains">
+  <!-- test
   <img id="id_2" src="../images/mountains1.jpg" width="384" height="216" usemap="#n64_link" title="Click on red dot" alt="japanese woodprint mountains">
+  -->
 
   <map name="n64_link">
   <area id="id_3" shape="circle" coords="35,102,18" alt="The greatest super hero of all time" href="../images/link_icon.gif">
@@ -109,9 +112,9 @@
     <li>Need to find and show the href?</li>
     <li>You specify the id; it will go to that look in the href attribute;</li>
     <li>.href;</li>
-    <li><button id="btn_11" class="btn" onclick="func_11()">Show shape</button></li>
+    <li><button id="btn_11" class="btn" onclick="func_11()">Show href</button></li>
     <li>Image src of id_2 : <span id="target_11"></span></li>
-    <li><button id="btn_12" class="btn" onclick="func_12()">Show shape</button></li>
+    <li><button id="btn_12" class="btn" onclick="func_12()">Show href</button></li>
     <li>Area href of id_3 : <span id="target_12"></span></li>
   </ul>
 
@@ -119,7 +122,9 @@
     <li>Need to find and show the protocol?</li>
     <li>.protocol;</li>
     <li><button id="btn_13" class="btn" onclick="func_13()">Show protocol</button></li>
-    <li>Protocol for  : <span id="target_13"></span></li>
+    <li>Protocol for big image : <span id="target_13"></span></li>
+    <li><button id="btn_14" class="btn" onclick="func_14()">Show protocol</button></li>
+    <li>Protocol for small image : <span id="target_14"></span></li>
   </ul>
 
 
@@ -206,6 +211,16 @@
     document.getElementById("target_13").innerHTML = image_1;
   }
 
+ function func_14(){
+    var image_1 = document.getElementById("id_2").protocol;
+    if (image_1 == undefined){
+      //alert(image_1);  //debug
+      document.getElementById("target_14").innerHTML = "img src does not use";
+    } else {
+      document.getElementById("target_14").innerHTML = image_1;
+    }
+    
+  }
 
 
 	$(document).ready(function(){
