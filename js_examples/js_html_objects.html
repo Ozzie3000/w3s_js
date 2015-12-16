@@ -220,13 +220,25 @@
     document.getElementById("target_13").innerHTML = image_1;
   }
 
- function func_14(){
+  //show protocol
+  function func_14(){
     var image_1 = document.getElementById("id_2").protocol;
     if (image_1 == undefined){
       //alert(image_1);  //debug
       document.getElementById("target_14").innerHTML = "img src uses a relative path";
     } else {
       document.getElementById("target_14").innerHTML = image_1;
+    }
+  }
+
+  //show hostname
+  function func_15(){
+    var image_1 = document.getElementById("id_2").hostname;
+    if (image_1 == undefined){
+      //alert(image_1);  //debug
+      document.getElementById("target_15").innerHTML = "undefined";
+    } else {
+      document.getElementById("target_15").innerHTML = image_1;
     }
   }
 
