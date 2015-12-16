@@ -133,9 +133,9 @@
     <li>Need to find and show the hostname?</li>
     <li>.hostname;</li>
     <li><button id="btn_15" class="btn" onclick="func_15()">Show hostname</button></li>
-    <li>hostname for small image : <span id="target_15"></span></li>
+    <li>hostname for large image : <span id="target_15"></span></li>
     <li><button id="btn_16" class="btn" onclick="func_16()">Show hostname</button></li>
-    <li>hostname for large image : <span id="target_16"></span></li>
+    <li>hostname for small image : <span id="target_16"></span></li>
   </ul>
 
 
@@ -241,6 +241,17 @@
       document.getElementById("target_15").innerHTML = "undefined";
     } else {
       document.getElementById("target_15").innerHTML = image_1;
+    }
+  }
+
+  //show hostname
+  function func_16(){
+    var image_1 = document.getElementById("id_3").hostname;
+    if (image_1 == undefined){
+      //alert(image_1);  //debug
+      document.getElementById("target_16").innerHTML = "undefined";
+    } else {
+      document.getElementById("target_16").innerHTML = image_1;
     }
   }
 
