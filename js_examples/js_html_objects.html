@@ -265,6 +265,17 @@
     }
   }
 
+  //show port
+  function func_17(){
+    var image_1 = document.getElementById("id_3").port;
+    if (image_1 == undefined){
+      //alert(image_1);  //debug
+      document.getElementById("target_17").innerHTML = "undefined";
+    } else {
+      document.getElementById("target_17").innerHTML = image_1;
+    }
+  }
+
 
 	$(document).ready(function(){
 
