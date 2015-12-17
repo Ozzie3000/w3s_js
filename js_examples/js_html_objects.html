@@ -73,7 +73,7 @@
 
   <h2>Area Object</h2>
 
-  <img id="id_2" src="http://www.smashbros.com/images/og/link.jpg" width="384" height="216" usemap="#n64_link" title="Click on red dot" alt="japanese woodprint mountains">
+  <img id="id_2" src="http://www.smashbros.com/images/og/link.jpg" width="384" height="216" usemap="#n64_link" title="Click on red dot" alt="big link">
   <!-- test
   <img id="id_2" src="../images/mountains1.jpg" width="384" height="216" usemap="#n64_link" title="Click on red dot" alt="japanese woodprint mountains">
   -->
@@ -276,7 +276,7 @@
 
   //show port
   function func_17(){
-    var image_1 = document.getElementById("id_3").port;
+    var image_1 = document.getElementById("id_2").port;
     if (image_1 == undefined){
       //alert(image_1);  //debug
       document.getElementById("target_17").innerHTML = "undefined";
@@ -293,6 +293,17 @@
       document.getElementById("target_18").innerHTML = "undefined";
     } else {
       document.getElementById("target_18").innerHTML = image_1;
+    }
+  }
+
+  //show pathname
+  function func_19(){
+    var image_1 = document.getElementById("id_2").pathname;
+    if (image_1 == undefined){
+      //alert(image_1);  //debug
+      document.getElementById("target_19").innerHTML = "undefined";
+    } else {
+      document.getElementById("target_19").innerHTML = image_1;
     }
   }
 
