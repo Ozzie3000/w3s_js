@@ -307,6 +307,17 @@
     }
   }
 
+  //show pathname
+  function func_20(){
+    var image_1 = document.getElementById("id_3").pathname;
+    if (image_1 == undefined){
+      //alert(image_1);  //debug
+      document.getElementById("target_20").innerHTML = "undefined";
+    } else {
+      document.getElementById("target_20").innerHTML = image_1;
+    }
+  }
+
 
 	$(document).ready(function(){
 
