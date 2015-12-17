@@ -73,13 +73,13 @@
 
   <h2>Area Object</h2>
 
-  <img id="id_2" src="http://www.smashbros.com/images/og/link.jpg" width="384" height="216" usemap="#n64_link" title="Click on red dot" alt="big link">
+  <img id="id_2" src="http://www.smashbros.com/images/og/link.jpg?test=1" width="384" height="216" usemap="#n64_link" title="Click on red dot" alt="big link">
   <!-- test
   <img id="id_2" src="../images/mountains1.jpg" width="384" height="216" usemap="#n64_link" title="Click on red dot" alt="japanese woodprint mountains">
   -->
 
   <map name="n64_link">
-  <area id="id_3" shape="circle" coords="35,102,18" alt="The greatest super hero of all time" href="../images/link_icon.gif">
+  <area id="id_3" shape="circle" coords="35,102,18" alt="The greatest super hero of all time" href="../images/link_icon.gif?test=2">
   </map>
 
 
@@ -324,6 +324,17 @@
       document.getElementById("target_20").innerHTML = "undefined";
     } else {
       document.getElementById("target_20").innerHTML = image_1;
+    }
+  }
+
+  //show querystring
+  function func_21(){
+    var image_1 = document.getElementById("id_3").search;
+    if (image_1 == undefined){
+      //alert(image_1);  //debug
+      document.getElementById("target_21").innerHTML = "undefined";
+    } else {
+      document.getElementById("target_21").innerHTML = image_1;
     }
   }
 
