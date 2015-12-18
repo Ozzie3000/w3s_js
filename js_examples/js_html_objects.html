@@ -369,6 +369,17 @@
     }
   }
 
+  //show hash
+  function func_24(){
+    var image_1 = document.getElementById("id_3").hash;
+    if (image_1 == undefined){
+      //alert(image_1);  //debug
+      document.getElementById("target_24").innerHTML = "undefined";
+    } else {
+      document.getElementById("target_24").innerHTML = image_1;
+    }
+  }
+
 
 	$(document).ready(function(){
 
