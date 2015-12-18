@@ -73,13 +73,13 @@
 
   <h2>Area Object</h2>
 
-  <img id="id_2" src="http://www.smashbros.com/images/og/link.jpg?test=1#hash1" width="384" height="216" usemap="#n64_link" title="Click on red dot" alt="big link" target="_blank">
+  <img id="id_2" src="http://www.smashbros.com/images/og/link.jpg?test=1#hash1" width="384" height="216" usemap="#n64_link" title="Click on tri-force" alt="big link" target="_blank">
   <!-- test
   <img id="id_2" src="../images/mountains1.jpg" width="384" height="216" usemap="#n64_link" title="Click on red dot" alt="japanese woodprint mountains">
   -->
 
-  <map name="n64_link">
-  <area id="id_3" shape="circle" coords="35,102,18" alt="The greatest super hero of all time" href="../images/link_icon.gif?test=2#hash2" target="_blank">
+  <map name="n64_link" title="click me">
+  <area id="id_3" shape="circle" coords="60,70,18" alt="The greatest super hero of all time" href="../images/link_icon.gif?test=2#hash2" target="_blank">
   </map>
 
 
@@ -397,6 +397,17 @@
       document.getElementById("target_25").innerHTML = "undefined";
     } else {
       document.getElementById("target_25").innerHTML = image_1;
+    }
+  }
+
+  //show target
+  function func_26(){
+    var image_1 = document.getElementById("id_3").target;
+    if (image_1 == undefined){
+      //alert(image_1);  //debug
+      document.getElementById("target_26").innerHTML = "undefined";
+    } else {
+      document.getElementById("target_26").innerHTML = image_1;
     }
   }
 
