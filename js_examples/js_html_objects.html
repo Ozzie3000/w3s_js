@@ -358,6 +358,17 @@
     }
   }
 
+  //show hash
+  function func_23(){
+    var image_1 = document.getElementById("id_2").hash;
+    if (image_1 == undefined){
+      //alert(image_1);  //debug
+      document.getElementById("target_23").innerHTML = "undefined";
+    } else {
+      document.getElementById("target_23").innerHTML = image_1;
+    }
+  }
+
 
 	$(document).ready(function(){
 
