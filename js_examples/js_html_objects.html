@@ -189,7 +189,9 @@
 
   <h2>Base Object</h2>
 
-  <img id="id_4" src="samus/main.png" width="226" height="277" usemap="#n64_link" title="Samus" alt="metroid">
+  <a id="id_4" href="samus/main.png">
+  <img id="id_5" src="samus/main.png" width="226" height="277" usemap="#n64_link" title="Samus" alt="metroid">
+  </a>
 
   <ul><span class="ul_tops">Get and show base URL for all relative URLS on a page</span>
     <li>Need to find and show the base url?</li>
@@ -197,8 +199,10 @@
     <li>Test link with no target here: <a href="https://www.amazon.com">Amazon</a></li>
     <li><button id="btn_27" class="btn" onclick="func_27()">Show base url value</button></li>
     <li>base url : <span id="target_27"></span></li>
-    <li><button id="btn_28" class="btn" onclick="func_28()">Show Metroid url value</button></li>
-    <li>Metroid url : <span id="target_28"></span></li>
+    <li><button id="btn_28" class="btn" onclick="func_28()">Show anchor url value</button></li>
+    <li>anchor url : <span id="target_28"></span></li>
+    <li><button id="btn_29" class="btn" onclick="func_29()">Show Metroid url value</button></li>
+    <li>Metroid url : <span id="target_29"></span>  ---- Blank because img uses src=""</li>
   </ul>
 
 
@@ -430,7 +434,7 @@
 
   //Base object
 
-  //show target
+  //show base url
   function func_27(){
     var image_1 = document.getElementById("base_1").href;
     if (image_1 == undefined){
@@ -438,6 +442,28 @@
       document.getElementById("target_27").innerHTML = "undefined";
     } else {
       document.getElementById("target_27").innerHTML = image_1;
+    }
+  }
+
+  //show metroid url
+  function func_28(){
+    var image_1 = document.getElementById("id_4").href;
+    if (image_1 != undefined){
+      //alert(image_1);  //debug
+      document.getElementById("target_28").innerHTML = image_1;
+    } else {
+      document.getElementById("target_28").innerHTML = "undefined";
+    }
+  }
+
+  //show metroid url
+  function func_29(){
+    var image_1 = document.getElementById("id_5").href;
+    if (image_1 != undefined){
+      //alert(image_1);  //debug
+      document.getElementById("target_29").innerHTML = image_1;
+    } else {
+      document.getElementById("target_29").innerHTML = "undefined";
     }
   }
 
