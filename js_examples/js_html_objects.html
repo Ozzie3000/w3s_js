@@ -16,7 +16,7 @@
 		
 	}); //end doc ready
 </script>
-<base id="base1" href="http://www.smashbros.com/images/character/" target="_blank"></base>
+<base id="base_1" href="http://www.smashbros.com/images/character/" target="_blank"></base>
 </head>
 <body>
 	<input type="button" id="submit" class="btn" value="Refreshness" onclick="location.reload();" />
@@ -196,7 +196,7 @@
     <li>.href;</li>
     <li>Test link with no target here: <a href="https://www.amazon.com">Amazon</a></li>
     <li><button id="btn_27" class="btn" onclick="func_27()">Show base url value</button></li>
-    <li>base url value for large image : <span id="target_27"></span></li>
+    <li>base url : <span id="target_27"></span></li>
   </ul>
 
 
@@ -430,7 +430,7 @@
 
   //show target
   function func_27(){
-    var image_1 = document.getElementById("id_4").href;
+    var image_1 = document.getElementById("base_1").href;
     if (image_1 == undefined){
       //alert(image_1);  //debug
       document.getElementById("target_27").innerHTML = "undefined";
