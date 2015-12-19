@@ -16,7 +16,7 @@
 		
 	}); //end doc ready
 </script>
-<base href="http://www.smashbros.com/images/character/" target="_blank"></base>
+<base id="base1" href="http://www.smashbros.com/images/character/" target="_blank"></base>
 </head>
 <body>
 	<input type="button" id="submit" class="btn" value="Refreshness" onclick="location.reload();" />
@@ -423,6 +423,19 @@
       document.getElementById("target_26").innerHTML = "undefined";
     } else {
       document.getElementById("target_26").innerHTML = image_1;
+    }
+  }
+
+  //Base object
+
+  //show target
+  function func_27(){
+    var image_1 = document.getElementById("id_4").href;
+    if (image_1 == undefined){
+      //alert(image_1);  //debug
+      document.getElementById("target_27").innerHTML = "undefined";
+    } else {
+      document.getElementById("target_27").innerHTML = image_1;
     }
   }
 
