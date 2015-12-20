@@ -232,7 +232,9 @@
   </iframe>
 
   <ul><span class="ul_tops">Change background color of iframe</span>
-    <li></li>
+    <li>You can grab an iframe and do work to it</li>
+    <li><button id="btn_33" class="btn" onclick="func_33()">Change color</button></li>
+    <li>Change to blue. Scroll up : <span id="target_33"></span></li>
   </ul>
 
 
@@ -528,6 +530,13 @@
     } else {
       document.getElementById("target_32").innerHTML = "undefined";
     }
+  }
+
+  //change bg color iframe
+  function func_33(){
+    var image_1 = document.getElementById("frame_1");
+    document.getElementById("target_33").innerHTML = "You changed iframe to blue";
+    image_1.style.backgroundColor = "blue";
   }
 
 
