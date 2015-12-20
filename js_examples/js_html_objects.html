@@ -488,6 +488,17 @@
     }
   }
 
+  //show yoshi url
+  function func_31(){
+    var image_1 = document.getElementById("id_7").href;
+    if (image_1 != undefined){
+      //alert(image_1);  //debug
+      document.getElementById("target_31").innerHTML = image_1;
+    } else {
+      document.getElementById("target_31").innerHTML = "undefined";
+    }
+  }
+
 
 	$(document).ready(function(){
 
