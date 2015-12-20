@@ -506,6 +506,19 @@
     }
   }
 
+  //show yoshi url
+  function func_32(){
+    var image_1 = document.getElementById("base_1").href;
+    if (image_1 != undefined){
+      //alert(image_1);  //debug
+      document.getElementById("target_32").innerHTML = image_1;
+    } else {
+      document.getElementById("target_32").innerHTML = "undefined";
+    }
+  }
+
+
+
 
 	$(document).ready(function(){
 
