@@ -477,6 +477,17 @@
     }
   }
 
+  //show yoshi url
+  function func_30(){
+    var image_1 = document.getElementById("id_6").href;
+    if (image_1 != undefined){
+      //alert(image_1);  //debug
+      document.getElementById("target_30").innerHTML = image_1;
+    } else {
+      document.getElementById("target_30").innerHTML = "undefined";
+    }
+  }
+
 
 	$(document).ready(function(){
 
