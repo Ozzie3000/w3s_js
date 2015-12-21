@@ -227,7 +227,7 @@
 
   <h2>Iframe Object</h2>
 
-  <iframe id="frame_1" src="">
+  <iframe id="frame_1" src="" height="100" width="600">
     <p>If you see this you are missing out on iframes</p>
   </iframe>
 
@@ -543,6 +543,12 @@
     var image_1 = document.getElementById("frame_1");
     document.getElementById("target_33").innerHTML = "You changed iframe to blue";
     image_1.style.backgroundColor = "blue";
+  }
+
+  //Get height for iframe
+  function func_34(){
+    var image_1 = document.getElementById("frame_1").height;
+    document.getElementById("target_34").innerHTML = image_1;
   }
 
 
