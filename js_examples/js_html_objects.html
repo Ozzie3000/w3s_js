@@ -229,7 +229,7 @@
 
   <!--   <img src="fox/main.png">   -->
 
-  <iframe id="frame_1" src="" height="204" width="204" name="some iframe box">
+  <iframe id="frame_1" src="" height="102" width="408" name="some iframe box">
 
     <p>If you see this you are missing out on iframes</p>
   </iframe>
@@ -568,6 +568,12 @@
   function func_35(){
     var image_1 = document.getElementById("frame_1").name;
     document.getElementById("target_35").innerHTML = image_1;
+  }
+
+  //Get src for iframe
+  function func_36(){
+    var image_1 = document.getElementById("frame_1").src;
+    document.getElementById("target_36").innerHTML = image_1;
   }
 
 
