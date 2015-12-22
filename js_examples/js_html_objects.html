@@ -645,10 +645,10 @@
   function func_40(){
     //document.getElementById("id_9").src = "luigi/main.png";
     var image_1 = document.getElementById("id_9").src;
-    if(image_1.src == ""){
-      code
+    if (document.getElementById("id_9").src == "http://www.smashbros.com/images/character/fox/main.png") {
+      document.getElementById("id_9").src = "luigi/main.png";
     } else {
-      code
+      document.getElementById("id_9").src = "fox/main.png";
     }
     document.getElementById("target_40").innerHTML = "changed img src";
   }
