@@ -273,14 +273,14 @@
   <h2>Image Object</h2>
 
   <a id="id_8" href="fox/main.png">
-    <img id="id_9" src="fox/main.png" width="204" height="204" usemap="#n64_link" title="Fox Mcloud" alt="star fox">
+    <img id="id_9" src="fox/main.png" width="204" height="204" usemap="#n64_link" title="Fox Mcloud" alt="Fox Mcloud">
   </a>
 
   <ul><span class="ul_tops">Find and get alt text for an image</span>
     <li>Target the id of an image and grab it's alt text</li>
     <li>alt.;</li>
-    <li><button id="btn_378" class="btn" onclick="func_378()">Show image alt text</button></li>
-    <li>Alt text for image : <span id="target_378"></span></li>
+    <li><button id="btn_38" class="btn" onclick="func_38()">Show image alt text</button></li>
+    <li>Alt text for image : <span id="target_38"></span></li>
   </ul>
 
 
@@ -612,6 +612,14 @@
     document.getElementById("frame_1").src = "https://www.amazon.com";
   }
 
+
+  //image object *******************
+
+  //image alt text
+  function func_38(){
+    var image_1 = document.getElementById("id_9").alt;
+    document.getElementById("target_38").innerHTML = image_1;
+  }
 
 
 
