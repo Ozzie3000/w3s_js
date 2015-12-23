@@ -674,6 +674,17 @@
     document.getElementById("target_41").innerHTML = image_1;
   }
 
+  //change image source using match
+  function func_42(){
+    var image_1 = document.getElementById("id_9");
+    if (image_1.src.match("fox/main.png")) {
+      image_1.src = "luigi/main.png";
+    } else {
+      image_1.src = "fox/main.png";
+    }
+    document.getElementById("target_42").innerHTML = "changed img src to : " + image_1.src;
+  }
+
 
 
 	$(document).ready(function(){
