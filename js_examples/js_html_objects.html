@@ -327,7 +327,7 @@
 
   <br>
 
-  <table style="border:1px solid black" id="myTable">
+  <table style="border:1px solid black" id="id_10">
     <tr>
       <td>Cell 1</td>
       <td>Cell 2</td>
@@ -341,7 +341,7 @@
   <ul><span class="ul_tops">Change table border</span>
     <li>Target the id of a table, and change its style and border</li>
     <li>("some_id").style.border = "stuff";</li>
-    <li><button id="btn_44" class="btn" onclick="func_44()">change table border</button></li>
+    <li><button id="btn_44" class="btn" onclick="func_44('id_10')">change table border</button></li>
     <li>change to : <span id="target_44"></span></li>
   </ul>
 
@@ -722,6 +722,12 @@
   function func_43(){
     var image_1 = document.getElementById("id_2").useMap;
     document.getElementById("target_43").innerHTML = image_1;
+  }
+
+  //change table's border
+  function func_44(table_id){
+    document.getElementById(table_id).style.border = "5px solid blue";
+    document.getElementById("target_44").innerHTML = "Change to : 5px solid blue";
   }
 
 
