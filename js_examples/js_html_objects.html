@@ -357,13 +357,17 @@
     <li>Use a function to pass those are argument and show the .innerHTML</li>
     <li><button id="btn_46" class="btn" onclick="func_46('id_10',  0, 0)">Show text for cell 1</button></li>
     <li>Text : <span id="target_46"></span></li>
+    <!--  work on later
     <li>Pick 1 through 4 : <input id="picker" type="number" min="1" max="4" name="picker"> <button id="btn_46" class="btn" onclick="func_46('id_10',  0, 0)">Show text for cell <span id="test">x</span></button></li>
     <li>Text : <span id="target_46"></span></li>
+    work on later - -->
   </ul>
 
   <ul><span class="ul_tops">Create a table caption</span>
     <li>Target table by id and drop in text</li>
     <li>.createCaption().innerHTML = "Your text goes here";</li>
+    <li><button id="btn_47" class="btn" onclick="func_47()">Add table caption</button></li>
+    <li>Text added above: <span id="target_47"></span></li>
   </ul>
 
 
@@ -763,6 +767,12 @@
   function func_46(id, row, cell){
     var image_1 = document.getElementById(id).rows[row].cells;
     document.getElementById("target_46").innerHTML = image_1[cell].innerHTML;
+  }
+
+  //add table caption
+  function func_47(){
+    var image_1 = document.getElementById("id_10").createCaption().innerHTML = "New Table caption";
+    document.getElementById("target_47").innerHTML = image_1;
   }
 
 
