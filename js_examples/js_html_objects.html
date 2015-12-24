@@ -738,6 +738,8 @@
     document.getElementById("target_43").innerHTML = image_1;
   }
 
+  //Table object   ***************
+
   //change table's border
   function func_44(table_id){
     document.getElementById(table_id).style.border = "5px solid blue";
@@ -748,6 +750,12 @@
   function func_45(table_id){
     document.getElementById(table_id).style.padding = "10px";
     document.getElementById("target_45").innerHTML = "10 px where added";
+  }
+
+  //grab cell innerHTML text
+  function func_46(id, row, cell){
+    var image_1 = document.getElementById(id).rows[row].cells;
+    document.getElementById("target_46").innerHTML = image_1[cell].innerHTML;
   }
 
 
