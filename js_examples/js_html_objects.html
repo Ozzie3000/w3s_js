@@ -775,6 +775,14 @@
     document.getElementById("target_47").innerHTML = image_1;
   }
 
+  //add rows to a table
+  function func_48(id){
+    var row = document.getElementById(id).insertRow(0);
+    var left_cell = row.inserCell(0);
+    var right_cell = row.inserCell(1);
+    left_cell.innerHTML = right_cell.innerHTML = "New Cell added"
+  }
+
 
 
 	$(document).ready(function(){
