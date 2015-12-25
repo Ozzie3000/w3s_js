@@ -370,6 +370,18 @@
     <li>Text added above: <span id="target_47"></span></li>
   </ul>
 
+  <ul><span class="ul_tops">Add rows then cells inside table</span>
+    <li>In same function add a row, then add cells to that row</li>
+    <li>
+      <textarea style="width: 520px; height: 75px">
+      var row = document.getElementById(id).insertRow(0);
+      var left_cell = row.inserCell(0);
+      var right_cell = row.inserCell(1);
+      left_cell.innerHTML = right_cell.innerHTML = "New Cell added"
+      </textarea>
+    </li>
+  </ul>
+
 
 
 
