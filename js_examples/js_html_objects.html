@@ -375,11 +375,13 @@
     <li>
       <textarea style="width: 520px; height: 75px">
       var row = document.getElementById(id).insertRow(0);
-      var left_cell = row.inserCell(0);
-      var right_cell = row.inserCell(1);
+      var left_cell = row.insertCell(0);
+      var right_cell = row.insertCell(1);
       left_cell.innerHTML = right_cell.innerHTML = "New Cell added"
       </textarea>
     </li>
+    <li><button id="btn_48" class="btn" onclick="func_48('id_10')">Add rows and cells to table</button></li>
+    <li><span id="target_48"></span></li>
   </ul>
 
 
@@ -790,9 +792,10 @@
   //add rows to a table
   function func_48(id){
     var row = document.getElementById(id).insertRow(0);
-    var left_cell = row.inserCell(0);
-    var right_cell = row.inserCell(1);
+    var left_cell = row.insertCell(0);
+    var right_cell = row.insertCell(1);
     left_cell.innerHTML = right_cell.innerHTML = "New Cell added"
+    document.getElementById("target_48").innerHTML = "Scroll up and see the new row and cells";
   }
 
 
