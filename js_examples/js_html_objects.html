@@ -396,6 +396,8 @@
     <li></li>
     <li><button id="btn_50" class="btn" onclick="func_50('id_10', 0, 0, 'hello')">Add hello 0, 0</button></li>
     <li><span id="target_50"></span></li>
+    <li><button id="btn_51" class="btn" onclick="func_50('id_10', 0, 1, 'world')">Add world 0, 1</button></li>
+    <li><span id="target_51"></span></li>
   </ul>
 
 
@@ -825,6 +827,7 @@
     switch (cell){
       case 0 :
         alert ("You changed cell: " + cell);
+        document.getElementById("target_50").innerHTML = "You added: " + content + " to: " + " row: " + row + " cell: " + cell;
         break;
       case 1 :
         alert ("You changed cell: " + cell);
