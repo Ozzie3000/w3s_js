@@ -327,7 +327,7 @@
 
   <br>
 
-  <table style="border:1px solid black" id="id_10">
+  <table style="border:1px solid black" id="id_10" border="1">
     <tr>
       <td>Cell 1 was here</td>
       <td>Cell 2 was here</td>
@@ -813,6 +813,12 @@
   function func_49(id, row){
     document.getElementById(id).deleteRow(row);
     document.getElementById("target_49").innerHTML = "You deleted : " +"id " + id + " row " +  row;
+  }
+
+  // change content in a table cell
+  function func_50(id, row, cell, content) {
+    var tabby = document.getElementById(id).rows[row].cells;
+    tabby[cell].innerHTML = content;
   }
 
 
