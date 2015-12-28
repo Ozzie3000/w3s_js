@@ -82,13 +82,18 @@
 
   <br >
 
-  <form onsubmit="func_7()" action="https://www.amazon.com" target="_blank">
+  <form onsubmit="func_7()" onreset="func_8()" action="https://www.amazon.com" target="_blank">
 		Enter your first name: <input id="id_7" name="first_name" type="text" size="25">
-		<input type="submit">
+		<input type="submit"> 
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="reset">
 	</form>
 
 	<ul><span class="ul_tops">onreset</span>
 		<li>onrest occurs when the onreset event is triggered</li>
+		<li>In the HTML event is onreset.  onreset="function_name()"</li>
+		<li>In conjunction with an input type="reset"</li>
+		<li>Use form above reset button</li>
 	</ul>
 
 
@@ -130,13 +135,13 @@
 	}
 
 	//onsubmit
-	function func_7() {
+	function func_7(){
     input_val = document.forms[1].id_7.value;
     alert("Hello " + input_val + "! You will now be redirected to amazon");
 	}
 
 	//onreset
-	function func_8() {
+	function func_8(){
     alert("this alert window was triggered by an onreset attribute");
 	}
 
