@@ -101,6 +101,8 @@
 		<li>In the HTML event is onkeydown.  onkeydown="function_name()"</li>
 		<li>Usually in conjunction with an input field</li>
 		<li>Use form above</li>
+		<li><span id="target_9"></span></li>
+		<li><span id="target_9b"></span></li>
 	</ul>
 
 
@@ -150,6 +152,15 @@
 	//onreset
 	function func_8(){
     alert("this alert window was triggered by an onreset attribute");
+	}
+
+	//onkeydown
+	function func_9(){
+    document.getElementById("target_9").innerHTML = "this alert window was triggered by an onkeydown attribute";
+    function(){
+    	var counter = 0;
+    }
+    counter++;
 	}
 
 
