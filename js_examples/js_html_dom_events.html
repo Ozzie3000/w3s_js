@@ -82,7 +82,7 @@
 
   <br >
 
-  <form onsubmit="confirmInput()" action="https://www.amazon.com" target="_blank">
+  <form onsubmit="func_7()" action="https://www.amazon.com" target="_blank">
 		Enter your first name: <input id="id_7" name="first_name" type="text" size="25">
 		<input type="submit">
 	</form>
@@ -125,6 +125,12 @@
 		document.getElementById("target_6").innerHTML = "You selected the text inside the input above";
 	}
 
+	//onsubmit
+	function func_7() {
+    input_val = document.forms[1].id_7.value;
+    alert("Hello " + input_val + "! You will now be redirected to amazon");
+}
+
 
 
 
@@ -132,7 +138,7 @@
 
 	$(document).ready(function(){
 
-	}); //end doc ready
+	}); //end doc ready	
 </script>
 </body>
 </html>
