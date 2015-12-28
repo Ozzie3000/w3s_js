@@ -66,6 +66,13 @@
   	<li>When you navigate to above input field you will see the change</li>
   </ul>
 
+  <ul><span class="ul_tops">onfocus and onblur</span>
+  	<li>onfocus / onblur</li>
+  	<li>Using both functions on one html element</li>
+  	<li>Your Favorite snack: <input type="text" id="id_5" name="snack" onfocus="func_4(this)" onblur="func_5(this)"></li>
+  	<li>When you navigate to above input field you will see the change</li>
+  </ul>
+
 
 
 <br><br><br><br>
@@ -92,6 +99,11 @@
 	//onfocus function func_4()
 	function func_4(obj){
 		obj.style.backgroundColor = "yellow";
+	}
+
+	//onblur function func_5()
+	function func_5(obj){
+		obj.style.backgroundColor = "#e5ffff";
 	}
 
 
