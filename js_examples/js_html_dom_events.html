@@ -36,7 +36,7 @@
   <ul><span class="ul_tops">onchange funky func</span>
   	<li>In the HTML you can call a function when you navigate away from something, but only when it changes</li>
   	<li>In the HTML event is onchange.  onchange="function_name()"</li>
-  	<li>Your first name: <input type="text" id="id_1" name="first_name" onchange="func_2()"></li>
+  	<li>Your last name: <input type="text" id="id_2" name="first_name" onchange="func_2()"></li>
   	<li>When you navigate away from above input field you will see the change</li>
   	<li>Remember the function is only called when a change happens</li>
   </ul>
@@ -49,6 +49,12 @@
 	//onblur function func_1()
 	function func_1(){
 		var asset_1 = document.getElementById("id_1");
+		asset_1.value = asset_1.value.toUpperCase();
+	}
+
+	//onchange function func_2()
+	function func_2(){
+		var asset_1 = document.getElementById("id_2");
 		asset_1.value = asset_1.value.toUpperCase();
 	}
 
