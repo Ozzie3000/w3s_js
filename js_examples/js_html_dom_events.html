@@ -103,6 +103,7 @@
 		<li>Use form above</li>
 		<li><span id="target_9"></span></li>
 		<li><span id="target_9b"></span></li>
+
 	</ul>
 
 
@@ -156,11 +157,10 @@
 
 	//onkeydown
 	function func_9(){
-    document.getElementById("target_9").innerHTML = "this alert window was triggered by an onkeydown attribute";
-    function(){
-    	var counter = 0;
-    }
-    counter++;
+    document.getElementById("target_9").innerHTML = "this message was triggered by an onkeydown attribute";
+    var text = document.getElementById("id_7").value;
+    
+    document.getElementById("target_9").innerHTML = text;
 	}
 
 
