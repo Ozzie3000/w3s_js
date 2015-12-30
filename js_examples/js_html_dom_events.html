@@ -82,8 +82,8 @@
 
   <br >
 
-  <form onsubmit="func_7()" onreset="func_8()" action="https://www.amazon.com" target="_blank">
-		Enter your first name: <input id="id_7" name="first_name" type="text" size="25" onkeydown="func_9()" onkeypress="func_10()" onkeyup="func_11(), func_12()" >
+  <form id="id_7" onsubmit="func_7()" onreset="func_8()" action="https://www.amazon.com" target="_blank">
+		Enter your first name: <input id="id_8" name="field1" type="text" size="25" onkeydown="func_9()" onkeypress="func_10()" onkeyup="func_11(), func_12()" >
 		<input type="submit"> 
 		&nbsp;&nbsp;&nbsp;&nbsp;
 		<input type="reset">
@@ -123,7 +123,7 @@
 
 	<ul><span class="ul_tops">onkeyup using document.forms</span>
 		<li>onkeyup using .forms[index]</li>
-		<li><span id="target_12"></span></li>
+		<li><span id="target_12" name="field2"></span></li>
 	</ul>
 
 
@@ -166,7 +166,7 @@
 
 	//onsubmit
 	function func_7(){
-    input_val = document.forms[1].id_7.value;
+    input_val = document.forms[1].id_8.value;
     alert("Hello " + input_val + "! You will now be redirected to amazon");
 	}
 
@@ -178,7 +178,7 @@
 	//onkeydown
 	function func_9(){
     document.getElementById("target_9").innerHTML = "this message was triggered by an onkeydown attribute";
-    var text = document.getElementById("id_7").value;
+    var text = document.getElementById("id_8").value;
 
     document.getElementById("target_9").innerHTML = text;
 	}
@@ -186,20 +186,21 @@
 	//onkeypress
 	function func_10(){
     document.getElementById("target_10").innerHTML = "this message was triggered by an onkeypress attribute";
-    var text = document.getElementById("id_7").value;
+    var text = document.getElementById("id_8").value;
     document.getElementById("target_10").innerHTML = text;
 	}
 
-	//onkeypress
+	//onkeyup
 	function func_11(){
     document.getElementById("target_11").innerHTML = "this message was triggered by an onkeypress attribute";
-    var text = document.getElementById("id_7").value;
+    var text = document.getElementById("id_8").value;
     document.getElementById("target_11").innerHTML = text;
 	}
 
-	//onkeypress
+	//onkeyup
 	function func_12(){
-    alert("test");
+    //alert("test"); // testing
+    document.getElementById("target_12").innerHTML = document.forms[1].field1.value;
 	}
 
 
