@@ -83,7 +83,7 @@
   <br >
 
   <form onsubmit="func_7()" onreset="func_8()" action="https://www.amazon.com" target="_blank">
-		Enter your first name: <input id="id_7" name="first_name" type="text" size="25" onkeydown="func_9()" onkeypress="func_10()">
+		Enter your first name: <input id="id_7" name="first_name" type="text" size="25" onkeydown="func_9()" onkeypress="func_10()" onkeyup="func_11()">
 		<input type="submit"> 
 		&nbsp;&nbsp;&nbsp;&nbsp;
 		<input type="reset">
@@ -183,6 +183,13 @@
     document.getElementById("target_10").innerHTML = "this message was triggered by an onkeypress attribute";
     var text = document.getElementById("id_7").value;
     document.getElementById("target_10").innerHTML = text;
+	}
+
+	//onkeypress
+	function func_11(){
+    document.getElementById("target_11").innerHTML = "this message was triggered by an onkeypress attribute";
+    var text = document.getElementById("id_7").value;
+    document.getElementById("target_11").innerHTML = text;
 	}
 
 
