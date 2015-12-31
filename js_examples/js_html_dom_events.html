@@ -132,7 +132,7 @@
 	</ul>
 
 	<form id="id_" target="_blank">
-		Enter your first name: <input id="id_9" name="field3" type="text" size="25" onkeydown="func_13()" onkeyup="func_14()">
+		Enter your first name: <input id="id_9" name="field3" type="text" size="25" onkeydown="func_13('#AFF90A')" onkeyup="func_13('#33ffff')">
 	</form>
 
 
@@ -214,7 +214,10 @@
     document.getElementById("target_12").innerHTML = document.forms[1].field1.value;
 	}
 
-
+	//onkeydown and onkeyup
+	function func_13(color){
+    document.forms[2].field3.style.backgroundColor = color;
+	}
 
 
 
