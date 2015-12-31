@@ -29,16 +29,21 @@
   	<li>Went from blue to red to black</li>
   </ul>
 
-  <ul><span class="ul_tops">onmousedown</span>
+  <ul><span class="ul_tops">onmousedown and onmouseup</span>
   	<li>There are several ways to code events around mouse actions</li>
   	<li>inline onmousedown="" and onmouseup=""</li>
   	<li onmousedown="style.color='red'" onmouseup="style.color='black'">Click and this text for 2 seconds boy!!!</li>
   	<li>Went from blue to red to black</li>
+  	<li>Now for same effect with JS</li>
+  	<li onmousedown="func_1(this, 'red')" onmouseup="func_1(this, 'black')">Click and this text for 2 seconds boy!!!</li>
   </ul>
 
 
 <script>
-	//document.getElementById("").
+	//onmousedown and onmouseup func1()
+	function func_1(object, color){
+		object.style.color = color;
+	}
 
 
 	$(document).ready(function(){
