@@ -51,6 +51,7 @@
     <li>
       <div id="coordiv" style="width:300px;height:100px;border:3px solid" onmousemove="func_4(event)" onmouseout="func_5()"></div>
     </li>
+    <li><span id="stuff"></span></li>
   </ul>
 
 
@@ -84,12 +85,17 @@
     alert("You used the: " + event.button + " mouse button");
   }
 
-  //func_4
+  //func_4 show coordinates
   function func_4(e){
     x = e.clientX;
     y = e.clientY;
     coord = "Coordinates: (" + x + "," + y + ")";
     document.getElementById("stuff").innerHTML = coord;
+  }
+
+  //func_5 clear innerHTML
+  function func_5(){
+    document.getElementById("stuff").innerHTML = "";
   }
 
 
