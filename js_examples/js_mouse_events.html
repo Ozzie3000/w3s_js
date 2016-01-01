@@ -84,6 +84,14 @@
     alert("You used the: " + event.button + " mouse button");
   }
 
+  //func_4
+  function func_4(e){
+    x = e.clientX;
+    y = e.clientY;
+    coord = "Coordinates: (" + x + "," + y + ")";
+    document.getElementById("stuff").innerHTML = coord;
+  }
+
 
 	$(document).ready(function(){
 
