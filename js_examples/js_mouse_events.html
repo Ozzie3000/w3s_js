@@ -17,7 +17,7 @@
 	}); //end doc ready
 </script>
 </head>
-<body>
+<body ommousedown="anElement(event)">
 	<input type="button" id="submit" class="btn" value="Refreshness" onclick="location.reload();" />
 	<br /><br />
   <h1>JS HTML events.  Mouse events</h1>
@@ -47,6 +47,23 @@
 	//onmousedown and onmouseup func1()
 	function func_1(object, color){
 		object.style.color = color;
+	}
+
+	//event alert
+	//needs work
+	function anElement(evt) {
+    var targ;
+    if (!evt) {
+        var evt = window.event;
+    }
+    if (evt.target) {
+        targ=evt.target;
+    } else if (evt.srcElement) {
+        targ=evt.srcElement;
+    }
+    var tname;
+    tname = targ.tagName;
+    alert("You clicked on a " + tname + " element.");
 	}
 
 
