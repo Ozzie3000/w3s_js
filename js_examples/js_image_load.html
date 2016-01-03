@@ -26,7 +26,7 @@
 	  <li>When this image loads you will get a pop up</li>
 	  <li>If the pop up does not happen; you have JS turned off</li>
   	<li>
-  		<img src="../images/link_icon.gif">
+  		<img src="../images/link_icon.gif" onload="img_loaded()">
   	</li>
   </ul>
 
@@ -37,7 +37,9 @@
 
 
 <script>
-	//document.getElementById("").
+	function img_loaded(){
+		alert("You have JS turned on and so you are seeing this message that he pic loaded");
+	}
 
 
 	$(document).ready(function(){
