@@ -22,13 +22,17 @@
 	<br /><br />
   <h1>JS examples click events</h1>
 
-  <ul><span class="ul_tops"></span>
-  	<li></li>
+  <ul><span class="ul_tops">Click to show the date</span>
+  	<li><button class="btn" onclick="the_date()">Show the date</button></li>
+  	<li>The Date: <span id="target_1"></span></li>
   </ul>
 
 
 <script>
-	//document.getElementById("").
+	function the_date(){
+		document.getElementById("target_1").innerHTML = Date();
+	}
+	
 
 
 	$(document).ready(function(){
