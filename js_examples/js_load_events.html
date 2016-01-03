@@ -17,18 +17,22 @@
 	}); //end doc ready
 </script>
 </head>
-<body>
+<body onload="func_1()">
 	<input type="button" id="submit" class="btn" value="Refreshness" onclick="location.reload();" />
 	<br /><br />
   <h1>JS examples load events</h1>
 
   <ul><span class="ul_tops">onload</span>
-  	<li></li>
+  	<li>You should have seen an alert pop up when the page first loaded</li>
+  	<li>If you did not see it you probably had JS turned off</li>
   </ul>
 
 
 <script>
-	//document.getElementById("").
+	function func_1(){
+		alert("The page loaded sucessfully");
+	}
+
 
 
 	$(document).ready(function(){
