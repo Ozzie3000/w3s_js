@@ -17,7 +17,7 @@
 	}); //end doc ready
 </script>
 </head>
-<body>
+<body onresize="sizer()">
 	<input type="button" id="submit" class="btn" value="Refreshness" onclick="location.reload();" />
 	<br /><br />
   <h1>JS examples on resize event</h1>
@@ -30,6 +30,11 @@
 
 <script>
 	//document.getElementById("").
+	function sizer(){
+		var wid = window.outerWidth;
+		var hei = window.outerHeight;
+		var message = "Current window size is: " + wid + " Wide and " + hei + " is the height"
+	}
 
 
 	$(document).ready(function(){
