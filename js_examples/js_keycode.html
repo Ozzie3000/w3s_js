@@ -17,20 +17,22 @@
 	}); //end doc ready
 </script>
 </head>
-<body onkeyup="func_1()">
+<body onkeyup="func_1(event)">
 	<input type="button" id="submit" class="btn" value="Refreshness" onclick="location.reload();" />
 	<br /><br />
   <h1>JS examples: key code</h1>
 
   <ul><span class="ul_tops">Find one which key was pressed</span>
   	<li>Using onkeyup="" on the body</li>
+  	<li>Click on the page and look below for key code after a key press</li>
+  	<li>keycode: <span id="target_1"></span></li>
   </ul>
 
 
 <script>
 	//keycode
 	function func_1(event){
-		document.getElementById("").innerHTML = event.keyCode;
+		document.getElementById("target_1").innerHTML = event.keyCode;
 	}
 
 
