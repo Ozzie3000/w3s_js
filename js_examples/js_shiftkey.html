@@ -28,7 +28,16 @@
 
 
 <script>
-	//document.getElementById("").
+	//shift key yes or no
+	function func_1(event){
+		var hai = "The shift key was pressed";
+		var ie = "The shift key was not pressed";
+		if (event.shiftKey == 1){
+			document.getElementById("target_1").innerHTML = hai;
+		} else {
+			document.getElementById("target_1").innerHTML = ie;
+		}
+	}
 
 
 	$(document).ready(function(){
