@@ -25,6 +25,7 @@
   <ul><span class="ul_tops">Open window object with specified attributes</span>
   	<li>In a function you can specify how the window will look and act</li>
   	<li>New widown -----&gt; <button onclick="func_1()">Go!</button></li>
+  	<li>New widown, but not as friendly -----&gt; <button onclick="func_2()">Go!</button></li>
   </ul>
 
 
@@ -33,7 +34,11 @@
 	function func_1(){
 		window.open("https://www.amazon.com", "_blank", "toolbar=yes, location=yes, directories=yes, status=yes, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=400, height=400");
 	}
-	//document.getElementById("").
+
+	function func_2(){
+		window.open("https://www.amazon.com", "_blank", "toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=400, height=400");
+	}
+	
 
 
 	$(document).ready(function(){
