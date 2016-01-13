@@ -28,7 +28,13 @@
 
 
 <script>
-	//document.getElementById("").
+	//global var.... maybe I should do it differently.  actually seems to work without it
+	var new_window;
+	
+	//open new window
+	function open_window() {
+	  new_window = window.open("", "", "width=400 ,height=200");
+	}
 
 
 	$(document).ready(function(){
