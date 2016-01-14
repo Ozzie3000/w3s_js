@@ -27,7 +27,8 @@
   	<li>Close and check on work against last opened or closed window</li>
   	<li><button onclick="open_window()">Open Window</button></li>
   	<li><button onclick="close_window()">Close Window</button></li>
-  	<li><li><button onclick="check_window()">Check Window status</button></li></li>
+  	<li><button onclick="check_window()">Check Window status</button></li>
+  	<li><span id="target_1"></span></li>
   </ul>
 
 
@@ -51,7 +52,7 @@
 	function check_window() {
 	  var message = "";
 	  if(!new_window){
-	  	message = "You never opened a window";
+	  	message = " You never opened a window";
 	  } else {
 	  	if (new_window.closed){
 	  		message = " is closed";
@@ -59,7 +60,7 @@
 	  		message = " last window opened is currently open";
 	  	}
 	  }
-	  document.getElementById("target_1").innerHTML = "new_window" + message;
+	  document.getElementById("target_1").innerHTML = "new_window: " + message;
 	}
 
 
