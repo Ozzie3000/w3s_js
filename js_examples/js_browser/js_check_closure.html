@@ -43,6 +43,21 @@
 	  }
 	}
 
+	//close for closure of new window
+	function check_window() {
+	  var message = "";
+	  if(!new_window){
+	  	message = "You never opened a window";
+	  } else {
+	  	if (new_window.closed){
+	  		message = " is closed";
+	  	} else {
+	  		message = " last window opened is currently open";
+	  	}
+	  }
+	  document.getElementById("target_1").innerHTML = "new_window" + message;
+	}
+
 
 	$(document).ready(function(){
 
