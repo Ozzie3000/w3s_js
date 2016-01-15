@@ -36,9 +36,10 @@
 		var newWindow = window.open("", "", "width=400, height=200");
 	}
 
-	//open new window and write to parent
+	//open new window and write to parent version 2
 	function func_2(){
 		var newWindow = window.open("", "", "width=400, height=200");
+		newWindow.opener.document.getElementById("target_2").innerHTML = "a new window was opened";
 	}
 	
 
