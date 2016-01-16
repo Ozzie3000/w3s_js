@@ -27,6 +27,7 @@
   	<li>Then use a function to move new window around</li>
   	<li><input class="btn" type="button" value="Open 'newWindow'" onclick="func_1()"/></li>
   	<li><input class="btn" type="button" value="Move 'newWindow'" onclick="func_2()"/></li>
+  	<li><input class="btn" type="button" value="Focus 'newWindow'" onclick="func_3()"/></li>
   	<li><input class="btn" type="button" value="Close 'newWindow'" onclick="func_4()"/></li>
   </ul>
 
@@ -43,6 +44,11 @@
 	//move new window 
 	function func_2(){
 		newWindow.moveBy(200, 200);
+	}
+
+	//focus new window
+	function func_3(){
+		newWindow.focus();
 	}
 
 	//close new window
