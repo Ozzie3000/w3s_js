@@ -27,7 +27,7 @@
   	<li>Then use a function to move new window around</li>
   	<li><input class="btn" type="button" value="Open 'newWindow'" onclick="func_1()"/></li>
   	<li><input class="btn" type="button" value="Move 'newWindow'" onclick="func_2()"/></li>
-  	<li><input class="btn" type="button" value="Close 'newWindow'" onclick="func_3()"/></li>
+  	<li><input class="btn" type="button" value="Close 'newWindow'" onclick="func_4()"/></li>
   </ul>
 
 
@@ -40,13 +40,13 @@
 		newWindow = window.open("", "", "width=400, height=200");
 	}
 
-	//move new window  //does seem to work
+	//move new window 
 	function func_2(){
-		newWindow = window.moveBy(300, 300);
+		newWindow.moveBy(200, 200);
 	}
 
 	//close new window
-	function func_3(){
+	function func_4(){
 		newWindow.close();
 	}
 
