@@ -27,22 +27,27 @@
   	<li>Then use a function to move new window around</li>
   	<li><input class="btn" type="button" value="Open 'newWindow'" onclick="func_1()"/></li>
   	<li><input class="btn" type="button" value="Move 'newWindow'" onclick="func_2()"/></li>
-  	<li><input class="btn" type="button" value="Move 'newWindow'" onclick="func_3()"/></li>
+  	<li><input class="btn" type="button" value="Close 'newWindow'" onclick="func_3()"/></li>
   </ul>
 
 
 <script>
 	//global var
-	//var newWindow;
+	var newWindow;
 
 	//open new window
 	function func_1(){
-		var newWindow = window.open("", "", "width=400, height=200");
+		newWindow = window.open("", "", "width=400, height=200");
 	}
 
-	//move new window
+	//move new window  //does seem to work
 	function func_2(){
-		var newWindow = window.moveBy(200, 200);
+		newWindow = window.moveBy(300, 300);
+	}
+
+	//close new window
+	function func_3(){
+		newWindow.close();
 	}
 
 
