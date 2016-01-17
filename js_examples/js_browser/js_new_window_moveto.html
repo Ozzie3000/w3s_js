@@ -28,6 +28,8 @@
   	<li>Other functions to moveTo a location and bring it back to focus</li>
   	<li><input class="btn" type="button" value="Open 'newWindow'" onclick="func_1()"/></li>
   	<li><input class="btn" type="button" value="Move 'newWindow'" onclick="func_2()"/></li>
+  	<li><input class="btn" type="button" value="Close 'newWindow'" onclick="func_3()"/></li>
+
   </ul>
 
 
@@ -44,6 +46,11 @@
 	function func_2(){
 		newWindow.moveTo(400, 10);
 		newWindow.focus();
+	}
+
+	//close new window
+	function func_3(){
+		newWindow.close();
 	}
 
 
