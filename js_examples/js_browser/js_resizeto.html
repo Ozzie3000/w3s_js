@@ -28,7 +28,14 @@
 
 
 <script>
-	//document.getElementById("").
+	//global var
+	var nw;
+
+	//open new window
+	function func_1(){
+		nw = window.open("", "", "width=400, height=200");
+		nw.focus();
+	}
 
 
 	$(document).ready(function(){
