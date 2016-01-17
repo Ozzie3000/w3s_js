@@ -34,6 +34,13 @@
 	//open new window
 	function func_1(){
 		nw = window.open("", "", "width=400, height=200");
+		nw.focus();
+	}
+
+	//resize
+	function func_2() {
+    nw.resizeBy(50, 50);
+    nw.focus();
 	}
 
 
