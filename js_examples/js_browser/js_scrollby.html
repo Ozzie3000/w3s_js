@@ -26,12 +26,26 @@
   	<li></li>
   </ul>
 
+  <ul id="target_1"><span class="ul_tops"></span>
+  	<li><button id="btn2">append</button></li>
+  </ul>
+
 
 <script>
-	//document.getElementById("").
+	function myFunction() {
+    var text = "";
+    var i;
+    for (i = 0; i < x; i++) {
+        text += "chnage me " + i + "<br>";
+    }
+    document.getElementById("target_1").innerHTML = text;
+}
 
 
 	$(document).ready(function(){
+		$("#btn2").click(function(){
+        $("#target_1").append("<li>Appended item</li>");
+    });
 
 	}); //end doc ready
 </script>
