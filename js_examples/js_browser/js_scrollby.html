@@ -24,8 +24,10 @@
 
   <ul><span class="ul_tops">The scrollBy</span>
   	<li>You can scroll to a specified amount from your starting location</li>
+  	<li>Scroll by x = 0 and y = 300</li>
+  	<li><input class="btn" type="button" value="Scroll 300" onclick="func_1()"/></li>
   	<li>Scroll by x = 0 and y = 600</li>
-  	<li><input class="btn" type="button" value="Scroll" onclick="func_1()"/></li>
+  	<li><input class="btn" type="button" value="Scroll 600" onclick="func_2()"/></li>
   </ul>
 
   <ul id="target_1"><span class="ul_tops">Scroll test</span>
@@ -36,8 +38,14 @@
 
 
 <script>
-	//scroll func
+
+//scroll func
 	function func_1() {
+    window.scrollBy(0, 300);
+	}
+
+	//scroll func
+	function func_2() {
     window.scrollBy(0, 600);
 	}
 
