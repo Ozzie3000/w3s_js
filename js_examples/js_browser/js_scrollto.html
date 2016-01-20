@@ -26,6 +26,10 @@
   	<li></li>
   </ul>
 
+  <ul id="target_1"><span class="ul_tops">Scroll test</span>
+  	
+  </ul>
+
 
 <script>
 	//scroll func
@@ -35,6 +39,16 @@
 
 
 	$(document).ready(function(){
+		function make_li(){
+	    var text = "";
+	    var i;
+	    var x = 50;
+	    for (i = 0; i < x; i++) {
+	      $("#target_1").append("<li>Appended item " + i + "</li>");;
+	    }
+		}
+
+		setTimeout(function(){make_li(); }, 1500);
 
 	}); //end doc ready
 </script>
