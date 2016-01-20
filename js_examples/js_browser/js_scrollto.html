@@ -36,8 +36,10 @@
   </ul>
 
   <ul><span class="ul_tops">Scroll up</span>
+  	<li>Scroll to: x = 0 and y = 0</li>
+  	<li><input class="btn" type="button" value="Scroll up to 0" onclick="func_3()"/></li>
   	<li>Scroll to: x = 0 and y = 100</li>
-  	<li><input class="btn" type="button" value="Scroll up to 100" onclick="func_3()"/></li>
+  	<li><input class="btn" type="button" value="Scroll up to 100" onclick="func_4()"/></li>
   </ul>
 
 
@@ -54,6 +56,11 @@
 
 	//scroll func
 	function func_3() {
+    window.scrollTo(0, 0);
+	}
+
+	//scroll func
+	function func_4() {
     window.scrollTo(0, 100);
 	}
 
