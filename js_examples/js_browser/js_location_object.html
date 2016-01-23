@@ -49,6 +49,11 @@
   	<li><button onclick="new_webbie()">Go to Amazon</button></li>
   </ul>
 
+  <ul><span class="ul_tops">Location replace</span>
+  	<li>Change the location using replace against the current page</li>
+  	<li><button onclick="replace_me()">Go to Amazon</button></li>
+  </ul>
+
   
 
   <br><br><br>
@@ -70,6 +75,11 @@
 	//location assign
 	function new_webbie() {
     window.location.assign("https://amazon.com");
+	}
+
+	//location replace
+	function replace_me() {
+    window.location.replace("https://amazon.com");
 	}
 
 
