@@ -44,6 +44,11 @@
   	<li>If above is blank; hosted locally</li>
   </ul>
 
+  <ul><span class="ul_tops">Location assign</span>
+  	<li>Change the location using assign against the current page</li>
+  	<li><button onclick="new_webbie()">Go to Amazon</button></li>
+  </ul>
+
   
 
   <br><br><br>
@@ -61,6 +66,11 @@
 
 	//location protocol
 	document.getElementById("target_3").innerHTML = "Page location protocol is: " + window.location.protocol;
+
+	//location assign
+	function new_webbie() {
+    window.location.assign("https://amazon.com");
+	}
 
 
 
