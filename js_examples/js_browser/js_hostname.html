@@ -20,7 +20,11 @@
 <body>
 	<input type="button" id="submit" class="btn" value="Refreshness" onclick="location.reload();" />
 	<br /><br />
-  <h1>JS examples: hostname</h1>
+  <h1>JS examples: hostname, URL</h1>
+
+  <ul><span class="ul_tops">Entire URL</span>
+  	<li>Display entire URL of current page below</li>
+  </ul>
 
   <ul><span class="ul_tops">Show hostname</span>
   	<li>Display the hostname (and the port if not 80) of the current URL.</li>
@@ -28,12 +32,14 @@
   	<li>If it's blank hosted on local machine</li>
   </ul>
 
-  <ul><span class="ul_tops">Entire URL</span>
-  	<li></li>
-  </ul>
+  
 
 
 <script>
+
+	//entire URL
+	document.getElementById("target_0").innerHTML = "Entire URL is: " + window.location.href;
+
 	//show hostname
 	document.getElementById("target_1").innerHTML = "Page hostname is: " + window.location.hostname;
 
