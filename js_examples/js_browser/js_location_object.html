@@ -59,7 +59,7 @@
     <li>Check top windown and if not equal to current window go somewhere else</li>
     <li><button onclick="breakout()">If not equal leave</button></li>
     <li>Both equal each other some nothing well happen</li>
-    <li>Also same equation, but if both match go to Amazon</li>
+    <li>Next function is almost the same equation, but if both match go to Amazon</li>
     <li><button onclick="breakout2()">If equal leave</button></li>
   </ul>
 
@@ -94,6 +94,13 @@
   //break out function
   function breakout() {
     if (window.top != window.self){
+      window.top.location = "js_window_object.html";
+    }
+  }
+
+  //break out function checking for equivalency.  If true leave
+  function breakout2() {
+    if (window.top == window.self){
       window.top.location = "js_window_object.html";
     }
   }
