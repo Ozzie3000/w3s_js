@@ -39,14 +39,19 @@
 
 <script>
 	//are cookies enabled
-	(function isCookies() {
+	(function isCookies(){
     document.getElementById("target_1").innerHTML = "Cookies enabled is T/F: " + navigator.cookieEnabled;
 	})();
 
 	//navigator.appName and navigator.codeName
-	(function broswer_names() {
+	(function broswer_names(){
     document.getElementById("target_2").innerHTML = "appName is " + navigator.appName + "<br>appCodeName is " + navigator.appCodeName;
 	})();
+
+	//browser engine
+	function engine_nine(){ 
+    document.getElementById("demo").innerHTML = "Browser engine is " + navigator.product;
+	}
 
 
 	$(document).ready(function(){
