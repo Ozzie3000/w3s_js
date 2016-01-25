@@ -36,6 +36,13 @@
   	</li>
   </ul>
 
+  <ul><span class="ul_tops">Browser engine</span>
+  	<li>Let's see what's under the hood</li>
+  	<li>
+  		<span id="target_3"></span>
+  	</li>
+  </ul>
+
 
 <script>
 	//are cookies enabled
@@ -49,9 +56,9 @@
 	})();
 
 	//browser engine
-	function engine_nine(){ 
-    document.getElementById("demo").innerHTML = "Browser engine is " + navigator.product;
-	}
+	(function engine_nine(){ 
+    document.getElementById("target_3").innerHTML = "Browser engine is " + navigator.product;
+	})();
 
 
 	$(document).ready(function(){
