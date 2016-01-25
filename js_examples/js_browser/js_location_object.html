@@ -83,6 +83,13 @@
     window.location.replace("https://amazon.com");
 	}
 
+  //break out function
+  function breakout() {
+    if (window.top != window.self){
+      window.top.location = "js_window_object.html";
+    }
+  }
+
 
 
 
