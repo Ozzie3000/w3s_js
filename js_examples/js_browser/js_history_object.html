@@ -7,7 +7,7 @@
 <!-- server
 <link rel="stylesheet" type="text/css" href="..stylesheets/main1.css"></link>
 -->
-<link rel="stylesheet" type="text/css" href="../stylesheets/main1.css"></link>
+<link rel="stylesheet" type="text/css" href="../../stylesheets/main1.css"></link>
 <style type="text/css"></style>
 <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
 <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
@@ -22,8 +22,12 @@
 	<br /><br />
   <h1>JS examples: history object</h1>
 
-  <ul><span class="ul_tops"></span>
-  	<li></li>
+  <ul><span class="ul_tops">A brief history of URLs in your browswer window</span>
+  	<li>You can use JS to show the number of items in your history list</li>
+  	<li>history.length;</li>
+  	<li><input class="btn" type="button" value="Number of items" onclick="num_history()"/></li>
+  	<li><span id="target_1"></span></li>
+  	<li>If it only shows 1; go somewhere and come back</li>
   </ul>
 
 
