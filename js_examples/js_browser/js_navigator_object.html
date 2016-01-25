@@ -51,6 +51,8 @@
   </ul>
 
 
+  <br><br><br>
+
 <script>
 	//are cookies enabled
 	(function isCookies(){
@@ -65,6 +67,11 @@
 	//browser engine
 	(function engine_nine(){ 
     document.getElementById("target_3").innerHTML = "Browser engine is " + navigator.product;
+	})();
+
+	//
+	(function version_info(){
+    document.getElementById("target_4").innerHTML = navigator.appVersion;
 	})();
 
 
