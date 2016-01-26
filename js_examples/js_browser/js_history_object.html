@@ -42,6 +42,13 @@
   	<li><input class="btn" type="button" value="Forward in Time" onclick="go_forward()"/></li>
   </ul>
 
+  <ul><span class="ul_tops">Go to a specific number in history list</span>
+  	<li>You can specify where to go in history list</li>
+  	<li>Positive numbers go forward</li>
+  	<li>Negative numbers go backward</li>
+  	<li><button onclick="specific_location(-1)">Go 1 pages back</button></li>
+  </ul>
+
 
   <br><br><br>
 
@@ -57,7 +64,7 @@
 	}
 
 	//a history forward button
-	function back_up(){
+	function go_forward(){
     window.history.forward();
 	}
 
