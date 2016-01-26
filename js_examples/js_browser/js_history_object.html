@@ -47,6 +47,8 @@
   	<li>Positive numbers go forward</li>
   	<li>Negative numbers go backward</li>
   	<!--wanted to test the image after its clicked button vs input type button -->
+  	<li>In order for this to work you will need to seed your history list</li>
+  	<li>2 places back and 2 places forward</li>
   	<li><button class="btn" onclick="specific_location(-1)">Go 1 page back</button></li>
   	<li><button class="btn" onclick="specific_location(-2)">Go 2 pages back</button></li>
   	<li><button class="btn" onclick="specific_location(1)">Go 1 page forward</button></li>
@@ -70,6 +72,11 @@
 	//a history forward button
 	function go_forward(){
     window.history.forward();
+	}
+
+	//got to a specific location in history by passing arguements
+	function specific_location(a){
+		window.history.go(a);
 	}
 
 
