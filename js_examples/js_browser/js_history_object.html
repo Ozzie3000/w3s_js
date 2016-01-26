@@ -41,8 +41,12 @@
 
 <script>
 	//show number of things (URLS) in history list
-	function num_history() {
+	function num_history(){
     document.getElementById("target_1").innerHTML = history.length;
+	}
+
+	function back_up(){
+    window.history.back();
 	}
 
 
