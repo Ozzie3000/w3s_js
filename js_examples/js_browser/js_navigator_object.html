@@ -73,10 +73,15 @@
     document.getElementById("target_3").innerHTML = "Browser engine is " + navigator.product;
 	})();
 
-	//
+	//version info   appVersion
 	(function version_info(){
     document.getElementById("target_4").innerHTML = navigator.appVersion;
 	})();
+
+  //user-agent
+  function user_agent(){
+    document.getElementById("target_5").innerHTML = navigator.userAgent;
+  }
 
 
 	$(document).ready(function(){
