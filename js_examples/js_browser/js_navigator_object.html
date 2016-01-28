@@ -52,6 +52,9 @@
 
   <ul><span class="ul_tops">User-agent</span>
     <li></li>
+    <li>
+      <span id="target_5"></span>
+    </li>
   </ul>
 
 
@@ -79,9 +82,9 @@
 	})();
 
   //user-agent
-  function user_agent(){
+  (function user_agent(){
     document.getElementById("target_5").innerHTML = navigator.userAgent;
-  }
+  })();
 
 
 	$(document).ready(function(){
