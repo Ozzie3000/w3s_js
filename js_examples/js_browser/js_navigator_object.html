@@ -104,13 +104,18 @@
   })();
 
   //user platform
-  (function myFunction(){ 
+  (function user_platform(){ 
     document.getElementById("target_6").innerHTML = navigator.platform;
   })();
 
   //browser language setting
-  (function myFunction() {
+  (function user_language() {
     document.getElementById("target_7").innerHTML = "Browser language is set to: " + navigator.language;
+  })();
+
+  //is JS enabled
+  (function is_js(){
+    document.getElementById("target_8").innerHTML = "JS is enabled T/F? : " + navigator.javaEnabled();
   })();
 
 
