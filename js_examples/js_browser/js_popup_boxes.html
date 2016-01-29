@@ -29,7 +29,9 @@
   </ul>
 
   <ul><span class="ul_tops">Line breaks in alert windows</span>
-  	<li></li>
+  	<li>You can use line breaks in alert messages</li>
+  	<li>stuff stuff \nHello more stuff</li>
+  	<li><input class="btn" type="button" value="See line break" onclick="line_break()"/></li>
   </ul>
 
 
@@ -40,6 +42,11 @@
 		//window.alert("Stop clicking me already!"); 
 		//version 2
 		alert("Stop clicking me already!");
+	}
+
+	//alert window with line break
+	function line_break(){
+		alert("Hello there. \nThis is line 2.");
 	}
 
 
