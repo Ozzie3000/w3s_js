@@ -38,6 +38,9 @@
   	<li>You can request confirmation from a user</li>
   	<li>It will display an alert box with cancel or ok</li>
   	<li><input class="btn" type="button" value="Confirm" onclick="ask_user1()"/></li>
+  	<li>
+  		<span id="target_1"></span>
+  	</li>
   </ul>
 
 
@@ -53,6 +56,17 @@
 	//alert window with line break
 	function line_break(){
 		alert("Hello there. \nThis is line 2.");
+	}
+
+	//alert window with ok and cancel
+	function ask_user1(){
+		var x;
+		if (confirm("Pick one") == true){
+			x = "You pressed the OK button";
+		} else {
+			x = "You did not press the OK button";
+		}
+		document.getElementById("target_1").innerHTML = x;
 	}
 
 
