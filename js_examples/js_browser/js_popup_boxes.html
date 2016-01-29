@@ -102,6 +102,16 @@
 	}
 */
 
+	//ask user for input
+	function ask_user2(){
+    var person = prompt("Please enter your name", "Yautja");
+    
+    if (person != null) {
+        document.getElementById("target_2").innerHTML =
+        "Hello " + person + "! How are you today?";
+    }
+	}
+
 	$(document).ready(function(){
 
 	}); //end doc ready
