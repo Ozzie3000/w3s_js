@@ -43,6 +43,9 @@
   	</li>
   </ul>
 
+  <li>
+  	<span id="target_2"></span>
+  </li>
 
 <script>
 	//alert windox or box
@@ -69,6 +72,22 @@
 		document.getElementById("target_1").innerHTML = x;
 	}
 
+/*   testing what happens on escape
+	//alert window with ok and cancel
+	function ask_user2(){
+		var selected;
+		x = confirm("Pick one")
+		alert(x);
+		if (x === true){
+			selected = "You pressed the OK button";
+		} else if (x == "") {
+			selected = "You choose neither";
+		} else {
+			selected = "You hit cancel";
+		}
+		document.getElementById("target_2").innerHTML = selected;
+	}
+*/
 
 	$(document).ready(function(){
 
