@@ -54,7 +54,7 @@
 	<ul><span class="ul_tops">Prompt window</span>
 		<li>Ask a user for input</li>
 		<li>It will display an alert box with a box, cancel and ok buttons</li>
-  	<li><input class="btn" type="button" value="Promp" onclick="ask_user2()"/></li>
+  	<li><input class="btn" type="button" value="Ask me a question" onclick="ask_user2()"/></li>
   	<li>
   		<span id="target_2"></span>
   	</li>
@@ -105,10 +105,13 @@
 	//ask user for input
 	function ask_user2(){
     var person = prompt("Please enter your name", "Yautja");
-    
-    if (person != null) {
-        document.getElementById("target_2").innerHTML =
-        "Hello " + person + "! How are you today?";
+    if ((person != null) && (person != "")) {
+    	console.log(person);
+      document.getElementById("target_2").innerHTML =
+      "Hello " + person + "! How are you today?";
+    } else {
+    	console.log(person);
+    	ask_user2();
     }
 	}
 
