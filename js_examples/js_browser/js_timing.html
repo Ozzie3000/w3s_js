@@ -87,7 +87,7 @@
 
   <ul><span class="ul_tops">Set and interval and clear it</span>
     <li></li>
-    <li></li>
+    <li><input class="btn" type="button" value="Time Time" onclick="clearInterval(func_as_var)"/></li>
     <li>
       <span id="target_11"></span>
     </li>
@@ -171,6 +171,7 @@
 
   //setInterval
   //function as variable to pass as an argument later
+  //executes right way (well 1 sec because i used 1 second in interval) even thought stored in a variable
   var func_as_var = setInterval(clock2, 1000);
 
   //JS clock
