@@ -77,7 +77,8 @@
   </ul>
 
   <ul><span class="ul_tops">Make a clock</span>
-  	<li></li>
+  	<li>We will use the JS new Date(); object</li>
+    <li>Then chop it up into hours, minutes, seconds</li>
   </ul>
 
 
@@ -141,12 +142,20 @@
     var h = today.getHours();
     var m = today.getMinutes();
     var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
+    m = add_zed(m);
+    s = add_zed(s);
     document.getElementById('stuff').innerHTML =
     h + ":" + m + ":" + s;
     var t = setTimeout(starting_func, 500);
 	}
+
+  //add a 0 up front if less than 10
+  function add_zed(i){
+    if (i < 10) {
+      i = "0" + i;
+    };
+    return i;
+  }
 	
 
 
