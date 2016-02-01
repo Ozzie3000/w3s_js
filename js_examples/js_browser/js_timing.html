@@ -164,6 +164,15 @@
     };
     return i;
   }
+
+  //setInterval
+  //function as variable to pass as an argument later
+  var func_as_var = setInterval(clock2, 1000);
+
+  function clock2(){
+    document.getElementById("stuff").innerHTML =
+    new Date().toLocaleTimeString();
+  }
 	
 
 
