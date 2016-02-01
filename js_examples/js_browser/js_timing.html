@@ -76,6 +76,10 @@
   	<li><input class="btn" type="button" value="Stop counting" onclick="clearInterval(y)"/></li>
   </ul>
 
+  <ul><span class="ul_tops">Make a clock</span>
+  	<li></li>
+  </ul>
+
 
   <br><br><br><br>
 
@@ -130,6 +134,19 @@
 	//clearInterval
 	//hackish made a variable and set it equal to first function and passed that as param for 2nd function
 	
+
+	//clock
+	function starting_func(){
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('stuff').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(starting_func, 500);
+	}
 	
 
 
