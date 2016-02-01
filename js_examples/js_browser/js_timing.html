@@ -64,7 +64,7 @@
   <ul><span class="ul_tops">Timing a loop</span>
   	<li>You can set an interval for a function to keep executing on</li>
   	<li>setInterval(functionName, integer_in_milliseconds);</li>
-  	<li><input class="btn" type="button" value="Count" onclick="setInterval(counting, 1000)"/></li>
+  	<li><input class="btn" type="button" value="Count" onclick="y = setInterval(counting, 1000)"/></li>
   	<li>
   		<span id="target_9"></span>
   	</li>
@@ -73,6 +73,7 @@
   <ul><span class="ul_tops">Put a stop to the loop</span>
   	<li>Need to stop a setInterval?</li>
   	<li>Use clearInterval(FunctionName)</li>
+  	<li><input class="btn" type="button" value="Stop counting" onclick="clearInterval(y)"/></li>
   </ul>
 
 
@@ -125,6 +126,10 @@
 	function counting(){
 		document.getElementById("target_9").innerHTML = ++x;
 	}
+
+	//clearInterval
+	
+	
 
 
 	$(document).ready(function(){
