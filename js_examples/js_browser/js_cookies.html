@@ -48,6 +48,10 @@
     <li>document.cookie="username=William Riker; expires=Fri, 24 Dec 2016 12:00:00 UTC; path=/";</li>
     <li>To delete a cookie simply set exp to past date</li>
     <li>document.cookie="username=Jean Luke; expires=Thu, 07 Apr 0001 12:00:00 UTC";</li>
+    <li>document.cookie property may look like a normal text string, but know that it is not</li>
+    <li>After you write to document.cookie and call it again it will only be in name-value pairs</li>
+    <li>If you make a new cookie and there is an older one in existence it will not get overwritten</li>
+    <li>cookie1=value; cookie2=value; // where 1 is old and 2 is new. Both exist</li>
   </ul>
 
 
