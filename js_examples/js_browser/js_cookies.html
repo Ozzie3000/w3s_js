@@ -61,7 +61,7 @@
   }
 
   //check to see if anyone ate those cookies
-  function checkCookie() {
+  (function checkCookie() {
     var user=getCookie("username");
     if (user != "") {
         alert("Welcome again " + user);
@@ -71,7 +71,7 @@
            setCookie("username", user, 30);
        }
     }
-  }
+  })();
 
 
 
